@@ -1,12 +1,9 @@
 import React from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
-import { useTranslation } from "react-i18next";
-import i18next from "i18next";
-import db from "../../firebaseConfig";
+import "../../index.css";
 
 export default function HowItWorks() {
   return (
-    <div>
+    <div className="howitworks">
       <h1>This is HowItWorks Component!</h1>
     </div>
   );
