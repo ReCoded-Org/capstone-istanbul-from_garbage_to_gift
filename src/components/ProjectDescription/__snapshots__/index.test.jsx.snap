@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ProjectDescription correctly 1`] = `
+<div
+  className="container-md"
+>
+  <div
+    className="row row"
+  >
+    <div
+      className="col-md-6"
+    >
+      <div>
+        <img
+          alt="Team work"
+          src="gift.jpg"
+        />
+      </div>
+    </div>
+    <div
+      className="col-md-6"
+    >
+      <div
+        className="projectdescriptionheader"
+      >
+        <h1>
+          Gifting your unnecessary stuff might rescue someone else's life
+        </h1>
+      </div>
+      <div
+        className="projectdescriptionparagraph"
+      >
+        <p>
+          You can participate in changing the world by donating your unnecessary stuff to people in need, whatever your stuff is it might rescue the other people lives or better their lives at least, So don't throw out your un need stuff in the garbage, just give them to us and we will deliver them to whom in need
+           
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

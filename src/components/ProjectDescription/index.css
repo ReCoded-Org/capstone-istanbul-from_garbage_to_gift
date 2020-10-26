@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Acme&display=swap");
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectdescriptionheader h1 {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  margin: 20px;
+  font-family: "Acme";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 170%;
+  text-align: center;
+  color: #03c4a1;
+}
+
+.projectdescriptionparagraph {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  padding-top: 0px;
+  margin: 20px;
+  margin-top: 0px;
+  font-family: "Acme";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 170%;
+  text-align: center;
+  color: #726a95;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  padding-left: 0px;
+  margin: 20px;
+  margin-left: 0px;
+}
