@@ -6,7 +6,7 @@
   justify-content: center;
 }
 
-.projectdescriptionheader h1 {
+.projectDescriptionHeader h1 {
   width: 100%;
   height: auto;
   padding: 20px;
@@ -20,7 +20,7 @@
   color: #03c4a1;
 }
 
-.projectdescriptionparagraph {
+.projectDescriptionParagraph {
   width: 100%;
   height: auto;
   padding: 20px;

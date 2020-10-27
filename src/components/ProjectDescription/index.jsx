@@ -5,22 +5,20 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-export default function projectdescription() {
+export default function ProjectDescription() {
   return (
     <Container fluid="md">
       <Row className="row">
         <Col md={6}>
-          <div>
-            <img src={gift} alt="Team work"></img>
-          </div>
+          <img src={gift} alt="Team work"></img>
         </Col>
         <Col md={6}>
-          <div className="projectdescriptionheader">
+          <div className="projectDescriptionHeader">
             <h1>
               Gifting your unnecessary stuff might rescue someone else's life
             </h1>
           </div>
-          <div className="projectdescriptionparagraph">
+          <div className="projectDescriptionParagraph">
             <p>
               You can participate in changing the world by donating your
               unnecessary stuff to people in need, whatever your stuff is it
