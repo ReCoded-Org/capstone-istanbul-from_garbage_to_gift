@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Acme&display=swap");
+
+.footer {
+  font-family: "Acme";
+  background: #590995;
+  color: white;
+}
+
+.contact {
+  width: 30%;
+}
+
+

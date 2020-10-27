@@ -9,6 +9,10 @@
         "bootstrap": "^4.5.3",
         "firebase": "^7.24.0",
         "i18next": "^19.8.2",
+<<<<<<< HEAD
+=======
+        "i18next-browser-languagedetector": "^6.0.1",
+>>>>>>> 95bff16b315f600f66aae5570327f251c1a7b3ff
         "react": "^16.14.0",
         "react-bootstrap": "^1.4.0",
         "react-dom": "^16.14.0",
