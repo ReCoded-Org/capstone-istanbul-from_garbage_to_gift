@@ -18,8 +18,9 @@ const contactData = {
   },
 };
 const menuData = {
-  explanation:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s",
+  explanation: `Lorem Ipsum is simply dummy text of the printing and 
+    typesetting industry. Lorem Ipsum has been the industry 
+    standard dummy text ever since the 1500s`,
   menu: ["Terms of Service", "Contact Us", "About", "Recent Posts"],
 };
 
