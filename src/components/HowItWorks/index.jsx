@@ -3,7 +3,7 @@ import "./index.css";
 
 export default function HowItWorks() {
   return (
-    <div className="howitworks">
+    <div className="howItWorks">
       <h1>This is HowItWorks Component!</h1>
     </div>
   );

@@ -1,9 +1,7 @@
 import React from "react";
 import "./index.css";
 import gift from "./gift.jpg";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Container, Row, Col } from "react-bootstrap";
 
 export default function ProjectDescription() {
   return (
@@ -13,12 +11,12 @@ export default function ProjectDescription() {
           <img src={gift} alt="Team work"></img>
         </Col>
         <Col md={6}>
-          <div className="projectDescriptionHeader">
+          <div className="projectDescription">
             <h1>
               Gifting your unnecessary stuff might rescue someone else's life
             </h1>
           </div>
-          <div className="projectDescriptionParagraph">
+          <div className="projectDescription">
             <p>
               You can participate in changing the world by donating your
               unnecessary stuff to people in need, whatever your stuff is it
