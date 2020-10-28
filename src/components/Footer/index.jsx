@@ -1,60 +1,63 @@
-import React from 'react'
+import React from "react";
 import "./index.css";
 import { Row, Col, Container } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const contactData = {
-    
-        address: '9094 Bay Meadows Street Conyars, GA 30012',
-        phone:
-            {
-            phone1: '+229-955-5388-336', 
-            phone2: '+229-955-5373-360',
-            },
-        email: 
-            {
-            email1: 'office@mail.com', 
-            email2: 'support@mail.com',
-        }
-}
+  address: "9094 Bay Meadows Street Conyars, GA 30012",
+  phone: {
+    phone1: "+229-955-5388-336",
+    phone2: "+229-955-5373-360",
+  },
+  email: {
+    email1: "office@mail.com",
+    email2: "support@mail.com",
+  },
+};
 const menuData = {
-    
-        explanation: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s',
-        menu: [
-             'Terms of Service',
-             'Contact Us',
-             'About',
-             'Recent Posts',
-        ]
-}
+  explanation:
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s",
+  menu: ["Terms of Service", "Contact Us", "About", "Recent Posts"],
+};
 
 export default function Footer() {
-
-    return (
-        <Container className="footer">
-            <Row className="justify-content-md-center">
-                <Col md="auto">
-                    <div className="address">
-                        {contactData.address}
-                    </div>
-                    <div className="phone">
-                        {contactData.phone.phone1}
-                        {contactData.phone.phone2}
-                    </div>
-                    <div className="email">
-                        {contactData.email.email1}
-                        {contactData.email.email2}
-                    </div>      
-                </Col>
-                <Col>
-                    <div>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</div>
-                    <div>
-                        {menuData.menu.map(menuitem => <Col>{menuitem}</Col>)}
-                    </div>
-                </Col>
-                <Col>
-                 <h1>Logo</h1>
-                </Col>
+  return (
+    <Container fluid className="footer">
+      <Row className="mainRow">
+        <Row className="contact">
+          <Col className="address">
+            <Row className="footerIcons">
+              <FontAwesomeIcon icon={faMapMarkerAlt} />
             </Row>
-        </Container>
-    )
+            <Row>{contactData.address}</Row>
+          </Col>
+          <Col className="phone">
+            <Row className="footerIcons">
+              <FontAwesomeIcon icon={faPhoneAlt} />
+            </Row>
+            <Row>{contactData.phone.phone1}</Row>
+            <Row>{contactData.phone.phone2}</Row>
+          </Col>
+          <Col className="email">
+            <Row className="footerIcons">
+              <FontAwesomeIcon icon={faEnvelope} />
+            </Row>
+            <Row>{contactData.email.email1}</Row>
+            <Row>{contactData.email.email2}</Row>
+          </Col>
+        </Row>
+        <Col lg={6} className="menu">
+          <Row className="name">Fortune Found</Row>
+          <Row className="menuItems">
+            {menuData.menu.map((menuitem) => (
+              <Col>{menuitem}</Col>
+            ))}
+          </Row>
+        </Col>
+      </Row>
+    </Container>
+  );
 }

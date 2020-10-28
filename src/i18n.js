@@ -1,12 +1,11 @@
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
 
 // import Backend from 'i18next-http-backend';
-import LanguageDetector from 'i18next-browser-languagedetector';
-import common_ar from './locales/ar.json';
-import common_en from './locales/en.json';
-import common_tr from './locales/tr.json';
-
+import LanguageDetector from "i18next-browser-languagedetector";
+import common_ar from "./locales/ar.json";
+import common_en from "./locales/en.json";
+import common_tr from "./locales/tr.json";
 
 const resources = {
   en: {
@@ -16,8 +15,8 @@ const resources = {
     translation: common_ar,
   },
   tr: {
-  translation: common_tr,
- },
+    translation: common_tr,
+  },
 };
 
 i18n
@@ -29,7 +28,7 @@ i18n
   // for all options read: https://www.i18next.com/overview/configuration-options
 
   .init({
-    fallbackLng: 'en',
+    fallbackLng: "en",
     debug: true,
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
