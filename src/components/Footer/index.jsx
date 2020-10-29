@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+
 import { Row, Col, Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -7,6 +7,9 @@ import {
   faPhoneAlt,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
+import Image from "react-bootstrap/Image";
+import "./index.css";
+import WhiteLogo from "./whiteLogo.png";
 
 const contactData = {
   address: "9094 Bay Meadows Street Conyars, GA 30012",
@@ -19,8 +22,9 @@ const contactData = {
     email2: "support@mail.com",
   },
 };
+
 const menuData = {
-  explanation: "Fortune Found",
+  slogan: "",
   menu: ["Terms of Service", "Contact Us", "About", "Recent Posts"],
 };
 
@@ -50,13 +54,16 @@ export default function Footer() {
             <Row>{contactData.email.email2}</Row>
           </Col>
         </Row>
-        <Col lg={6} className="menu">
-          <Row className="name">{menuData.explanation}</Row>
+        <Col lg={4} className="menu">
+          <Row className="name">{menuData.slogan}</Row>
           <Row className="menuItems">
             {menuData.menu.map((menuitem) => (
               <Col>{menuitem}</Col>
             ))}
           </Row>
+        </Col>
+        <Col className="whiteLogo">
+          <Image src={WhiteLogo} alt="logo" width="160px" height="90px" />
         </Col>
       </Row>
     </Container>

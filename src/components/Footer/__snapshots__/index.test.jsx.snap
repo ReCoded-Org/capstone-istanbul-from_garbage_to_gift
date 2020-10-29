@@ -112,12 +112,12 @@ exports[`renders Footer correctly 1`] = `
       </div>
     </div>
     <div
-      className="menu col-lg-6"
+      className="menu col-lg-4"
     >
       <div
         className="name row"
       >
-        Fortune Found
+        
       </div>
       <div
         className="menuItems row"
@@ -143,6 +143,17 @@ exports[`renders Footer correctly 1`] = `
           Recent Posts
         </div>
       </div>
+    </div>
+    <div
+      className="whiteLogo col"
+    >
+      <img
+        alt="logo"
+        className=""
+        height="90px"
+        src="whiteLogo.png"
+        width="160px"
+      />
     </div>
   </div>
 </div>
