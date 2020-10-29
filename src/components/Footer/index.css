@@ -7,25 +7,14 @@
   width: "100%";
   font-size: 14px;
   height: 14em;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
-
-/* .address {
-  margin-top: 6em;
-  margin-left: 4em;
-  align-items: right;
-} */
 
 .mainRow {
   align-items: center;
 }
-
-/* .phone {
-  margin-top: 6em;
-} */
-
-/* .email {
-  margin-top: 6em;
-} */
 
 .menu {
   margin-left: 4em;

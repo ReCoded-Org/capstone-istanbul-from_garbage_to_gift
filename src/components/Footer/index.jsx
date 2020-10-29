@@ -2,9 +2,11 @@ import React from "react";
 import "./index.css";
 import { Row, Col, Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
-import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faMapMarkerAlt,
+  faPhoneAlt,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
 
 const contactData = {
   address: "9094 Bay Meadows Street Conyars, GA 30012",
@@ -18,9 +20,7 @@ const contactData = {
   },
 };
 const menuData = {
-  explanation: `Lorem Ipsum is simply dummy text of the printing and 
-    typesetting industry. Lorem Ipsum has been the industry 
-    standard dummy text ever since the 1500s`,
+  explanation: "Fortune Found",
   menu: ["Terms of Service", "Contact Us", "About", "Recent Posts"],
 };
 
@@ -51,7 +51,7 @@ export default function Footer() {
           </Col>
         </Row>
         <Col lg={6} className="menu">
-          <Row className="name">Fortune Found</Row>
+          <Row className="name">{menuData.explanation}</Row>
           <Row className="menuItems">
             {menuData.menu.map((menuitem) => (
               <Col>{menuitem}</Col>
