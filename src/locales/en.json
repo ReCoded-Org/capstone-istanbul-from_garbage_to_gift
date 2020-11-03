@@ -1,8 +1,8 @@
 {
-  "links": {
-    "home": "",
-    "about": ""
-  },
-  "home": {},
-  "about": {}
+  "footer": {
+    "termsOfService": "Terms of Service",
+    "contact": "Contact",
+    "about": "About",
+    "recentPosts": "Recent Posts"
+ }
 }

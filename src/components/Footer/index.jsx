@@ -9,7 +9,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Image from "react-bootstrap/Image";
 import "./index.css";
+import { useTranslation } from 'react-i18next';
 import WhiteLogo from "./whiteLogo.png";
+
 
 const contactData = {
   address: "9094 Bay Meadows Street Conyars, GA 30012",
@@ -28,44 +30,60 @@ const menuData = {
   menu: ["Terms of Service", "Contact Us", "About", "Recent Posts"],
 };
 
+
+
 export default function Footer() {
+
+  const  [t,i18n]  = useTranslation();
+  const selectLanguage = (language) => {
+    console.log('hello');
+    if (language === 'tr') {
+      i18n.changeLanguage('tr');
+       document.documentElement.style.setProperty('direction', 'ltr'); 
+    } else {
+      i18n.changeLanguage(language);
+       document.documentElement.style.setProperty('direction', 'ltr'); 
+    }
+  };
+
   return (
-    <Container fluid className="footer">
-      <Row className="mainRow">
-        <Row className="contact">
+    <div>
+      <Container fluid className="footer">
+        <Row className="mainRow">
+
           <Col className="address">
-            <Row className="footerIcons">
-              <FontAwesomeIcon icon={faMapMarkerAlt} />
-            </Row>
-            <Row>{contactData.address}</Row>
+            <FontAwesomeIcon className="icon" icon={faMapMarkerAlt} />
+            <div className="alignCenter">
+              {contactData.address}
+            </div> 
           </Col>
           <Col className="phone">
-            <Row className="footerIcons">
-              <FontAwesomeIcon icon={faPhoneAlt} />
-            </Row>
-            <Row>{contactData.phone.phone1}</Row>
-            <Row>{contactData.phone.phone2}</Row>
+            <FontAwesomeIcon className="icon" icon={faPhoneAlt} />
+            <div className="phone">
+              <div>
+              {contactData.phone.phone1}
+              </div>
+              <div>
+              {contactData.phone.phone2}
+              </div>
+            </div>
           </Col>
           <Col className="email">
-            <Row className="footerIcons">
-              <FontAwesomeIcon icon={faEnvelope} />
-            </Row>
-            <Row>{contactData.email.email1}</Row>
-            <Row>{contactData.email.email2}</Row>
+            <FontAwesomeIcon className="icon" icon={faEnvelope} />
+            <div className="email">
+              <div>
+              {contactData.email.email1}
+              </div>
+              <div>
+              {contactData.email.email2}
+              </div>
+            </div>
+          </Col>
+          <Col className="logo">
+            <Image src={WhiteLogo} alt="logo" width="160px" height="90px" />
           </Col>
         </Row>
-        <Col lg={4} className="menu">
-          <Row className="name">{menuData.slogan}</Row>
-          <Row className="menuItems">
-            {menuData.menu.map((menuitem) => (
-              <Col>{menuitem}</Col>
-            ))}
-          </Row>
-        </Col>
-        <Col className="whiteLogo">
-          <Image src={WhiteLogo} alt="logo" width="160px" height="90px" />
-        </Col>
-      </Row>
-    </Container>
+      </Container>
+    </div>
   );
 }

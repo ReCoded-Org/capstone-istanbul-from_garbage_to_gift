@@ -12,43 +12,66 @@
   bottom: 0;
 }
 
-.mainRow {
+
+ .mainRow {
+  display: flex;
+  height: 100%;
   align-items: center;
+  
 }
 
-.menu {
-  margin-left: 4em;
-  margin-top: 3.8em;
+.address {
+  flex-direction: column;
+  align-content: center;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 1em;
+}
+
+.alignCenter {
+  align-content: center;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 1em;
+  width: 50%;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.iconPhone {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.iconEmail {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  align-content: center;
+  padding: 1em;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-content: center;
+  padding: 1em;
 }
 
 .logo {
-  margin-right: 1em;
-}
-
-.menuItems {
-  margin-top: 1em;
-}
-
-.name {
+  margin-left: 6em;
   margin-bottom: 2em;
-  margin-left: 14em;
-  font-size: 22px;
-}
-
-.footerIcons {
-  display: flex;
-  padding: 5px;
-  justify-content: center;
-  height: 3em;
-  margin-right: 1.5em;
-}
-
-.contact {
-  margin-top: 4.45em;
-  margin-left: 4em;
-}
-
-.whiteLogo {
-  margin-left: 8.5em;
-  margin-top: 2em;
 }
