@@ -12,12 +12,10 @@
   bottom: 0;
 }
 
-
- .mainRow {
+.mainRow {
   display: flex;
   height: 100%;
   align-items: center;
-  
 }
 
 .address {
