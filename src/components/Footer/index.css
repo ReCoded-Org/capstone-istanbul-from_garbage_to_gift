@@ -40,6 +40,18 @@
   margin: 0 auto;
 }
 
+.iconPhone {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.iconEmail {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
 .phone {
   display: flex;
   flex-direction: column;
