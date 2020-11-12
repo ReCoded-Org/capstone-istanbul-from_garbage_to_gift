@@ -1,11 +1,11 @@
 import React from "react";
-import HowItWorks from "../../components/HowItWorks";
+import SuccessStories from "../../components/SuccessStories";
 
 export default function Home() {
   return (
-    <div>
+    <div className="container">
       <h1>This is Home Page!</h1>
-      <HowItWorks />
+      <SuccessStories />
     </div>
   );
 }
