@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Acme&display=swap");
+
+.container {
+  font-family: "Acme";
+}
+
+.successStoriesCardBody {
+  color: #026fc2;
+  font-size: 0.8em;
+}
+
+.title {
+  color: #c62a88;
+  margin-bottom: 1em;
+}
+
+.successStoriesSinglePost {
+  margin: 1em;
+  padding: 1em 0.75em;
+  border: 0.1em solid #d1dbe3;
+  border-radius: 0.5em;
+  background-color: #eef2f4;
+}
+
+img {
+  width: 100%;
+}
+
+.successStoriesCardTitle {
+  color: #590995;
+  font-size: 1em;
+}
