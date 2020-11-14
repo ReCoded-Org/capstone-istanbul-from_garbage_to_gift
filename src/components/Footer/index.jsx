@@ -7,7 +7,6 @@ import {
   faPhoneAlt,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
-import Image from "react-bootstrap/Image";
 import "./index.css";
 import WhiteLogo from "./whiteLogo.png";
 
@@ -46,8 +45,8 @@ export default function Footer() {
               <div>{contactData.email.email2}</div>
             </div>
           </Col>
-          <Col className="logo">
-            <Image src={WhiteLogo} alt="logo" width="160px" height="90px" />
+          <Col>
+            <img src={WhiteLogo} alt="logo" className="logo" />
           </Col>
         </Row>
       </Container>

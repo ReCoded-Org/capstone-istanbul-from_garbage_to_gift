@@ -8,11 +8,11 @@ import SiteNavbar from "./components/Navbar";
 function App() {
   return (
     <>
-    <Router>
-      <Route path="/" component={SiteNavbar} />
-      <Route exact path="/" component={Home} />
-    </Router>
-    <Footer />
+      <Router>
+        <Route path="/" component={SiteNavbar} />
+        <Route exact path="/" component={Home} />
+      </Router>
+      <Footer />
     </>
   );
 }

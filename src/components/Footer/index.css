@@ -6,7 +6,7 @@
   color: white;
   width: "100%";
   font-size: 1em;
-  height: 14em;
+  height: 7em;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -70,6 +70,7 @@
 }
 
 .logo {
-  margin-left: 6em;
-  margin-bottom: 2em;
+  margin-left: 5em;
+  margin-bottom: 1.5em;
+  width: 30%;
 }

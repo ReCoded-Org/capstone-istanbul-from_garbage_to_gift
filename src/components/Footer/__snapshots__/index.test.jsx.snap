@@ -97,14 +97,12 @@ exports[`renders Footer correctly 1`] = `
         </div>
       </div>
       <div
-        className="logo col"
+        className="col"
       >
         <img
           alt="logo"
-          className=""
-          height="90px"
+          className="logo"
           src="whiteLogo.png"
-          width="160px"
         />
       </div>
     </div>
