@@ -9,10 +9,10 @@ function App() {
     <Router>
       <Route path="/" component={SiteNavbar} />
       <Route exact path="/" component={Home} />
-      {/* <Route path="/Posts" component={Posts} />
-      <Route path="/Donate" component={Donate} />
-      <Route path="/Aboutus" component={Aboutus} />
-      <Route path="/Contactus" component={Contactus} /> */}
+      {/* <Route path="/posts" component={Posts} />
+      <Route path="/donate" component={Donate} />
+      <Route path="/about" component={Aboutus} />
+      <Route path="/contact" component={Contactus} /> */}
     </Router>
   );
 }

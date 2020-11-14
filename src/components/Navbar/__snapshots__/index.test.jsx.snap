@@ -10,8 +10,8 @@ exports[`renders ProjectDescription correctly 1`] = `
   >
     <img
       alt="logo"
-      src="../logo.png"
-      width="75em"
+      className="logoImg"
+      src="logo.png"
     />
   </a>
   <button
@@ -84,7 +84,7 @@ exports[`renders ProjectDescription correctly 1`] = `
       className="form-inline"
     >
       <input
-        className="form-control"
+        className="searchField form-control"
         placeholder="navbarsection.SearchHere"
         type="text"
       />

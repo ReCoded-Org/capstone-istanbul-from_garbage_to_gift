@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "./index.css";
+import logo from "./img/logo.png";
 import {
   Navbar,
   Nav,
@@ -15,7 +16,7 @@ export default function SiteNavbar() {
   return (
     <Navbar expand="lg" className="navMainClass">
       <Navbar.Brand href="/">
-        <img src="../logo.png" alt="logo" width="75em"></img>
+        <img src={logo} alt="logo" className="logoImg" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -38,6 +39,7 @@ export default function SiteNavbar() {
         </Nav>
         <Form inline>
           <FormControl
+            className="searchField"
             type="text"
             placeholder={t("navbarsection.SearchHere")}
           />
