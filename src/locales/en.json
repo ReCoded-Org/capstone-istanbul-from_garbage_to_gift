@@ -1,8 +1,16 @@
 {
-  "footer": {
-    "termsOfService": "Terms of Service",
-    "contact": "Contact",
-    "about": "About",
-    "recentPosts": "Recent Posts"
+  "home": {},
+  "about": {},
+
+  "navbarsection": {
+    "Home": "Home",
+    "Posts": "Posts",
+    "Donate": "Donate",
+    "AboutUs": "About us",
+    "ContactUs": "Contact us",
+    "SearchHere": "Search here",
+    "Search": "Search",
+    "LogIn": "Login",
+    "SignUp": "Sign Up"
   }
 }
