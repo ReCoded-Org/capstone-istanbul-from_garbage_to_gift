@@ -1,8 +1,8 @@
 {
-  "links": {
-    "home": "",
-    "about": ""
-  },
-  "home": {},
-  "about": {}
+  "footer": {
+    "termsOfService": "Kullanım Şartları",
+    "contact": "İletişim",
+    "about": "Hakkımızda",
+    "recentPosts": "Güncel Paylaşımlar"
+  }
 }
