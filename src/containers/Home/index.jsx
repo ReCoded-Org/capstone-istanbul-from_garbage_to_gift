@@ -1,13 +1,14 @@
 import React from "react";
-import HowItWorks from "../../components/HowItWorks";
-import Chat from "../../components/Chat"
+import ProjectDescription from "../../components/ProjectDescription";
+import SuccessStories from "../../components/SuccessStories";
+import WhoWeAre from "../../components/WhoWeAre";
 
 export default function Home() {
   return (
-    <div>
-      <h1>This is Home Page!</h1>
-      <HowItWorks />
-      <Chat/>
+    <div className="container">
+      <ProjectDescription />
+      <WhoWeAre />
+      <SuccessStories />
     </div>
   );
 }
