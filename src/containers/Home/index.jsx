@@ -1,6 +1,6 @@
 import React from "react";
 import HowItWorks from "../../components/HowItWorks";
-import Chat from "../../Chat"
+import Chat from "../../components/Chat"
 
 export default function Home() {
   return (
