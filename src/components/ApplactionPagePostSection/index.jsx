@@ -1,7 +1,9 @@
 
 import React, { useState, useEffect } from "react";
+import { Container } from "react-bootstrap";
 import db from "../../firebaseConfig";
-
+import "./index.css";
+import {container} from "react-bootstrap";
 
 export default function PostSection(props) { 
     
@@ -17,11 +19,17 @@ useEffect(()=>{
     fetchData()
 },[])
   return (
-    <div>
-      <h2>{post.about}</h2>
-      <p>{post.description}</p>
-      <img src={post.image} alt="post"/>
-    </div>
+    <Container className="postApplicationPage">
+      <div>
+      <img className="postImageApplicationPage" src={post.image} alt="post"/>
+      </div>
+      <div className="postTitleDescription">
+      <h2 className="postTitle">{post.about}</h2>
+      <p className="postDescription">{post.description}</p>
+      <p className="postDescription">Date: {post.date}</p>
+      </div>
+      
+    </Container>
   );
 
 }

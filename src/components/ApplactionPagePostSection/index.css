@@ -1,0 +1,22 @@
+
+.postTitle{
+color:#03C4A1;
+}
+.postDescription{
+  color: #726A95;  
+}
+
+.postApplicationPage{
+   display:flex; 
+   justify-content: center;
+   align-items: center;
+   margin-top: 5%;
+
+}
+.postImageApplicationPage{
+    width:60%;
+   
+}
+.postTitleDescription{
+    text-align: center;
+}
