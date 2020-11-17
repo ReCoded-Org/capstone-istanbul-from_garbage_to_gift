@@ -1,7 +1,28 @@
 {
-  "home": {},
-  "about": {},
-
+  "about": {
+    "aboutUs": [
+      {
+        "title": "Our Belives",
+        "paragraph": "Together we can build a better world, everyone can participate in changing the world by donating his/her unnecessary stuff to people in need, whatever the stuff is it might rescue the other people lives or better their lives at least."
+      },
+      {
+        "title": "Idea behind the website",
+        "paragraph": "Providing the linkage between the people who are willing to donate from their stuff and people who needs this stuff and make sure that we deliver the donation to the most vulnerable people."
+      },
+      {
+        "title": "About Us",
+        "paragraph": "Group of young people dream about a better world with no vulnerability and seek to integrate the efforts to provide the needed support to people in need. we always thrive to recieve new ideas to make us better."
+      }
+    ],
+    "team": [
+      { "name": "Luey Ahmad", "title": "Software engineer" },
+      { "name": "Ola Ouso", "title": "CEO" },
+      { "name": "Knar Göçer", "title": "Software engineer" },
+      { "name": "Betül Erkoç", "title": "Software engineer" },
+      { "name": "Orçun Sagırsoy", "title": "Software engineer" },
+      { "name": "Ammar Sammour", "title": "Lead Software engineer" }
+    ]
+  },
   "navbarsection": {
     "Home": "Home",
     "Posts": "Posts",

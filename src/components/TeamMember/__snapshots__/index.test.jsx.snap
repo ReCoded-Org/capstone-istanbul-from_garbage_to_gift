@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders TeamMember correctly 1`] = `
+<div
+  className="memberCol col-md-4"
+>
+  <img
+    className="teamMemberImg"
+  />
+  <h4 />
+  <p
+    className="memberTitle"
+  />
+</div>
+`;
