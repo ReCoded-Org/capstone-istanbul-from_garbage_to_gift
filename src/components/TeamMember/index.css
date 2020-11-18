@@ -1,0 +1,13 @@
+.teamMemberImg {
+  border-radius: 50%;
+  width: 50%;
+  margin-bottom: 1.5em;
+  margin-top: 2em;
+}
+.memberCol {
+  text-align: center;
+  color: #590995;
+}
+.memberTitle {
+  color: #726a95;
+}

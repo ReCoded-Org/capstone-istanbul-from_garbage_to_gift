@@ -12,6 +12,7 @@ exports[`renders ProjectDescription correctly 1`] = `
     >
       <img
         alt="Team work"
+        className="teamWorkImg"
         src="gift.jpg"
       />
     </div>

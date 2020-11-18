@@ -8,7 +8,7 @@ export default function ProjectDescription() {
     <Container fluid="md">
       <Row className="row">
         <Col md={6}>
-          <img src={gift} alt="Team work"></img>
+          <img src={gift} alt="Team work" className="teamWorkImg"></img>
         </Col>
         <Col md={6}>
           <div className="projectDescription">
