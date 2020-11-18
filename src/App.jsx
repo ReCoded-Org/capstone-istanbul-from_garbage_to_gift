@@ -2,6 +2,7 @@ import React from "react";
 import Home from "./containers/Home";
 import About from "./containers/About";
 import Footer from "./components/Footer";
+import NewPostForm from "./containers/NewPostForm";
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -13,6 +14,7 @@ function App() {
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/" component={Footer} />
+      <Route exact path="/donate" component={NewPostForm} />
       {/* <Route path="/posts" component={Posts} />
       <Route path="/donate" component={Donate} />
       <Route path="/contact" component={Contactus} /> */}

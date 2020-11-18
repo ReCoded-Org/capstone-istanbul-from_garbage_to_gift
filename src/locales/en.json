@@ -33,5 +33,23 @@
     "Search": "Search",
     "LogIn": "Login",
     "SignUp": "Sign Up"
+  },
+
+  "formsection": {
+    "Donate": "Donate",
+    "Receive": "Receive",
+    "DonationType": "Donation Type",
+    "DonationOption1": "Technology",
+    "DonationOption2": "Education",
+    "PostTitle": "Post Title",
+    "PostDetailsForDonator": " Details (Please give some more details about why you want to donate)",
+    "PostDetailsForReceiver": " Details (Why are you applying for donation, What are you expectations from donators and any other comments you would like to share with us)",
+    "TargetGroup": "Target Group ",
+    "Prerequisites": "Prerequisites (Please tell us about your prerequests about donator)",
+    "ProfileName": "Profile Name",
+    "AboutYou": "About You (Tell us about yourself, so we can find perfect donator for you max 300 words)  ",
+    "City": "City",
+    "ApplicationDate": "Last Date for Application",
+    "Submit": "Submit"
   }
 }
