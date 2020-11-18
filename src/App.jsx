@@ -3,7 +3,7 @@ import Home from "./containers/Home";
 import About from "./containers/About";
 import Footer from "./components/Footer";
 import NewPostForm from "./containers/NewPostForm";
-
+import Profile from "./containers/ProfilePage";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import SiteNavbar from "./components/Navbar";
@@ -15,6 +15,7 @@ function App() {
       <Route path="/about" component={About} />
       <Route path="/" component={Footer} />
       <Route exact path="/donate" component={NewPostForm} />
+      <Route path="/profile" component={Profile} />
       {/* <Route path="/posts" component={Posts} />
       <Route path="/donate" component={Donate} />
       <Route path="/contact" component={Contactus} /> */}
