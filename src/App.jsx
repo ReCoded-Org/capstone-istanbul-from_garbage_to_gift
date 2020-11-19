@@ -13,9 +13,9 @@ function App() {
       <Route path="/" component={SiteNavbar} />
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
-      <Route path="/" component={Footer} />
       <Route exact path="/donate" component={NewPostForm} />
       <Route path="/profile" component={Profile} />
+      <Route path="/" component={Footer} />
       {/* <Route path="/posts" component={Posts} />
       <Route path="/donate" component={Donate} />
       <Route path="/contact" component={Contactus} /> */}
