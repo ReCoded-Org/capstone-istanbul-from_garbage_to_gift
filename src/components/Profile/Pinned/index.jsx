@@ -1,13 +1,13 @@
 import React from 'react'
+import "./index.css"
 
-export default function index(skills) {
+export default function index(props) {
+    //console.log(props.pinned)
     return (
         <div>
             <h2 className="headings">Pinned</h2>
-            <div className="skillsSection">
-            {skills.map(skill =>
-                <button className="skillBtn">{skill}</button>)}
-            </div>
+            {props.pinned.map(skill =>
+                <span className="skillsBox">{skill}</span>)}
         </div>
     )
 }

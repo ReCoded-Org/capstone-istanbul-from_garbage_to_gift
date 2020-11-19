@@ -4,58 +4,63 @@ import Activities from "../../components/Profile/Activities"
 import Experience from "../../components/Profile/Experience"
 import Pinned from "../../components/Profile/Pinned"
 import "./index.css"
-import Col from 'react-bootstrap/Col'
+import {Col, Row} from 'react-bootstrap'
 
 const profileData = {
     
     description: {
+        imageUrl: "https://res.cloudinary.com/dk2ghb1pg/image/upload/v1535301733/bxoyfrkj4zwtbsewcryf.png",
         name : "Ammar Sammour",
         description : ["Lecturer", "Voluntarily teaching coding", "Part of the community since three years"]
     },
 
     pinned: ["Technology", "Education", "Software", "Web Design", "Greatness", "Friend"],
 
-    activities: {
-        activity1: ["Giving lecture for high school", "May 2018 - June 2021"],
-        activity2: ["Giving lecture for high school", "May 2018 - June 2021"],
-        activity3: ["Giving lecture for high school", "May 2018 - June 2021"]
-    },
+    activities: [
+        ["Giving lecture for high school", "May 2018 - June 2021"],
+        ["Giving lecture for high school", "May 2018 - June 2021"],
+        ["Giving lecture for high school", "May 2018 - June 2021"]
+    ],
 
-    professionalExperience: {
-        experience1: {
+    professionalExperience: [
+        {
             companyName: "ReCoded",
             role: "Instructor",
             time: "Since 2018",
             description: "Instructor at Full Stack Web Development bootcamps held in Turkey."
         },
-        experience2: {
+        {
             companyName: "ReCoded",
             role: "Instructor",
             time: "Since 2018",
             description: "Instructor at Full Stack Web Development bootcamps held in Turkey."
         },
-        experience3: {
+        {
             companyName: "ReCoded",
             role: "Instructor",
             time: "Since 2018",
             description: "Instructor at Full Stack Web Development bootcamps held in Turkey."
         }
-    }
+    ]
 }
 
 export default function index() {
     return (
         <div>
-            <Col className="description" sm={4}>
-                Description
-                <ProfileDescription />
+            <Row>
+            <Col sm={4}>
+                <div>
+                <ProfileDescription description={profileData.description} />
+                </div>
             </Col>
-            <Col className="activities" sm={8}>
-                Activities
-                <Pinned />
-                <Activities />
-                <Experience />
+            <Col  sm={8}>
+             <div>
+                <Pinned pinned={profileData.pinned} />
+                <Activities activities={profileData.activities} />
+                <Experience experience={profileData.professionalExperience} />
+             </div>
             </Col>
+            </Row>
         </div>
     )
 }

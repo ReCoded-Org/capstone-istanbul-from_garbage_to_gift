@@ -1,0 +1,29 @@
+.descriptionCont {
+    border: solid 1px;
+    border-color: rgb(251, 152, 152);
+    height: 50em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profilePic {
+    border: solid 1px;
+    border-color: rgb(251, 152, 152);
+    margin-top: 7em;
+}
+
+.profileDescription {
+    border: solid 1px;
+    border-color: rgb(251, 152, 152);
+}
+
+.profileEditBtn {
+    border: solid 1px;
+    border-color: rgb(251, 152, 152);
+}
+
+.profileName {
+    border: solid 1px;
+    border-color: rgb(251, 152, 152);
+}
