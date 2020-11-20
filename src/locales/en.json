@@ -33,5 +33,12 @@
     "Search": "Search",
     "LogIn": "Login",
     "SignUp": "Sign Up"
+  },
+  "applicationPageStep1": {
+    "Step1": "Step 1",
+    "Step2": "Step 2",
+   
+   "Next": "Next"
   }
+  
 }
