@@ -1,16 +1,15 @@
 .steps {
-    display: flex;
-    justify-content: center;
-    margin-top: 3.5em;
-    /* align-items: center; */
+  display: flex;
+  justify-content: center;
+  margin-top: 3.5em;
+  /* align-items: center; */
 }
 .steps hr {
-    width: 50%;
-    color: black;
-    
+  width: 50%;
+  color: black;
 }
-.stepOne{
-    color: #03C4A1;
-    text-align: center;
-    justify-content: right;
+.stepOne {
+  color: #03c4a1;
+  text-align: center;
+  justify-content: right;
 }

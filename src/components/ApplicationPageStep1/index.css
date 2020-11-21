@@ -1,11 +1,18 @@
-.prerequisites{
-    margin: 1.2em 0;
-    color: #590995
+.prerequisites {
+  margin: 1.2em 0;
+  color: #590995;
 }
-.prerequisitesDescription{
-    color:  #726A95; 
-    
+.prerequisitesDescription {
+  color: #726a95;
 }
-.meet{
-    
+.meet {
+  margin: 0.6em;
+}
+.nextButton {
+  margin: 3em 0;
+  align-self: flex-end;
+}
+.stepOneDiv {
+  display: flex;
+  /* align-items: flex-end; */
 }

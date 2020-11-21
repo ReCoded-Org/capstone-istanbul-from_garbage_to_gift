@@ -3,10 +3,11 @@ import Home from "./containers/Home";
 import About from "./containers/About";
 import Footer from "./components/Footer";
 import ApplicationPage from "./containers/ApplicationForm";
-
+// import Chat from "./components/Chat";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import SiteNavbar from "./components/Navbar";
+
 function App() {
   return (
     <Router className="appStyle">
@@ -14,6 +15,7 @@ function App() {
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/application" component={ApplicationPage} />
+      {/* <Route path="/chat" component={Chat} /> */}
       <Route path="/" component={Footer} />
       {/* <Route path="/posts" component={Posts} />
       <Route path="/donate" component={Donate} />

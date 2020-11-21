@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders PostSectionStep1 correctly 1`] = `
+<div
+  className="00 container"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-md-4"
+    >
+      <h2
+        className="prerequisites"
+      >
+        Prerequisites
+      </h2>
+      <ul />
+      <input
+        name="radiobutton"
+        type="checkbox"
+        value={true}
+      />
+      <label
+        className=" prerequisitesDescription meet"
+        htmlFor="radiobutton"
+      >
+        I meet these prerequisities
+      </label>
+    </div>
+    <div
+      className="stepOneDiv col-md-8"
+    />
+  </div>
+</div>
+`;

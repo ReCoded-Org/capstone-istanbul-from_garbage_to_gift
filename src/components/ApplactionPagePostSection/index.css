@@ -1,23 +1,20 @@
+.postTitle {
+  color: #03c4a1;
+}
+.postDescription {
+  color: #726a95;
+}
 
-.postTitle{
-color:#03C4A1;
+.postApplicationPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
 }
-.postDescription{
-  color: #726A95;  
+.postImageApplicationPage {
+  width: 60%;
+  border-radius: 20em;
 }
-
-.postApplicationPage{
-   display:flex; 
-   justify-content: center;
-   align-items: center;
-   margin-top: 5%;
-
-}
-.postImageApplicationPage{
-    width:60%;
-    border-radius: 20em;
-   
-}
-.postTitleDescription{
-    text-align: center;
+.postTitleDescription {
+  text-align: center;
 }
