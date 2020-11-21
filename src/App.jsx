@@ -9,6 +9,7 @@ import Contact from "./containers/Contact";
 import About from "./containers/About";
 import Footer from "./components/Footer";
 import NewPostForm from "./containers/NewPostForm";
+import PostPageVolunteer from "./containers/PostPageVolunteer";
 import SiteNavbar from "./components/Navbar";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/login" component={LoginContainer} />
           <Route exact path="/donate" component={NewPostForm} />
           <Route exact path="/contact" component={Contact} />
+          <Route path="/Volunteers" component={PostPageVolunteer} />
           <Route path="/forgot-password" component={ForgotPassword} />
           <Route path="/" component={Footer} />
         </Router>

@@ -94,6 +94,24 @@
       { "name": "Ammar Sammour", "title": "Lead Software engineer" }
     ]
   },
+  "postPage": {
+    "title": "Find your next volunteering opportunity",
+    "type": "Type",
+    "city": "City",
+    "showing": "Showing",
+    "results": "results",
+    "goods": "Goods",
+    "money": "Money",
+    "service": "Service",
+    "sort": "Sort",
+    "sortTitle": "by Title",
+    "sortDate": "by Date",
+    "allLabel": "All",
+    "searchLabel": "Search",
+    "altVolunteerHeader": "Header Volunteer",
+    "altVolunteerPost": "for the post"
+  },
+
   "navbarsection": {
     "Home": "Home",
     "Posts": "Posts",
