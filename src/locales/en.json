@@ -51,5 +51,10 @@
     "City": "City",
     "ApplicationDate": "Last Date for Application",
     "Submit": "Submit"
+  },
+  "profilePage": {
+    "basicInfo": {
+      "uploadBtn": "Upload"
+    }
   }
 }
