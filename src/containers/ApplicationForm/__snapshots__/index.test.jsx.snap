@@ -103,7 +103,7 @@ exports[`renders ApplicationPage correctly 1`] = `
         <h2
           className="prerequisites"
         >
-          Prerequisites
+          applicationPageStep1.Prerequisites
         </h2>
         <ul />
         <input
@@ -116,7 +116,7 @@ exports[`renders ApplicationPage correctly 1`] = `
           className=" prerequisitesDescription meet"
           htmlFor="radiobutton"
         >
-          I meet these prerequisities
+          applicationPageStep1.Meet
         </label>
       </div>
       <div

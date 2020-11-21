@@ -120,6 +120,8 @@
   "applicationPageStep1": {
     "Step1": "Step 1",
     "Step2": "Step 2",
-    "Next": "Next"
+    "Next": "Next",
+    "Prerequisites": "Prerequisites",
+    "Meet": "I meet these prerequisities"
   }
 }

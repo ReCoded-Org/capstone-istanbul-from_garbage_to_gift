@@ -10,7 +10,9 @@ export default function PostSectionStep1(props) {
     <Container className="00">
       <Row className="">
         <Col md={4}>
-          <h2 className="prerequisites">Prerequisites</h2>
+          <h2 className="prerequisites">
+            {t("applicationPageStep1.Prerequisites")}
+          </h2>
           <ul>
             {props.prerequisites &&
               props.prerequisites.map((prerequisity) => (
@@ -27,7 +29,7 @@ export default function PostSectionStep1(props) {
             htmlFor="radiobutton"
             className=" prerequisitesDescription meet"
           >
-            I meet these prerequisities
+            {t("applicationPageStep1.Meet")}
           </label>
         </Col>
         <Col md={8} className="stepOneDiv">

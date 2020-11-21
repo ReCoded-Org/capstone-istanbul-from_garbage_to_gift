@@ -5,6 +5,7 @@ import { AuthProvider } from "./components/contexts/AuthContext";
 import LoginContainer from "./containers/Login";
 import ForgotPassword from "./components/LoginPage/ForgotPassword";
 import Home from "./containers/Home";
+import Contact from "./containers/Contact";
 import About from "./containers/About";
 import Footer from "./components/Footer";
 import NewPostForm from "./containers/NewPostForm";
@@ -22,12 +23,10 @@ function App() {
           <Route path="/signup" component={Signup} />
           <Route path="/login" component={LoginContainer} />
           <Route exact path="/donate" component={NewPostForm} />
+          <Route exact path="/contact" component={Contact} />
           <Route path="/forgot-password" component={ForgotPassword} />
           <Route path="/application" component={ApplicationPage} />
           <Route path="/" component={Footer} />
-          {/* <Route path="/posts" component={Posts} />
-      <Route path="/donate" component={Donate} />
-      <Route path="/contact" component={Contactus} /> */}
         </Router>
       </AuthProvider>
     </>
