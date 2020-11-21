@@ -19,7 +19,7 @@
   text-align: center !important;
   padding: 0 !important;
 }
-.signUpButton {
+.signUpLogoutButton {
   background-color: #590995 !important;
   color: #f8f8f8 !important;
 }
@@ -28,4 +28,9 @@
 }
 .logoImg {
   width: 70%;
+}
+
+.loggedInUserInfo {
+  color: #590995 !important;
+  background-color: #f8f8f8 !important;
 }
