@@ -8,7 +8,7 @@ import Home from "./containers/Home";
 import About from "./containers/About";
 import Footer from "./components/Footer";
 import NewPostForm from "./containers/NewPostForm";
-
+import ApplicationPage from "./containers/ApplicationForm";
 import SiteNavbar from "./components/Navbar";
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
           <Route path="/login" component={LoginContainer} />
           <Route exact path="/donate" component={NewPostForm} />
           <Route path="/forgot-password" component={ForgotPassword} />
+          <Route path="/application" component={ApplicationPage} />
           <Route path="/" component={Footer} />
           {/* <Route path="/posts" component={Posts} />
       <Route path="/donate" component={Donate} />
