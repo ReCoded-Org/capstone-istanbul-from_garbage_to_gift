@@ -1,4 +1,62 @@
 {
+  "loginPages": {
+    "login": {
+      "logIn": "Log In",
+      "email": "Email",
+      "password": "Password",
+      "logInBtn": "Log In",
+      "forgotPass": "Forgot Password?",
+      "needAcc": "Need an account?",
+      "signUp": "Sign Up",
+      "logInGoogle": "Login with Google",
+      "logInFacebook": "Login with Facebook",
+      "alertFailLogin": "Failed to login.",
+      "alertLoginSuccess": "Logged in Succesfully"
+    },
+    "signup": {
+      "signUp": "Sign Up",
+      "name": "Name",
+      "surname": "Surname",
+      "email": "Email",
+      "password": "Password",
+      "passwordConfirm": "Password Confirmation",
+      "getStarted": "Get Started",
+      "haveAnAccount": "Already have an account?",
+      "logIn": "Log In",
+      "passNotMatch": "Passwords do not match",
+      "failCreateAcc": "Failed to create an account"
+    },
+    "forgotPassword": {
+      "passReset": "Password Reset",
+      "email": "Email",
+      "resetBtn": "Reset Password",
+      "login": "Login",
+      "needAccount": "Need an account",
+      "signup": "Sign Up",
+      "alertMessage": "Check your inbox!",
+      "alertError": "Failed to reset password"
+    },
+    "faceLogin": {
+      "welcome": "Welcome"
+    },
+    "logout": {
+      "alertSuccess": "Logged out Successfully",
+      "alertLogoutFail": "Logged out failed",
+      "signout": "Sign out",
+      "updateProfile": "Update Profile",
+      "logOut": "Log out"
+    },
+    "updateLoginInfo": {
+      "passNotMatch": "Passwords do not match",
+      "failUpdate": "Failed to update account",
+      "updateProfile": "Update Profile",
+      "email": "Email",
+      "password": "Password",
+      "passConfirm": "Password Confirmation",
+      "update": "Update",
+      "cancel": "Cancel"
+    }
+  },
   "about": {
     "aboutUs": [
       {
@@ -32,12 +90,30 @@
     "SearchHere": "Search here",
     "Search": "Search",
     "LogIn": "Login",
-    "SignUp": "Sign Up"
+    "SignUp": "Sign Up",
+    "logout": "Log out"
   },
-  "applicationPageStep1": {
-    "Step1": "Step 1",
-    "Step2": "Step 2",
 
-    "Next": "Next"
+  "projectDescription": {
+    "header": "Gifting your unnecessary stuff might rescue someone else's life",
+    "paragraph": "You can participate in changing the world by donating your unnecessary stuff to people in need, whatever your stuff is it might rescue the other people lives or better their lives at least, So don't throw out your un need stuff in the garbage, just give them to us and we will deliver them to whom in need"
+  },
+
+  "formsection": {
+    "Donate": "Donate",
+    "Receive": "Receive",
+    "DonationType": "Donation Type",
+    "DonationOption1": "Technology",
+    "DonationOption2": "Education",
+    "PostTitle": "Post Title",
+    "PostDetailsForDonator": " Details (Please give some more details about why you want to donate)",
+    "PostDetailsForReceiver": " Details (Why are you applying for donation, What are you expectations from donators and any other comments you would like to share with us)",
+    "TargetGroup": "Target Group ",
+    "Prerequisites": "Prerequisites (Please tell us about your prerequests about donator)",
+    "ProfileName": "Profile Name",
+    "AboutYou": "About You (Tell us about yourself, so we can find perfect donator for you max 300 words)  ",
+    "City": "City",
+    "ApplicationDate": "Last Date for Application",
+    "Submit": "Submit"
   }
 }

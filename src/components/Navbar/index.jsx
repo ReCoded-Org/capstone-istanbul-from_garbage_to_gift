@@ -1,18 +1,26 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "./index.css";
 import logo from "./img/logo.png";
-import {
-  Navbar,
-  Nav,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button,
-} from "react-bootstrap";
+import Logout from "../LoginPage/Logout";
+import { useAuth } from "../../components/contexts/AuthContext";
+import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
 
 export default function SiteNavbar() {
   const { t } = useTranslation();
+  const { currentUser } = useAuth();
+
+  let history = useHistory();
+
+  function handleClickLogin() {
+    history.push("/login");
+  }
+
+  function handleClickSignup() {
+    history.push("/signup");
+  }
+
   return (
     <Navbar expand="lg" className="navMainClass">
       <Navbar.Brand href="/">
@@ -37,20 +45,27 @@ export default function SiteNavbar() {
             {t("navbarsection.ContactUs")}
           </Nav.Link>
         </Nav>
-        <Form inline>
-          <FormControl
-            className="searchField"
-            type="text"
-            placeholder={t("navbarsection.SearchHere")}
-          />
-        </Form>
 
-        <Button className="navButtons">{t("navbarsection.Search")}</Button>
-        <Button className="navButtons">{t("navbarsection.LogIn")}</Button>
-        <Button className="navButtons signUpButton">
-          {t("navbarsection.SignUp")}
-        </Button>
-
+        {currentUser ? (
+          <>
+            <div className="loggedInUserInfo">
+              Logged in as {currentUser.email}
+            </div>
+            <Logout />
+          </>
+        ) : (
+          <>
+            <Button onClick={handleClickLogin} className="navButtons">
+              {t("navbarsection.LogIn")}
+            </Button>
+            <Button
+              onClick={handleClickSignup}
+              className="navButtons signUpLogoutButton"
+            >
+              {t("navbarsection.SignUp")}
+            </Button>
+          </>
+        )}
         <NavDropdown
           title="EN"
           id="basic-nav-dropdown"
