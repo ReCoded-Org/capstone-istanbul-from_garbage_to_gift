@@ -1,4 +1,17 @@
 {
+  "contact": {
+    "aletMessage": "Your message was successfully submitted",
+    "formName": "Name",
+    "formNamePlaceholder": "Full Name",
+    "formEmail": "Email",
+    "formEmailPlaceholder": "example@gmail.com",
+    "formMessagePlaceholder": "Please type your message to us",
+    "formButton": "Send",
+    "header": "Get in touch",
+    "phone": "0090 536 437 48 43",
+    "email": "Contactus@fortunefound.org",
+    "par1": "Get in touch with us and we will be happy to answer your inquiries"
+  },
   "loginPages": {
     "login": {
       "logIn": "Log In",
