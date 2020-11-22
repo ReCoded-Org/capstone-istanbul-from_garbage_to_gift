@@ -34,7 +34,11 @@
   color: #590995 !important;
   background-color: #f8f8f8 !important;
 }
-
-.dropdownNavbar {
-  color: #590995 !important;
+.languageIcon {
+  color: #590995;
+  width: 4.2%;
+}
+.dropdown-menu {
+  min-width: 0.2em !important;
+  float: none !important;
 }

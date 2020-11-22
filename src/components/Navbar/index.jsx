@@ -3,12 +3,20 @@ import { useHistory } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "./index.css";
 import logo from "./img/logo.png";
+import languageIcon from "./img/languageIcon.png";
 import Logout from "../LoginPage/Logout";
 import { useAuth } from "../../components/contexts/AuthContext";
-import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
+import {
+  Navbar,
+  Nav,
+  DropdownButton,
+  Dropdown,
+  Button,
+  NavDropdown,
+} from "react-bootstrap";
 
 export default function SiteNavbar() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { currentUser } = useAuth();
 
   let history = useHistory();
@@ -20,6 +28,33 @@ export default function SiteNavbar() {
   function handleClickSignup() {
     history.push("/signup");
   }
+  const selectLanguage = (language) => {
+    if (language === "ar") {
+      i18n.changeLanguage("ar");
+      document.documentElement.style.setProperty("direction", "rtl");
+    } else {
+      i18n.changeLanguage(language);
+      document.documentElement.style.setProperty("direction", "ltr");
+    }
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+  const LANG_SPECS = [
+    {
+      code: "ar",
+      name: "AR",
+    },
+    {
+      code: "en",
+      name: "En",
+    },
+    {
+      code: "tr",
+      name: "TR",
+    },
+  ];
 
   return (
     <Navbar expand="lg" className="navMainClass">
@@ -74,15 +109,26 @@ export default function SiteNavbar() {
             </Button>
           </>
         )}
-        <NavDropdown
-          title="EN"
-          id="basic-nav-dropdown"
-          className="navMainClass"
+        <DropdownButton
+          alignRight
+          variant="none"
+          className="languageIcon"
+          title={<img src={languageIcon} alt="Language icon" />}
         >
-          <NavDropdown.Item href="#EN">EN</NavDropdown.Item>
-          <NavDropdown.Item href="#AR">TR</NavDropdown.Item>
-          <NavDropdown.Item href="#TR">AR</NavDropdown.Item>
-        </NavDropdown>
+          {LANG_SPECS.map((lang) => {
+            return (
+              <Dropdown.Item
+                as="button"
+                key={lang.code}
+                onClick={() => {
+                  selectLanguage(lang.code);
+                }}
+              >
+                {lang.name}
+              </Dropdown.Item>
+            );
+          })}
+        </DropdownButton>
       </Navbar.Collapse>
     </Navbar>
   );
