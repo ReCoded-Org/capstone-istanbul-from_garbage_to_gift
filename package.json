@@ -16,7 +16,6 @@
         "firebase": "^7.24.0",
         "i18next": "^19.8.2",
         "i18next-browser-languagedetector": "^6.0.1",
-        "react-test-renderer": "^16.12.0",
         "react": "^16.14.0",
         "react-bootstrap": "^1.4.0",
         "react-dom": "^16.14.0",
@@ -25,6 +24,7 @@
         "react-i18next": "^11.7.3",
         "react-router-dom": "^5.2.0",
         "react-scripts": "3.4.3",
+        "react-test-renderer": "^17.0.1",
         "sass": "^1.27.0"
     },
     "scripts": {
@@ -60,7 +60,6 @@
         "eslint-plugin-jsx-a11y": "^6.3.1",
         "eslint-plugin-react": "^7.21.5",
         "eslint-plugin-react-hooks": "^4.1.2",
-        "react-test-renderer": "^16.12.0",
         "jest": "^24.9.0",
         "prettier": "^2.0.5",
         "pretty-quick": "^2.0.1",

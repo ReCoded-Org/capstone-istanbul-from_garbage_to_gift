@@ -98,6 +98,8 @@
     "title": "Find your next volunteering opportunity",
     "type": "Type",
     "city": "City",
+    "date": "Date",
+    "by": "By",
     "showing": "Showing",
     "results": "results",
     "goods": "Goods",
@@ -110,6 +112,10 @@
     "searchLabel": "Search",
     "altVolunteerHeader": "Header Volunteer",
     "altVolunteerPost": "for the post"
+  },
+  "postPageReciever": {
+    "title": "Find What You Need",
+    "altRecieverHeader": "Header Reciever"
   },
 
   "navbarsection": {
