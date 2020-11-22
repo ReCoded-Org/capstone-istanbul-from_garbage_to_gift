@@ -128,7 +128,9 @@
     "Search": "Search",
     "LogIn": "Login",
     "SignUp": "Sign Up",
-    "logout": "Log out"
+    "logout": "Log out",
+    "DonationPosts": "Donation Posts",
+    "ReceivingPosts": "Receiving Posts"
   },
 
   "projectDescription": {

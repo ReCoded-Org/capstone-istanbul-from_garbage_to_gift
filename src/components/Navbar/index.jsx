@@ -32,9 +32,17 @@ export default function SiteNavbar() {
           <Nav.Link href="/" className="navMainClass">
             {t("navbarsection.Home")}
           </Nav.Link>
-          <Nav.Link href="/posts" className="navMainClass">
-            {t("navbarsection.Posts")}
-          </Nav.Link>
+          <NavDropdown
+            title={t("navbarsection.Posts")}
+            className="dropdownNavbar"
+          >
+            <NavDropdown.Item href="/donatePosts">
+              {t("navbarsection.DonationPosts")}
+            </NavDropdown.Item>
+            <NavDropdown.Item href="/receivePosts">
+              {t("navbarsection.ReceivingPosts")}
+            </NavDropdown.Item>
+          </NavDropdown>
           <Nav.Link href="/donate" className="navMainClass">
             {t("navbarsection.Donate")}
           </Nav.Link>

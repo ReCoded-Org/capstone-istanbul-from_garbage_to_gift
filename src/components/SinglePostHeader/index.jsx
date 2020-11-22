@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 
-export default function SinglePostHeader({ postHeaderData }) {
+export default function SinglePostHeader({ postHeaderData, postType }) {
   const { t } = useTranslation();
 
   return (
@@ -15,7 +15,9 @@ export default function SinglePostHeader({ postHeaderData }) {
           <h6>{postHeaderData.description}</h6>
         </Col>
         <Col lg={2}>
-          <Link to="/posts">
+          <Link
+            to={postType === "donatorPost" ? "/donatePosts" : "/receivePosts"}
+          >
             <Button className="backButton" variant="light">
               {t("singlePost.BackButton")}
             </Button>

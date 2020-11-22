@@ -163,7 +163,7 @@ export default function PostList(props) {
               />
             }
           >
-            <Post postInfo={item} />
+            <Post postInfo={item} type={props.collectionName} />
           </Suspense>
         ))}
       </Row>
