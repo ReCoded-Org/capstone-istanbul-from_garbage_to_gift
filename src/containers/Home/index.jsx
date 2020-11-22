@@ -6,9 +6,9 @@ import ProjectDescription from "../../components/ProjectDescription";
 export default function Home() {
   return (
     <div className="container">
-    <ProjectDescription/>
-    <WhoWeAre />
-    <SuccessStories />
+      <ProjectDescription />
+      <WhoWeAre />
+      <SuccessStories />
     </div>
   );
 }

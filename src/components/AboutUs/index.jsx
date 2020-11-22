@@ -18,7 +18,6 @@ export default function AboutUs() {
           <AboutCard {...aboutCard} key={index} />
         ))}
       </Row>
-      
     </div>
   );
 }

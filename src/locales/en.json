@@ -60,7 +60,7 @@
   "about": {
     "about": "About Us",
     "ourTeam": "Our Team",
-    "teamDiscription":"Behind this project is a benevolent team of five brothers and sisters led by an experienced leader, please don't hesitate to contact us for any help or feedback",
+    "teamDiscription": "Behind this project is a benevolent team of five brothers and sisters led by an experienced leader, please don't hesitate to contact us for any help or feedback",
     "aboutUs": [
       {
         "title": "Our Belives",
@@ -76,12 +76,36 @@
       }
     ],
     "team": [
-      { "name": "Luey Ahmad", "title": "Software engineer", "gitHubLinks": "https://github.com/settings/profile"},
-      { "name": "Ola Ouso", "title": "CEO", "gitHubLinks": "https://github.com/settings/profile"},
-      { "name": "Knar Göçer", "title": "Software engineer", "gitHubLinks": "https://github.com/settings/profile" },
-      { "name": "Betül Erkoç", "title": "Software engineer", "gitHubLinks": "https://github.com/settings/profile" },
-      { "name": "Orçun Sagırsoy", "title": "Software engineer", "gitHubLinks": "https://github.com/settings/profile" },
-      { "name": "Ammar Sammour", "title": "Lead Software engineer", "gitHubLinks": "https://github.com/settings/profile" }
+      {
+        "name": "Luey Ahmad",
+        "title": "Software engineer",
+        "gitHubLinks": "https://github.com/settings/profile"
+      },
+      {
+        "name": "Ola Ouso",
+        "title": "CEO",
+        "gitHubLinks": "https://github.com/settings/profile"
+      },
+      {
+        "name": "Knar Göçer",
+        "title": "Software engineer",
+        "gitHubLinks": "https://github.com/settings/profile"
+      },
+      {
+        "name": "Betül Erkoç",
+        "title": "Software engineer",
+        "gitHubLinks": "https://github.com/settings/profile"
+      },
+      {
+        "name": "Orçun Sagırsoy",
+        "title": "Software engineer",
+        "gitHubLinks": "https://github.com/settings/profile"
+      },
+      {
+        "name": "Ammar Sammour",
+        "title": "Lead Software engineer",
+        "gitHubLinks": "https://github.com/settings/profile"
+      }
     ]
   },
   "navbarsection": {

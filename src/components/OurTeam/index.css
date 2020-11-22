@@ -7,7 +7,7 @@
   color: #726a95;
   margin: 2em 0;
 }
-.teamMembers{
+.teamMembers {
   display: flex;
   margin-bottom: 6em;
 }
@@ -15,6 +15,6 @@
   width: 40%;
   margin: 2em 0;
 }
-.ourTeamSectionOne{
+.ourTeamSectionOne {
   text-align: center;
 }
