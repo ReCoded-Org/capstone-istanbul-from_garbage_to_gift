@@ -13,7 +13,7 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import contactUsChannelsImg from "./contactUsChannelsImg.svg";
-import WomenCheckingPhoneImg from "./WomenCheckingPhoneImg.svg";
+import ContactWithLoveImg from "./ContactWithLoveImg.svg";
 import db from "../../firebaseConfig";
 
 export default function ContactForm() {
@@ -116,8 +116,8 @@ export default function ContactForm() {
       <Row className="contactPageImgsRow">
         <img
           className="contactPageImgs"
-          src={WomenCheckingPhoneImg}
-          alt="Women checking phone"
+          src={ContactWithLoveImg}
+          alt="Contact with love"
         />
       </Row>
     </div>
