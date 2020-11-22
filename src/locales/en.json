@@ -152,5 +152,17 @@
     "City": "City",
     "ApplicationDate": "Last Date for Application",
     "Submit": "Submit"
+  },
+
+  "singlePost": {
+    "TargetGroup": "Target Group",
+    "Prerequisites": "Prerequisites",
+    "Address": "Address",
+    "AboutPostOwner": "AboutPostOwner",
+    "ApplicationDeadline": "Last day for Application",
+    "PostType": "Post Type:",
+    "BackButton": "Go Back to Posts",
+    "Apply": "Apply",
+    "SimilarPosts": "Similar Posts"
   }
 }

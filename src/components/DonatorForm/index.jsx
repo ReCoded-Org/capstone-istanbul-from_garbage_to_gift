@@ -9,7 +9,6 @@ export default function DonatorForm() {
 
   const handlePostChange = (e, key) => {
     setDonatorPostData({ ...donatorPostData, [key]: e.target.value });
-    console.log(donatorPostData);
   };
   const { t } = useTranslation();
 

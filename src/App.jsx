@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 import NewPostForm from "./containers/NewPostForm";
 import PostPageVolunteer from "./containers/PostPageVolunteer";
 import SiteNavbar from "./components/Navbar";
-import PostPageReciever from "./containers/PostPageReciever";
+import SinglePostPage from "./containers/SinglePostPage";
 
 function App() {
   return (
@@ -25,8 +25,9 @@ function App() {
           <Route path="/login" component={LoginContainer} />
           <Route exact path="/donate" component={NewPostForm} />
           <Route exact path="/contact" component={Contact} />
-          <Route path="/Volunteers" component={PostPageVolunteer} />
-          <Route path="/Recievers" component={PostPageReciever} />
+          <Route exact path="/posts" component={PostPageVolunteer} />
+          <Route exact path="/posts/:id" component={SinglePostPage} />
+          <Route exact path="/application" />
           <Route path="/forgot-password" component={ForgotPassword} />
           <Route path="/" component={Footer} />
         </Router>

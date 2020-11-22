@@ -9,7 +9,6 @@ export default function ReceiverForm() {
 
   const handlePostChange = (e, key) => {
     setReceiverPostData({ ...receiverPostData, [key]: e.target.value });
-    console.log(receiverPostData);
   };
 
   const { t } = useTranslation();
