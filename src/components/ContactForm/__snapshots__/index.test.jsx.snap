@@ -194,9 +194,9 @@ exports[`renders ContactForm correctly 1`] = `
     className="contactPageImgsRow row"
   >
     <img
-      alt="Piggy pig"
+      alt="Women checking phone"
       className="contactPageImgs"
-      src="PiggyImg.svg"
+      src="WomenCheckingPhoneImg.svg"
     />
   </div>
 </div>

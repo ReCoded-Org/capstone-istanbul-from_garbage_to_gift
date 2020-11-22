@@ -6,6 +6,7 @@
 .contactPageImgs {
   width: 50%;
   margin: 2em;
+  border-radius: 0.5em;
 }
 
 .contactFormRow {
@@ -16,11 +17,12 @@
   background-color: #f7f9fa;
   margin: 3em;
   padding-top: 1em;
+  border-radius: 0.5em;
 }
 
 .contactFormAllInputsAndMessageSpaceStyle {
   border: solid 0.063em #d1dbe3;
-  border-radius: 1em;
+  border-radius: 0.5em;
   padding: 1em;
   margin: 1em;
 }
