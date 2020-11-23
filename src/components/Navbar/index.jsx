@@ -113,7 +113,13 @@ export default function SiteNavbar() {
           alignRight
           variant="none"
           className="languageIcon"
-          title={<img src={languageIcon} alt="Language icon" />}
+          title={
+            <img
+              src={languageIcon}
+              className="languageIconImage"
+              alt="Language icon"
+            />
+          }
         >
           {LANG_SPECS.map((lang) => {
             return (

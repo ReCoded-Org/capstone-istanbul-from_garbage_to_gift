@@ -38,6 +38,10 @@
   color: #590995;
   width: 4.2%;
 }
+
+.languageIconImage {
+  width: 2em;
+}
 .dropdown-menu {
   min-width: 0.2em !important;
   float: none !important;

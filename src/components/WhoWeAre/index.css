@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Acme&display=swap");
-
 .whoWeAre {
   font-family: "Acme";
 }
@@ -22,7 +20,7 @@
 
 .targetParagraph {
   padding: 1.8em;
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #726a95;
 }
 

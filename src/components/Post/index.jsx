@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import "./index.css";
 import loadingGif from "../PostList/image/loadingGif.gif";
 
-export default function PostVolunteer(postInfo) {
+export default function Post(postInfo) {
   const { t } = useTranslation();
 
   if (postInfo.postInfo && postInfo.postInfo.date && postInfo.postInfo.title) {

@@ -1,59 +1,44 @@
-import React from "react";
+/* eslint-disable no-unused-expressions */
+/* eslint-disable import/extensions */
+/* eslint-disable prefer-destructuring */
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import "./index.css";
-import { Row, Col, Container } from "react-bootstrap";
-
-const data = [
-  {
-    time: "One week ago",
-    description:
-      "Ahmed gave blankets he didn't need it to vulnerable family last winter, by this he participate in reducing the harsh winter season cold.",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTu9sbpuDCREIss1uBnJ5AE6Ggyyc9PtA6ttg&usqp=CAU",
-    id: 1,
-  },
-  {
-    time: "Two weeks ago",
-    description:
-      "Musicians, actors and influencers plan social media takeover to support #MarchForOurLives",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQMKzI_IJS7u0bpB4qQTFdW4yztlQ0mYoq3pg&usqp=CAU",
-    id: 2,
-  },
-  {
-    time: "One month ago",
-    description: "Ammar donated his computer to a high school student.",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQayyYmKyYJ18CTiOSpcLV3SCiCP65Bp8Cu2w&usqp=CAU",
-    id: 3,
-  },
-];
+import { Row, Container } from "react-bootstrap";
+import Post from "../Post/index.jsx";
+// eslint-disable-next-line import/extensions
+import db from "../../firebaseConfig.js";
 
 export default function SuccessStories() {
+  const [stories, setStories] = useState([]);
+
   const { t } = useTranslation();
+
+  const fetchData = async () => {
+    const res = await db.collection("donatorPost").get();
+
+    const data = res.docs.map((post) => {
+      const tmp = post.data();
+      const id = post.id;
+      return { id, ...tmp };
+    });
+    setStories(data);
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
-    <Container>
-      <h1 className="text-center title">{t("successStories.header")}</h1>
-      <p className="text-center title">{t("successStories.paragraph")}</p>
-      <Row className="justify-content-md-center">
-        {data.map((singleData) => {
-          return (
-            <Col
-              className="successStoriesSinglePost"
-              lg={3}
-              sm={12}
-              key={singleData.id}
-            >
-              <p className="successStoriesCardTitle text-center">
-                {singleData.time}
-              </p>
-              <div className="successStoriesCardBody">
-                <p className="text-center">{singleData.description}</p>
-                <img src={singleData.image} alt="" />
-              </div>
-            </Col>
-          );
-        })}
+    <Container className="successStoriesContaier">
+      <p className="text-center successTitle">{t("successStories.header")}</p>
+      <p className="text-center successParagraph">
+        {t("successStories.paragraph")}
+      </p>
+      <Row className="postsSuccessStories" fluid="md">
+        {stories
+          .map((singleData) => <Post postInfo={singleData} />)
+          .slice(0, 3)}
       </Row>
     </Container>
   );

@@ -2,87 +2,21 @@
 
 exports[`renders SuccessStories correctly 1`] = `
 <div
-  className="container"
+  className="successStoriesContaier container"
 >
-  <h1
-    className="text-center title"
+  <p
+    className="text-center successTitle"
   >
     successStories.header
-  </h1>
+  </p>
   <p
-    className="text-center title"
+    className="text-center successParagraph"
   >
     successStories.paragraph
   </p>
   <div
-    className="justify-content-md-center row"
-  >
-    <div
-      className="successStoriesSinglePost col-lg-3 col-sm-12"
-    >
-      <p
-        className="successStoriesCardTitle text-center"
-      >
-        One week ago
-      </p>
-      <div
-        className="successStoriesCardBody"
-      >
-        <p
-          className="text-center"
-        >
-          Ahmed gave blankets he didn't need it to vulnerable family last winter, by this he participate in reducing the harsh winter season cold.
-        </p>
-        <img
-          alt=""
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTu9sbpuDCREIss1uBnJ5AE6Ggyyc9PtA6ttg&usqp=CAU"
-        />
-      </div>
-    </div>
-    <div
-      className="successStoriesSinglePost col-lg-3 col-sm-12"
-    >
-      <p
-        className="successStoriesCardTitle text-center"
-      >
-        Two weeks ago
-      </p>
-      <div
-        className="successStoriesCardBody"
-      >
-        <p
-          className="text-center"
-        >
-          Musicians, actors and influencers plan social media takeover to support #MarchForOurLives
-        </p>
-        <img
-          alt=""
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQMKzI_IJS7u0bpB4qQTFdW4yztlQ0mYoq3pg&usqp=CAU"
-        />
-      </div>
-    </div>
-    <div
-      className="successStoriesSinglePost col-lg-3 col-sm-12"
-    >
-      <p
-        className="successStoriesCardTitle text-center"
-      >
-        One month ago
-      </p>
-      <div
-        className="successStoriesCardBody"
-      >
-        <p
-          className="text-center"
-        >
-          Ammar donated his computer to a high school student.
-        </p>
-        <img
-          alt=""
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQayyYmKyYJ18CTiOSpcLV3SCiCP65Bp8Cu2w&usqp=CAU"
-        />
-      </div>
-    </div>
-  </div>
+    className="postsSuccessStories row"
+    fluid="md"
+  />
 </div>
 `;
