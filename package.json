@@ -25,6 +25,7 @@
         "react-router-dom": "^5.2.0",
         "react-scripts": "3.4.3",
         "react-test-renderer": "^17.0.1",
+        "react-firebase-hooks": "^2.2.0",
         "sass": "^1.27.0"
     },
     "scripts": {

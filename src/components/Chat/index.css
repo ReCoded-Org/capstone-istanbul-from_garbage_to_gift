@@ -1,0 +1,91 @@
+.mainScreen {
+  padding: 10px;
+  height: 80vh;
+  margin: 10vh 0 10vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainScreen::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+.mainScreen::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+.messageBox {
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  background-color: #590995;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.messageBox button {
+  width: 50%;
+  background-color: #590995;
+}
+
+.messageBox.input {
+  line-height: 1.5;
+  width: 100%;
+  font-size: 1.5rem;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.signIn {
+  color: #282c34;
+  background: white;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+}
+
+.message p {
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.sent {
+  flex-direction: row-reverse;
+}
+
+.sent p {
+  color: white;
+  background: #590995;
+  align-self: flex-end;
+}
+.received p {
+  background: #e5e5ea;
+  color: #c62a88;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 2px 5px;
+}
