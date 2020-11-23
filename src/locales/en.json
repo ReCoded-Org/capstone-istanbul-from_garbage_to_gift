@@ -159,13 +159,10 @@
     "LogIn": "Login",
     "SignUp": "Sign Up",
     "logout": "Log out",
-<<<<<<< HEAD
     "myProfile": "My Profile",
-    "welcome": "Welcome"
-=======
+    "welcome": "Welcome",
     "DonationPosts": "Donation Posts",
     "ReceivingPosts": "Receiving Posts"
->>>>>>> 4cdc9be463cda09fbd596c18688d7751eb94a541
   },
 
   "projectDescription": {
@@ -192,12 +189,6 @@
     "ApplicationDate": "Last Date for Application",
     "Submit": "Submit"
   },
-<<<<<<< HEAD
-  "profilePage": {
-    "basicInfo": {
-      "uploadBtn": "Upload"
-    }
-=======
   "singlePost": {
     "TargetGroup": "Target Group",
     "Prerequisites": "Prerequisites",
@@ -208,6 +199,5 @@
     "BackButton": "Go Back to Posts",
     "Apply": "Apply",
     "SimilarPosts": "Similar Posts"
->>>>>>> 4cdc9be463cda09fbd596c18688d7751eb94a541
   }
 }
