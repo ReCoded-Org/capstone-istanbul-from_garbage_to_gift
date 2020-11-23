@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Container, Form, Button, Col, Row } from "react-bootstrap";
-import db from "../../firebaseConfig";
+import { Container, Form, Col, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
+import db from "../../firebaseConfig";
 import "./index.css";
 
 export default function DonatorForm() {
@@ -104,13 +104,9 @@ export default function DonatorForm() {
             </Row>
           </Form.Group>
           <Row className="justify-content-md-center">
-            <Button
-              className="submitButton"
-              type="submit"
-              variant="outline-light"
-            >
+            <button className="submitButton" type="submit">
               {t("formsection.Submit")}
-            </Button>
+            </button>
           </Row>
         </Form>
       </Container>
