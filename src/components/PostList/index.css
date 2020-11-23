@@ -65,3 +65,7 @@
 .postFilter:focus {
   outline: none;
 }
+.loadingGif {
+  width: 7em;
+  height: 6em;
+}

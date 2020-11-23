@@ -7,14 +7,12 @@ exports[`renders SuccessStories correctly 1`] = `
   <h1
     className="text-center title"
   >
-    Sucess Stories
+    successStories.header
   </h1>
   <p
     className="text-center title"
   >
-    We succeed to deliver the happiness to more than 1000 person, help us to increase the number 
-    <br />
-     and participate in changing the world
+    successStories.paragraph
   </p>
   <div
     className="justify-content-md-center row"

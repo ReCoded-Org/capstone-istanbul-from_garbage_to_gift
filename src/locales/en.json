@@ -1,4 +1,13 @@
 {
+  "successStories": {
+    "header": "Success Stories",
+    "paragraph": "We succeed to deliver the happiness to more than 1000 person, help us to increase the number and participate in changing the world"
+  },
+  "whoWeAre": {
+    "header": "Website Mission",
+    "paragraph": "Providing the linkage between the people who are willing to donate from their stuff and people who needs these stuff and make sure that we deliver the donation to the most vulnerable people.",
+    "howItWorks": "How It Works"
+  },
   "contact": {
     "aletMessage": "Your message was successfully submitted",
     "formName": "Name",

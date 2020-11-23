@@ -1,29 +1,27 @@
 import React from "react";
-import target from "./images/target.jpg";
+import { useTranslation } from "react-i18next";
 import { Row, Col, Container } from "react-bootstrap";
+import target from "./images/target.jpg";
 import "./index.css";
 
 export default function WhoWeAre() {
+  const { t } = useTranslation();
   return (
     <Container fluid="md" className="whoWeAre">
       <Row className="targetText">
         <Col md={6}>
-          <h2 className="targetHeader">Website Mission</h2>
-          <p className="targetParagraph">
-            Providing the linkage between the people who are willing to donate
-            from their stuff and people who needs these stuff and make sure that
-            we deliver the donation to the most vulnerable people.
-          </p>
+          <h2 className="targetHeader">{t("whoWeAre.header")}</h2>
+          <p className="targetParagraph">{t("whoWeAre.paragraph")}</p>
         </Col>
 
         <Col md={6}>
-          <img src={target} alt="Target" className="whoWeAreImage"></img>
+          <img src={target} alt="Target" className="whoWeAreImage" />
         </Col>
       </Row>
 
       <Row>
         <Col>
-          <h1 className="whoWeAreTitle">How it Works?</h1>
+          <h1 className="whoWeAreTitle">{t("whoWeAre.howItWorks")}</h1>
         </Col>
       </Row>
 
@@ -32,11 +30,11 @@ export default function WhoWeAre() {
           height="400em"
           width="600em"
           src="https://www.youtube.com/embed/9Fev-hRCR-8"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
           title="How It Works?"
-        ></iframe>
+        />
       </Row>
     </Container>
   );

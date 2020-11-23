@@ -1,10 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders single Post component correctly 1`] = `
-<iframe
-  height="480"
-  src="https://giphy.com/embed/xTk9ZvMnbIiIew7IpW"
-  title="load"
-  width="480"
+<img
+  alt="loading..."
+  className="loadingGif"
+  src="loadingGif.gif"
 />
 `;

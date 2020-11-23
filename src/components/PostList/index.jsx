@@ -12,6 +12,7 @@ import { Row, Container } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import "./index.css";
 import db from "../../firebaseConfig.js";
+import loadingGif from "./image/loadingGif.gif";
 
 const Post = lazy(() => import("../Post/index.jsx"));
 
@@ -77,7 +78,7 @@ export default function PostList(props) {
       setPosts(constantAllPosts);
     } else {
       const fltr = constantAllPosts.filter(
-        (el) => el.address[0] === e.target.value
+        (el) => el.address === e.target.value
       );
       setPosts(fltr);
     }
@@ -123,7 +124,7 @@ export default function PostList(props) {
           <select className="postFilter" id="city" onChange={handleCity}>
             <option value="all">{t("postPage.allLabel")}</option>
             {constantAllPosts.map((el) => {
-              return <option value={el.address[0]}>{el.address[0]}</option>;
+              return <option value={el.address}>{el.address}</option>;
             })}
           </select>
         </div>
@@ -155,12 +156,7 @@ export default function PostList(props) {
           // eslint-disable-next-line max-len
           <Suspense
             fallback={
-              <iframe
-                title="load"
-                src="https://giphy.com/embed/xTk9ZvMnbIiIew7IpW"
-                width="20"
-                height="20"
-              />
+              <img className="loadingGif" src={loadingGif} alt="loading..." />
             }
           >
             <Post postInfo={item} type={props.collectionName} />

@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./index.css";
 import { Row, Col, Container } from "react-bootstrap";
 
@@ -29,13 +30,11 @@ const data = [
 ];
 
 export default function SuccessStories() {
+  const { t } = useTranslation();
   return (
     <Container>
-      <h1 className="text-center title">Sucess Stories</h1>
-      <p className="text-center title">
-        We succeed to deliver the happiness to more than 1000 person, help us to
-        increase the number <br /> and participate in changing the world
-      </p>
+      <h1 className="text-center title">{t("successStories.header")}</h1>
+      <p className="text-center title">{t("successStories.paragraph")}</p>
       <Row className="justify-content-md-center">
         {data.map((singleData) => {
           return (

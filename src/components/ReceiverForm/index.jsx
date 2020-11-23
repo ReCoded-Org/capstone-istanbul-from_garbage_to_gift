@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Form, Button, Col, Row } from "react-bootstrap";
-import db from "../../firebaseConfig";
 import { useTranslation } from "react-i18next";
+import db from "../../firebaseConfig";
 import "./index.css";
 
 export default function ReceiverForm() {
