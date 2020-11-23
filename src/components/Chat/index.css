@@ -83,7 +83,7 @@ button:disabled {
   color: #c62a88;
 }
 
-img {
+.chatUserImg {
   width: 40px;
   height: 40px;
   border-radius: 50%;

@@ -32,9 +32,11 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
+
+
 export const auth = firebase.auth();
 
 //export const storage = firebase.storage();
-// import { storage } from “./firebasewConfig”
+// import { storage } from “./firebasewConfig” 
 
 export default firebase.firestore();

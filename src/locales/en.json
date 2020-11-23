@@ -199,5 +199,12 @@
     "BackButton": "Go Back to Posts",
     "Apply": "Apply",
     "SimilarPosts": "Similar Posts"
+  },
+  "applicationPageStep1": {
+    "Step1": "Step 1",
+    "Step2": "Step 2",
+    "Next": "Next",
+    "Prerequisites": "Prerequisites",
+    "Meet": "I meet these prerequisites"
   }
 }
