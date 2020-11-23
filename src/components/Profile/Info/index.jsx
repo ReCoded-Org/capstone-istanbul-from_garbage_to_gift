@@ -1,19 +1,47 @@
-import React from "react";
-//import { storage } from "../../../firebaseConfig"
+import React, {useState} from "react";
+import { storage } from "../../../firebaseConfig"
 
 import "./index.css";
 
 import orcunProPic from "../img/orcunProfilePic.png";
 
 export default function Info({ userInfo }) {
-  console.log(userInfo);
-  console.log(typeof userInfo);
+  
+
+  const [file, setFile] = useState(null);
+  const [url, setURL] = useState("");
+
+  function handleChange(e) {
+    setFile(e.target.files[0]);
+  }
+
+  function handleUpload(e) {
+    e.preventDefault();
+    const uploadTask = storage.ref(`/images/${file.name}`).put(file);
+    uploadTask.on("state_changed", console.log, console.error, () => {
+      storage
+        .ref("images")
+        .child(file.name)
+        .getDownloadURL()
+        .then((url) => {
+          setFile(null);
+          setURL(url);
+        });
+    });
+  }
+
   if (!userInfo) {
     return <h2>loading...</h2>;
   } else {
     return (
       <div className="infoContainer">
-        <img src={orcunProPic} className="profileImg" alt="profile" />
+        <img src={url} className="profileImg" alt="profile" />
+
+        <form onSubmit={handleUpload}>
+        <input type="file" onChange={handleChange} />
+        <button disabled={!file}>upload to firebase</button>
+      </form>
+
         <div className="nameSurnameTxt">
           <h2 className="userNameTxt">{userInfo.name}</h2>
           <h2>{userInfo.surname}</h2>
