@@ -27,7 +27,8 @@
         "react-test-renderer": "^17.0.1",
         "react-watermark-component": "^2.2.1",
         "react-firebase-hooks": "^2.2.0",
-        "sass": "^1.27.0"
+        "sass": "^1.27.0",
+        "sweetalert": "^2.1.2"
     },
     "scripts": {
         "start": "react-scripts start",

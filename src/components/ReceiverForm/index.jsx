@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Form, Button, Col, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import db from "../../firebaseConfig";
+import swal from "sweetalert";
 import "./index.css";
 
 export default function ReceiverForm() {
@@ -24,8 +25,10 @@ export default function ReceiverForm() {
       about: receiverPostData.about,
       address: receiverPostData.address,
       date: receiverPostData.date,
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp5nbPgcqswxMK_MlDRX81HF17TFaUPSNRtw&usqp=CAU",
     });
-    alert(t("formsection.SubmitAlert"));
+    swal("", t("formsection.SubmitAlert"), "success");
   };
 
   return (

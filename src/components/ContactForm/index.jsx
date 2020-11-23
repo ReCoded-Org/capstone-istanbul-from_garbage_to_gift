@@ -15,6 +15,7 @@ import {
 import contactUsChannelsImg from "./contactUsChannelsImg.svg";
 import ContactWithLoveImg from "./ContactWithLoveImg.svg";
 import db from "../../firebaseConfig";
+import swal from "sweetalert";
 
 export default function ContactForm() {
   const [name, setName] = useState("");
@@ -34,7 +35,7 @@ export default function ContactForm() {
     setEmail("");
     setMessage("");
     // eslint-disable-next-line no-alert
-    alert(t("contact.aletMessage"));
+    swal("", t("contact.aletMessage"), "success");
   };
 
   return (
