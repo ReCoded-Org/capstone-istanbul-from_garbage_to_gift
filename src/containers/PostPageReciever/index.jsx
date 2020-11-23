@@ -10,7 +10,7 @@ export default function PostPageVolunteer() {
   return (
     <div>
       <PostPageRecieverHeader />
-      <PostList collectionName="recieverPost" />
+      <PostList collectionName="receiverPost" />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Signup from "./components/LoginPage/Signup";
 import { AuthProvider } from "./components/contexts/AuthContext";
@@ -14,8 +14,18 @@ import PostPageReceiver from "./containers/PostPageReciever";
 import SiteNavbar from "./components/Navbar";
 import SinglePostPage from "./containers/SinglePostPage";
 import ApplicationPage from "./containers/ApplicationForm";
+import i18next from "i18next";
 
 function App() {
+  const [currentLanguage, setCurrentLanguage] = useState(i18next.language);
+  i18next.on("languageChanged", (lng) => {
+    setCurrentLanguage(lng);
+  });
+  if (currentLanguage === "ar") {
+    document.documentElement.style.setProperty("direction", "rtl");
+  } else {
+    document.documentElement.style.setProperty("direction", "ltr");
+  }
   return (
     <>
       <AuthProvider>

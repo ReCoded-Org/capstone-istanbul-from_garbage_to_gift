@@ -13,10 +13,15 @@ import { useTranslation } from "react-i18next";
 import "./index.css";
 import db from "../../firebaseConfig.js";
 import loadingGif from "./image/loadingGif.gif";
+import i18next from "i18next";
 
 const Post = lazy(() => import("../Post/index.jsx"));
 
 export default function PostList(props) {
+  const [currentLanguage, setCurrentLanguage] = useState(i18next.language);
+  i18next.on("languageChanged", (lng) => {
+    setCurrentLanguage(lng);
+  });
   const [posts, setPosts] = useState([]);
   const [constantAllPosts, setConstantAllPosts] = useState();
   const { t } = useTranslation();
@@ -24,12 +29,13 @@ export default function PostList(props) {
   const fetchData = async () => {
     const res = await db.collection(`${props.collectionName}`).get();
 
-    const data = res.docs.map((post) => {
-      const tmp = post.data();
-      const id = post.id;
-      return { id, ...tmp };
-    });
-
+    const data = res.docs
+      .map((post) => {
+        const tmp = post.data();
+        const id = post.id;
+        return { id, ...tmp };
+      })
+      .filter((post) => post.lang === currentLanguage);
     setPosts(data);
     setConstantAllPosts(data);
   };

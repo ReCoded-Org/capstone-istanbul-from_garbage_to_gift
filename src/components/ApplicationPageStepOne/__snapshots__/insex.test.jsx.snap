@@ -13,9 +13,9 @@ exports[`renders PostSectionStep1 correctly 1`] = `
       <h2
         className="prerequisites"
       >
-        applicationPageStep1.Prerequisites
+        applicationPageStep1.target
       </h2>
-      <ul />
+      <p />
       <input
         name="radiobutton"
         type="checkbox"

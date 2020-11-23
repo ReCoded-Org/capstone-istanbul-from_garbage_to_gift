@@ -2,12 +2,16 @@ import React, { useState } from "react";
 import { Container, Form, Button, Col, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import db from "../../firebaseConfig";
+import i18next from "i18next";
 import swal from "sweetalert";
 import "./index.css";
 
 export default function ReceiverForm() {
   const [receiverPostData, setReceiverPostData] = useState({});
-
+  const [currentLanguage, setCurrentLanguage] = useState(i18next.language);
+  i18next.on("languageChanged", (lng) => {
+    setCurrentLanguage(lng);
+  });
   const handlePostChange = (e, key) => {
     setReceiverPostData({ ...receiverPostData, [key]: e.target.value });
   };
@@ -18,6 +22,7 @@ export default function ReceiverForm() {
     e.preventDefault();
     db.collection("receiverPost").add({
       title: receiverPostData.title,
+      lang: currentLanguage,
       type: receiverPostData.type,
       description: receiverPostData.description,
       prerequisites: receiverPostData.prerequisites,

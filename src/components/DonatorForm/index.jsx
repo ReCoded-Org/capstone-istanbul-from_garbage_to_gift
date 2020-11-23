@@ -2,12 +2,16 @@ import React, { useState } from "react";
 import { Container, Form, Col, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import db from "../../firebaseConfig";
+import i18next from "i18next";
 import swal from "sweetalert";
 import "./index.css";
 
 export default function DonatorForm() {
   const [donatorPostData, setDonatorPostData] = useState({});
-
+  const [currentLanguage, setCurrentLanguage] = useState(i18next.language);
+  i18next.on("languageChanged", (lng) => {
+    setCurrentLanguage(lng);
+  });
   const handlePostChange = (e, key) => {
     setDonatorPostData({ ...donatorPostData, [key]: e.target.value });
   };
@@ -17,6 +21,7 @@ export default function DonatorForm() {
     e.preventDefault();
     db.collection("donatorPost").add({
       title: donatorPostData.title,
+      lang: currentLanguage,
       type: donatorPostData.type,
       description: donatorPostData.description,
       target: donatorPostData.target,

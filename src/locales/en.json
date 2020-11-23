@@ -209,6 +209,7 @@
     "Step2": "Step 2",
     "Next": "Next",
     "Prerequisites": "Prerequisites",
+    "target": "Target",
     "Meet": "I meet these prerequisites"
   }
 }

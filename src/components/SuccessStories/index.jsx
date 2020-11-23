@@ -8,26 +8,31 @@ import { Row, Container } from "react-bootstrap";
 import Post from "../Post/index.jsx";
 // eslint-disable-next-line import/extensions
 import db from "../../firebaseConfig.js";
+import i18next from "i18next";
 
 export default function SuccessStories() {
   const [stories, setStories] = useState([]);
-
+  const [currentLanguage, setCurrentLanguage] = useState(i18next.language);
+  i18next.on("languageChanged", (lng) => {
+    setCurrentLanguage(lng);
+  });
   const { t } = useTranslation();
 
-  const fetchData = async () => {
-    const res = await db.collection("donatorPost").get();
-
-    const data = res.docs.map((post) => {
-      const tmp = post.data();
-      const id = post.id;
-      return { id, ...tmp };
-    });
-    setStories(data);
-  };
-
   useEffect(() => {
+    const fetchData = async () => {
+      const res = await db.collection("donatorPost").get();
+
+      const data = res.docs
+        .map((post) => {
+          const tmp = post.data();
+          const id = post.id;
+          return { id, ...tmp };
+        })
+        .filter((post) => post.lang === currentLanguage);
+      setStories(data);
+    };
     fetchData();
-  }, []);
+  }, [currentLanguage]);
 
   return (
     <Container className="successStoriesContaier">
