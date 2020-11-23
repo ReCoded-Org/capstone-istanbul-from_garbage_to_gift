@@ -154,8 +154,7 @@ exports[`renders SuccessStories correctly 1`] = `
         className="justify-content-md-center row"
       >
         <button
-          className="submitButton btn btn-outline-light"
-          disabled={false}
+          className="submitButton"
           type="submit"
         >
           formsection.Submit

@@ -45,12 +45,12 @@
   margin-left: 1em;
   background: #590995;
   border-radius: 0.5em;
-  box-shadow: 1.188em 0.625em 1.25em #78737b;
-  transition: transform 250ms;
+  box-shadow: 0em 1em 2em #78737b;
+  transition: transform 50ms;
   border: none;
 }
 .sendButton:hover {
-  transform: translateY(-0.063em);
+  transform: translateY(-0.5em);
 }
 .getInTouchTextColor {
   color: #f7f9fa;
@@ -58,10 +58,10 @@
 }
 a.social {
   margin: 0 1em;
-  transition: transform 250ms;
+  transition: transform 50ms;
   display: inline-block;
   color: #590995;
 }
 a.social:hover {
-  transform: translateY(-0.063em);
+  transform: translateY(-0.5em);
 }

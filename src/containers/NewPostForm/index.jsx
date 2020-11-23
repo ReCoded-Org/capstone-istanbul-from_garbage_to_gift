@@ -27,8 +27,7 @@ export default function Form() {
             <ToggleButton
               key={idx}
               type="radio"
-              variant="secondary"
-              className="toggle"
+              className="receiveDonateToggleButton"
               name="radio"
               value={radio.value}
               checked={radioValue === radio.value}
