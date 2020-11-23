@@ -9,11 +9,11 @@
 
 .profileImg {
   border-radius: 15%;
-
   width: 50%;
+  height: 10%;
   margin-top: 2em;
   background: #590995;
-  box-shadow: 16px 16px 32px #350559, -16px -16px 32px #7d0dd1;
+  box-shadow: 0.5em 0.5em 0.5em #350559, -0.5em -0.5em 0.5em #7d0dd1;
 }
 
 .nameSurnameTxt {

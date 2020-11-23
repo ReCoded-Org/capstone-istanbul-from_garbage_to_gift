@@ -206,5 +206,10 @@
     "Next": "Next",
     "Prerequisites": "Prerequisites",
     "Meet": "I meet these prerequisites"
+  },
+  "profilePage": {
+    "basicInfo": {
+      "uploadBtn": "Upload"
+    }
   }
 }

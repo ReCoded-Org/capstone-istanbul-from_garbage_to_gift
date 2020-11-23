@@ -7,6 +7,7 @@ import { Container } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import db from "../../../firebaseConfig";
 
+
 export default function Signup() {
   const { t } = useTranslation();
   const emailRef = useRef();
@@ -39,6 +40,7 @@ export default function Signup() {
             userId: res.user.uid,
             job: userState.job,
             location: userState.location,
+            imgUrl: ""
           });
         }
       );

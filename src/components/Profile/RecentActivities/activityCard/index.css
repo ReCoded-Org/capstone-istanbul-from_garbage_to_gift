@@ -7,7 +7,7 @@
   align-items: center;
   border-radius: 2em;
   background: #ffffff;
-  box-shadow: 10px 10px 20px #a1a1a1, -10px -10px 20px #ffffff;
+  box-shadow: 1em 1em 1em #a1a1a1, -1em -1em 1em #ffffff;
 }
 
 .nameDescContainer {

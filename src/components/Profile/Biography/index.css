@@ -17,7 +17,7 @@
   border: solid 0.25em #c62a88;
   border-radius: 1em;
   background: #ffffff;
-  box-shadow: 10px 10px 20px #a1a1a1, -10px -10px 20px #ffffff;
+  box-shadow: 1em 1em 1em #a1a1a1, -1em -1em 1em #ffffff;
 }
 
 .bioText {

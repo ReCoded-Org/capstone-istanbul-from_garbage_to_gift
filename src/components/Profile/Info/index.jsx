@@ -1,16 +1,18 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { storage } from "../../../firebaseConfig"
-
+import db from "../../../firebaseConfig";
 import "./index.css";
+import { useAuth } from "../../contexts/AuthContext";
+import { useTranslation } from "react-i18next";
 
-import orcunProPic from "../img/orcunProfilePic.png";
 
 export default function Info({ userInfo }) {
   
-
+  const { t } = useTranslation();
   const [file, setFile] = useState(null);
   const [url, setURL] = useState("");
-
+  const [userImg, setUserImg] = useState();
+  const { currentUser } = useAuth();
   function handleChange(e) {
     setFile(e.target.files[0]);
   }
@@ -30,6 +32,22 @@ export default function Info({ userInfo }) {
     });
   }
 
+  useEffect(() => {
+    if (currentUser) {
+      const fetchData = async () => {
+        const res = await db.collection("userProfile").get();
+        const data = res.docs.find((doc) => {
+          console.log(doc.data());
+          return doc.data().userId === currentUser.uid;
+        });
+        console.log(data);
+        setUserImg(data ? data.data().imgUrl : url);
+      };
+      fetchData();
+      console.log("fetched")
+    }
+  }, [currentUser, url]);
+
   if (!userInfo) {
     return <h2>loading...</h2>;
   } else {
@@ -37,10 +55,10 @@ export default function Info({ userInfo }) {
       <div className="infoContainer">
         <img src={url} className="profileImg" alt="profile" />
 
-        <form onSubmit={handleUpload}>
+        <form className="uploadImgSection"onSubmit={handleUpload}>
         <input type="file" onChange={handleChange} />
-        <button disabled={!file}>upload to firebase</button>
-      </form>
+        <button>{t('profilePage.basicInfo.uploadBtn')}</button>
+        </form>
 
         <div className="nameSurnameTxt">
           <h2 className="userNameTxt">{userInfo.name}</h2>
