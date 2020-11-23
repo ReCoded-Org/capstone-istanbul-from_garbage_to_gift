@@ -15,9 +15,8 @@ export default function ProfilePageContiner() {
     const data = res.docs.find((doc) => doc.data().userId === currentUser.uid);
     setUserData(data.data());
   };
-  fetchData()
-  useEffect(() => {
-  }, [currentUser]);
+  fetchData();
+  useEffect(() => {}, [currentUser]);
 
   return (
     <div>

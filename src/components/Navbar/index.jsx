@@ -62,13 +62,11 @@ export default function SiteNavbar() {
     if (currentUser) {
       const fetchData = async () => {
         const res = await db.collection("userProfile").get();
-        const data = res.docs.find(
-          (doc) => {
-            console.log(doc.data())
-            return doc.data().userId === currentUser.uid
-          }
-      );
-        console.log(data)
+        const data = res.docs.find((doc) => {
+          console.log(doc.data());
+          return doc.data().userId === currentUser.uid;
+        });
+        console.log(data);
         setUserName(data ? data.data().name : "");
       };
       fetchData();
