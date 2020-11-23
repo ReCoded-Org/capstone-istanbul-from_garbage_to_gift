@@ -4,9 +4,15 @@
 
 .formContent {
   width: 100%;
+  margin-bottom: 2em;
 }
 
 .formLogo {
   width: 25%;
   margin-bottom: 4em;
+}
+
+.description {
+  margin: 3em 0;
+  color: #590995;
 }

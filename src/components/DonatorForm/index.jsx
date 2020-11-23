@@ -36,12 +36,11 @@ export default function DonatorForm() {
               as="select"
               onChange={(e) => handlePostChange(e, "type")}
             >
-              <option value="technology">
+              <option value="service">
                 {t("formsection.DonationOption1")}
               </option>
-              <option value="education">
-                {t("formsection.DonationOption2")}
-              </option>
+              <option value="goods">{t("formsection.DonationOption2")}</option>
+              <option value="money">{t("formsection.DonationOption3")}</option>
             </Form.Control>
           </Form.Group>
           <Form.Group>

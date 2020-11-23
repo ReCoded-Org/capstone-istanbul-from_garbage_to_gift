@@ -18,7 +18,7 @@ export default function Form() {
 
   return (
     <Container className="formContent">
-      <Row className="justify-content-md-center ">
+      <Row className="justify-content-md-center">
         <img src={Logo} alt="fortune-found" className="formLogo" />
       </Row>
       <Row className="justify-content-md-center">
@@ -38,6 +38,13 @@ export default function Form() {
             </ToggleButton>
           ))}
         </ButtonGroup>
+      </Row>
+      <Row className="justify-content-md-center description">
+        {radioValue === "ReceiverForm" ? (
+          <h3>Fill the Form to Find a Correct Receiver</h3>
+        ) : (
+          <h3>Fill the Form to Find a Correct Donator</h3>
+        )}
       </Row>
       {radioValue === "ReceiverForm" ? <ReceiverForm /> : <DonatorForm />}
     </Container>

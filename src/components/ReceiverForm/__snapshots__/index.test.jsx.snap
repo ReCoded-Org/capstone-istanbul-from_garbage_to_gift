@@ -21,14 +21,19 @@ exports[`renders SuccessStories correctly 1`] = `
         onChange={[Function]}
       >
         <option
-          value="technology"
+          value="service"
         >
           formsection.DonationOption1
         </option>
         <option
-          value="education"
+          value="goods"
         >
           formsection.DonationOption2
+        </option>
+        <option
+          value="money"
+        >
+          formsection.DonationOption3
         </option>
       </select>
     </div>
