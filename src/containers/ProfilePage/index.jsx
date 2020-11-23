@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./index.css";
 import { Row, Col } from "react-bootstrap";
-import profileData from "./mockData";
 import Info from "../../components/Profile/Info";
 import RecentActivities from "../../components/Profile/RecentActivities";
 import Biography from "../../components/Profile/Biography";
@@ -16,7 +15,7 @@ export default function ProfilePageContiner() {
     const data = res.docs.find((doc) => doc.data().userId === currentUser.uid);
     setUserData(data.data());
   };
-  //console.log(userData)
+
   useEffect(() => {
     fetchData();
   }, []);

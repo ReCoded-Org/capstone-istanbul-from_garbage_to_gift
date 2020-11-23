@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useHistory, Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "./index.css";
 import logo from "./img/logo.png";
@@ -28,7 +28,7 @@ export default function SiteNavbar() {
       const fetchData = async () => {
         const res = await db.collection("userProfile").get();
         const data = res.docs.find(
-          (doc) => doc.data().userId === currentUser.uid
+          (doc) => (doc.data().userId === currentUser.uid)
         );
         setUserName(data.data().name);
       };

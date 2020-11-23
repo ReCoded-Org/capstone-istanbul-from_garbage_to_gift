@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 
-import { useTranslation } from "react-i18next";
+
 import "./index.css";
-import { useAuth } from "../../contexts/AuthContext";
+
 import orcunProPic from "../img/orcunProfilePic.png";
 
 export default function Info({ userInfo }) {
@@ -13,7 +13,7 @@ export default function Info({ userInfo }) {
   } else {
     return (
       <div className="infoContainer">
-        <img src={orcunProPic} className="profileImg" />
+        <img src={orcunProPic} className="profileImg" alt="profile" />
         <div className="nameSurnameTxt">
           <h2 className="userNameTxt">{userInfo.name}</h2>
           <h2>{userInfo.surname}</h2>

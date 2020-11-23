@@ -1,8 +1,5 @@
 import React from "react";
 import "./index.css";
-import { Form, Button, Card, Alert } from "react-bootstrap";
-import { useTranslation } from "react-i18next";
-import { useAuth } from "../../contexts/AuthContext";
 import ActivityCard from "./activityCard";
 import kidsSchool from "../img/elementaryStudents.jpg";
 import earthQuake from "../img/earthquake.jpg";
