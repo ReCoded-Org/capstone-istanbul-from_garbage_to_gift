@@ -4,6 +4,8 @@
 }
 .aboutCenter {
   text-align: center;
+  margin: 1em 5em;
+  font-family: "Acme";
 }
 
 .aboutHeader {

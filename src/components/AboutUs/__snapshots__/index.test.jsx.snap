@@ -8,7 +8,7 @@ exports[`renders AboutUs correctly 1`] = `
     className="aboutHeader"
   >
     <h2>
-      About Us
+      about.about
     </h2>
   </div>
   <div
@@ -144,15 +144,6 @@ exports[`renders AboutUs correctly 1`] = `
         className="cardParagraph"
       />
     </div>
-  </div>
-  <div
-    className="teamImgDiv"
-  >
-    <img
-      alt="about team img"
-      className="aboutTeamImg"
-      src="aboutImg.png"
-    />
   </div>
 </div>
 `;

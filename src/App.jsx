@@ -5,12 +5,17 @@ import { AuthProvider } from "./components/contexts/AuthContext";
 import LoginContainer from "./containers/Login";
 import ForgotPassword from "./components/LoginPage/ForgotPassword";
 import Home from "./containers/Home";
+import Contact from "./containers/Contact";
 import About from "./containers/About";
 import Footer from "./components/Footer";
 import NewPostForm from "./containers/NewPostForm";
 import Profile from "./containers/ProfilePage";
 
+import PostPageVolunteer from "./containers/PostPageVolunteer";
+import PostPageReceiver from "./containers/PostPageReciever";
 import SiteNavbar from "./components/Navbar";
+import SinglePostPage from "./containers/SinglePostPage";
+
 function App() {
   return (
     <>
@@ -22,12 +27,14 @@ function App() {
           <Route path="/signup" component={Signup} />
           <Route path="/login" component={LoginContainer} />
           <Route exact path="/donate" component={NewPostForm} />
+          <Route exact path="/contact" component={Contact} />
+          <Route path="/donatePosts" component={PostPageVolunteer} />
+          <Route path="/receivePosts" component={PostPageReceiver} />
+          <Route exact path="/posts/:id" component={SinglePostPage} />
+          <Route exact path="/application" />
           <Route path="/forgot-password" component={ForgotPassword} />
           <Route path="/profile" component={Profile} />
           <Route path="/" component={Footer} />
-          {/* <Route path="/posts" component={Posts} />
-      <Route path="/donate" component={Donate} />
-      <Route path="/contact" component={Contactus} /> */}
         </Router>
       </AuthProvider>
     </>

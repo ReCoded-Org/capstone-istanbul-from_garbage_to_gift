@@ -9,6 +9,7 @@ import luey from "./imgs/luey.png";
 import ola from "./imgs/ola.png";
 import orcun from "./imgs/orcun.png";
 import ammar from "./imgs/ammar.png";
+import aboutImg from "./imgs/aboutImg.png";
 
 export default function OurTeam() {
   const { t } = useTranslation();
@@ -19,14 +20,18 @@ export default function OurTeam() {
   });
   return (
     <div>
-      <div>
-        <h2 className="teamSection">Our Team</h2>
-        <p className="teamSection teamParagraph">
-          Home is behind, the world ahead and there are many paths to tread
-          through shadows to the edge.
-        </p>
+      <div className="ourTeamSectionOne">
+        <div className="teamImgDiv">
+          <img src={aboutImg} alt="about team img" className="aboutTeamImg" />
+        </div>
+        <div>
+          <h2 className="teamSection">{t("about.ourTeam")}</h2>
+          <p className="teamSection teamParagraph">
+            {t("about.teamDiscription")}
+          </p>
+        </div>
       </div>
-      <Row>
+      <Row className="teamMembers">
         {team.map((teamMember, index) => (
           <TeamCard {...teamMember} key={index} />
         ))}

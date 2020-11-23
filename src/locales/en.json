@@ -1,4 +1,17 @@
 {
+  "contact": {
+    "aletMessage": "Your message was successfully submitted",
+    "formName": "Name",
+    "formNamePlaceholder": "Full Name",
+    "formEmail": "Email",
+    "formEmailPlaceholder": "example@gmail.com",
+    "formMessagePlaceholder": "Please type your message to us",
+    "formButton": "Send",
+    "header": "Get in touch",
+    "phone": "0090 536 437 48 43",
+    "email": "Contactus@fortunefound.org",
+    "par1": "Get in touch with us and we will be happy to answer your inquiries"
+  },
   "loginPages": {
     "login": {
       "logIn": "Log In",
@@ -61,6 +74,9 @@
     }
   },
   "about": {
+    "about": "About Us",
+    "ourTeam": "Our Team",
+    "teamDiscription": "Behind this project is a benevolent team of five brothers and sisters led by an experienced leader, please don't hesitate to contact us for any help or feedback",
     "aboutUs": [
       {
         "title": "Our Belives",
@@ -76,14 +92,62 @@
       }
     ],
     "team": [
-      { "name": "Luey Ahmad", "title": "Software engineer" },
-      { "name": "Ola Ouso", "title": "CEO" },
-      { "name": "Knar Göçer", "title": "Software engineer" },
-      { "name": "Betül Erkoç", "title": "Software engineer" },
-      { "name": "Orçun Sagırsoy", "title": "Software engineer" },
-      { "name": "Ammar Sammour", "title": "Lead Software engineer" }
+      {
+        "name": "Luey Ahmad",
+        "title": "Software engineer",
+        "gitHubLinks": "https://github.com/Luey-A"
+      },
+      {
+        "name": "Ola Ouso",
+        "title": "CEO",
+        "gitHubLinks": "https://github.com/olaouso"
+      },
+      {
+        "name": "Knar Göçer",
+        "title": "Software engineer",
+        "gitHubLinks": "https://github.com/knargocer"
+      },
+      {
+        "name": "Betül Erkoç",
+        "title": "Software engineer",
+        "gitHubLinks": "https://github.com/betulerkoc"
+      },
+      {
+        "name": "Orçun Sagırsoy",
+        "title": "Software engineer",
+        "gitHubLinks": "https://github.com/orcunsagirsoy"
+      },
+      {
+        "name": "Ammar Sammour",
+        "title": "Lead Software engineer",
+        "gitHubLinks": "https://github.com/Ammar-64"
+      }
     ]
   },
+  "postPage": {
+    "title": "Find your next volunteering opportunity",
+    "type": "Type",
+    "city": "City",
+    "date": "Date",
+    "by": "By",
+    "showing": "Showing",
+    "results": "results",
+    "goods": "Goods",
+    "money": "Money",
+    "service": "Service",
+    "sort": "Sort",
+    "sortTitle": "by Title",
+    "sortDate": "by Date",
+    "allLabel": "All",
+    "searchLabel": "Search",
+    "altVolunteerHeader": "Header Volunteer",
+    "altVolunteerPost": "for the post"
+  },
+  "postPageReciever": {
+    "title": "Find What You Need",
+    "altRecieverHeader": "Header Reciever"
+  },
+
   "navbarsection": {
     "Home": "Home",
     "Posts": "Posts",
@@ -95,8 +159,13 @@
     "LogIn": "Login",
     "SignUp": "Sign Up",
     "logout": "Log out",
+<<<<<<< HEAD
     "myProfile": "My Profile",
     "welcome": "Welcome"
+=======
+    "DonationPosts": "Donation Posts",
+    "ReceivingPosts": "Receiving Posts"
+>>>>>>> 4cdc9be463cda09fbd596c18688d7751eb94a541
   },
 
   "projectDescription": {
@@ -107,23 +176,38 @@
   "formsection": {
     "Donate": "Donate",
     "Receive": "Receive",
-    "DonationType": "Donation Type",
-    "DonationOption1": "Technology",
-    "DonationOption2": "Education",
+    "DonationType": "Type (Select One)",
+    "DonationOption1": "Service",
+    "DonationOption2": "Goods",
+    "DonationOption3": "Money",
     "PostTitle": "Post Title",
     "PostDetailsForDonator": " Details (Please give some more details about why you want to donate)",
     "PostDetailsForReceiver": " Details (Why are you applying for donation, What are you expectations from donators and any other comments you would like to share with us)",
-    "TargetGroup": "Target Group ",
-    "Prerequisites": "Prerequisites (Please tell us about your prerequests about donator)",
+    "TargetGroup": "Target Group (Who you are targeting)",
+    "Prerequisites": "Prerequisites (Please tell us about your prerequisites about donator)",
     "ProfileName": "Profile Name",
-    "AboutYou": "About You (Tell us about yourself, so we can find perfect donator for you max 300 words)  ",
+    "AboutYouDonate": "About You (Tell us about yourself, so we can find perfect receiver for you)  ",
+    "AboutYouReceive": "About You (Tell us about yourself, so we can find perfect donator for you)  ",
     "City": "City",
     "ApplicationDate": "Last Date for Application",
     "Submit": "Submit"
   },
+<<<<<<< HEAD
   "profilePage": {
     "basicInfo": {
       "uploadBtn": "Upload"
     }
+=======
+  "singlePost": {
+    "TargetGroup": "Target Group",
+    "Prerequisites": "Prerequisites",
+    "Address": "Address",
+    "AboutPostOwner": "AboutPostOwner",
+    "ApplicationDeadline": "Last day for Application",
+    "PostType": "Post Type:",
+    "BackButton": "Go Back to Posts",
+    "Apply": "Apply",
+    "SimilarPosts": "Similar Posts"
+>>>>>>> 4cdc9be463cda09fbd596c18688d7751eb94a541
   }
 }
