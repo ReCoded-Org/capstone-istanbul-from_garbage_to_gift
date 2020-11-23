@@ -37,7 +37,7 @@ export default function SinglePostHeader({ postHeaderData, postType }) {
             <p>{t("singlePost.ApplicationDeadline")}</p>
             <span className="postType">{postHeaderData.date}</span>
           </div>
-          <Link to="/application">
+          <Link to={`/application/${postType}/${postHeaderData.id}`}>
             <Button className="applyButton" variant="light">
               {t("singlePost.Apply")}
             </Button>

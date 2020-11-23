@@ -20,7 +20,7 @@ export default function SinglePostPage() {
       const id = post.id;
       if (id === currentId) {
         setPostType("donatorPost");
-        setCurrentPost(tmp);
+        setCurrentPost({ ...tmp, id });
       }
       return tmp;
     });
@@ -34,7 +34,7 @@ export default function SinglePostPage() {
       const id = post.id;
       if (id === currentId) {
         setPostType("recieverPost");
-        setCurrentPost(tmp);
+        setCurrentPost({ ...tmp, id });
       }
       return tmp;
     });
