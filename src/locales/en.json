@@ -17,9 +17,12 @@
       "signUp": "Sign Up",
       "name": "Name",
       "surname": "Surname",
+      "job": "Job Title",
       "email": "Email",
       "password": "Password",
       "passwordConfirm": "Password Confirmation",
+      "biography": "Biography",
+      "location": "Location",
       "getStarted": "Get Started",
       "haveAnAccount": "Already have an account?",
       "logIn": "Log In",
@@ -91,7 +94,9 @@
     "Search": "Search",
     "LogIn": "Login",
     "SignUp": "Sign Up",
-    "logout": "Log out"
+    "logout": "Log out",
+    "myProfile": "My Profile",
+    "welcome": "Welcome"
   },
 
   "projectDescription": {

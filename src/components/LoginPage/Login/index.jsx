@@ -5,6 +5,7 @@ import "./index.css";
 import { useTranslation } from "react-i18next";
 import { useAuth } from "../../contexts/AuthContext";
 import GoogleLogin from "../GoogleLogin/";
+import friendsBox from "../assets/friendsBox.jpg";
 
 export default function Login() {
   const { t } = useTranslation();
@@ -33,13 +34,16 @@ export default function Login() {
 
   return (
     <>
-      <Card className="neumorphism" style={{ marginTop: "10em" }}>
+      <Card
+        className="neumorphism justify-content-center flex-column align-items-center"
+        style={{ marginTop: "4em" }}
+      >
         {/* shadow class is a bootstrap class */}
-        <Card.Body className="purpleElemLogin">
+        <Card.Body className="purpleElemLogin ">
           <h2 className="text-center mb-4">{t("loginPages.login.logIn")}</h2>
           {error && <Alert variant="danger">{error}</Alert>}
-          <Form onSubmit={handleSubmit} className="login">
-            <Form.Group className="purpleElemLogin" id="email">
+          <Form onSubmit={handleSubmit}>
+            <Form.Group className="purpleElemLogin inputSize" id="email">
               <Form.Label>{t("loginPages.login.email")}</Form.Label>
               <Form.Control
                 className="purpleElemLogin"
@@ -79,6 +83,12 @@ export default function Login() {
           </div>
         </Card.Body>
       </Card>
+      <img
+        className="friendsBoxImg"
+        src={friendsBox}
+        alt="friends around gifts"
+        width="70%"
+      />
     </>
   );
 }

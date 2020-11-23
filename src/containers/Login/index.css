@@ -4,3 +4,7 @@
   align-items: center;
   margin-top: 1em;
 }
+
+.loginContainer {
+  width: 50em;
+}

@@ -33,10 +33,13 @@ export default function ForgotPassword() {
   return (
     <>
       <Container
-        className="d-flex flex-column justify-content-center"
+        className="d-flex flex-column justify-content-center forgotContainer"
         style={{ minHeight: "10em" }}
       >
-        <Card className="neumorphism" style={{ marginTop: "10em" }}>
+        <Card
+          className="neumorphism justify-content-center flex-column align-items-center"
+          style={{ marginTop: "8em" }}
+        >
           <Card.Body className="purpleElemForgotPass">
             <h2 className="text-center mb-4">
               {t("loginPages.forgotPassword.passReset")}
@@ -44,7 +47,7 @@ export default function ForgotPassword() {
             {error && <Alert variant="danger">{error}</Alert>}
             {message && <Alert variant="success">{message}</Alert>}
             <Form onSubmit={handleSubmit}>
-              <Form.Group id="email">
+              <Form.Group className="inputSize" id="email">
                 <Form.Label>{t("loginPages.forgotPassword.email")}</Form.Label>
                 <Form.Control
                   className="purpleElemForgotPass"
@@ -79,7 +82,7 @@ export default function ForgotPassword() {
           className="friendsBoxImg"
           src={friendsBox}
           alt="friends around gifts"
-          width="80%"
+          width="70%"
         />
       </Container>
     </>

@@ -39,7 +39,7 @@ function Login() {
           width="40em"
         />
       </div>
-      <div>
+      <div className="lgnGoogleText">
         <span className="buttonText">{t("loginPages.login.logInGoogle")}</span>
       </div>
     </button>

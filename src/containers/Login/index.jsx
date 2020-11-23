@@ -8,13 +8,12 @@ export default function LoginContainer() {
   return (
     <div>
       <Container
-        className="d-flex flex-column justify-content-center"
+        className="d-flex flex-column justify-content-center loginContainer"
         style={{ minHeight: "10em" }}
       >
         <div>
           <Login />
         </div>
-        <img src={friendsBox} alt="friends around gifts" width="70%" />
       </Container>
     </div>
   );

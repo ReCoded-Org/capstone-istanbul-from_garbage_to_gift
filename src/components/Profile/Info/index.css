@@ -1,0 +1,32 @@
+.infoContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #590995;
+  color: white;
+  height: 57.9em;
+}
+
+.profileImg {
+  border-radius: 15%;
+
+  width: 50%;
+  margin-top: 2em;
+  background: #590995;
+  box-shadow: 16px 16px 32px #350559, -16px -16px 32px #7d0dd1;
+}
+
+.nameSurnameTxt {
+  margin-top: 4em;
+  display: flex;
+
+  align-items: center;
+  height: 3em;
+}
+
+.userNameTxt {
+  margin-right: 0.5em;
+}
+.userJobCity {
+  margin-left: -5.2em;
+}

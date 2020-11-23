@@ -1,46 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./index.css";
 import { Row, Col } from "react-bootstrap";
 import profileData from "./mockData";
-import BasicInfo from "../../components/Profile/BasicInfoSection";
-import Skills from "../../components/Profile/SkillsSection";
-import Activities from "../../components/Profile/ActivitiesSection/Activities";
-import Experiences from "../../components/Profile/ExperiencesSection/Experiences";
-
+import Info from "../../components/Profile/Info";
+import RecentActivities from "../../components/Profile/RecentActivities";
+import Biography from "../../components/Profile/Biography";
+import db from "../../firebaseConfig";
+import { useAuth } from "../../components/contexts/AuthContext";
 export default function ProfilePageContiner() {
-  console.log(profileData);
-  // const [profileInfo, setProfileInfo] = useState();
+  const [userData, setUserData] = useState();
+  const { currentUser } = useAuth();
 
-  // const addItem = () => {
-  //   db.collection("notes").doc().set({
-  //     title: noteFormState.title,
-  //     content: noteFormState.content,
-  //   });
-  // };
-
-  // useEffect(() => {
-  //     const data = db.collection("cities").doc("t4WuvpE4DCzN9vLajZjK")
-  //     .onSnapshot(function(doc) {
-  //         console.log("Current data: ", doc.data());
-  //     });
-  //     console.log(data);
-  //   }, []);
-
-  //   console.log(profileInfo);
+  const fetchData = async () => {
+    const res = await db.collection("userProfile").get();
+    const data = res.docs.find((doc) => doc.data().userId === currentUser.uid);
+    setUserData(data.data());
+  };
+  //console.log(userData)
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   return (
     <div>
       <Row>
-        <Col sm={4}>
+        <Col sm={3}>
           <div>
-            <BasicInfo data={profileData.basicInfo} />
+            <Info userInfo={userData} />
           </div>
         </Col>
-        <Col sm={8}>
-          <div>
-            <Skills data={profileData.skills} />
-            <Activities data={profileData.activities} />
-            <Experiences data={profileData.professionalExperience} />
+        <Col sm={9}>
+          <div className="rightContainer d-flex flex-column align-items-center">
+            <Biography userInfo={userData} />
+            <RecentActivities />
           </div>
         </Col>
       </Row>

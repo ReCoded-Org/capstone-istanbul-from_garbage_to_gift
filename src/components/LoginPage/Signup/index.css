@@ -1,6 +1,7 @@
 .signUpBtn {
   background-color: #c62a88;
   border: none;
+  width: 17em;
 }
 
 .purpleElemSignUp {
@@ -17,8 +18,24 @@
 }
 
 .neumorphism {
-  border-radius: 1em;
-  background: #f8f8f8;
-  box-shadow: 0.5em 0.5em 1em #c62a88, -0.25em -0.25em 0.25em #590995;
+  border-radius: 4em;
+  background: #ffffff;
+  box-shadow: 0.25em 0.25em 1em #808080, -0.25em -0.25em 2em #ffffff;
   border: none;
+}
+
+.inputSize {
+  width: 30em;
+}
+
+.signupContainer {
+  width: 50em;
+  height: 59.1em;
+}
+
+#biography {
+  height: 8m;
+  width: 30em;
+  color: #590995;
+  border-color: #590995;
 }

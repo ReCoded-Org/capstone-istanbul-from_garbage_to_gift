@@ -1,0 +1,42 @@
+.singleActivityContainer {
+  border: solid 0.25em #c62a88;
+  width: 50em;
+  margin: 2em 2em;
+  display: flex;
+  height: 10em;
+  align-items: center;
+  border-radius: 2em;
+  background: #ffffff;
+  box-shadow: 10px 10px 20px #a1a1a1, -10px -10px 20px #ffffff;
+}
+
+.nameDescContainer {
+  border-left: solid 0.1em #c62a88;
+  display: flex;
+  width: 200em;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1em;
+}
+
+.cardTitle {
+  color: #03c4a1;
+  margin-bottom: -4em;
+  margin-top: 4em;
+  margin-left: 0.7em;
+}
+.cardDesc {
+  color: #590995;
+  margin-bottom: 4em;
+  margin-left: 1em;
+}
+.cardDate {
+  color: #03c4a1;
+  margin-left: 0.8em;
+}
+
+.activityImg {
+  width: 25%;
+  margin-left: 1em;
+  border-radius: 15%;
+}
