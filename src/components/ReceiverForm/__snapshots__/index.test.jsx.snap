@@ -19,6 +19,7 @@ exports[`renders SuccessStories correctly 1`] = `
       <select
         className="form-control"
         onChange={[Function]}
+        required={true}
       >
         <option
           value="service"
@@ -49,6 +50,7 @@ exports[`renders SuccessStories correctly 1`] = `
         className="form-control"
         onChange={[Function]}
         placeholder="formsection.PostTitle"
+        required={true}
         type="text"
       />
     </div>
@@ -63,6 +65,7 @@ exports[`renders SuccessStories correctly 1`] = `
       <textarea
         className="form-control"
         onChange={[Function]}
+        required={true}
         rows={3}
       />
     </div>
@@ -77,6 +80,7 @@ exports[`renders SuccessStories correctly 1`] = `
       <textarea
         className="form-control"
         onChange={[Function]}
+        required={true}
         rows={3}
       />
     </div>
@@ -92,6 +96,7 @@ exports[`renders SuccessStories correctly 1`] = `
         className="form-control"
         onChange={[Function]}
         placeholder="formsection.ProfileName"
+        required={true}
         type="text"
       />
     </div>
@@ -106,6 +111,7 @@ exports[`renders SuccessStories correctly 1`] = `
       <textarea
         className="form-control"
         onChange={[Function]}
+        required={true}
         rows={3}
       />
     </div>
@@ -127,6 +133,7 @@ exports[`renders SuccessStories correctly 1`] = `
             className="form-control"
             onChange={[Function]}
             placeholder="formsection.City"
+            required={true}
             type="text"
           />
         </div>
@@ -142,6 +149,7 @@ exports[`renders SuccessStories correctly 1`] = `
           <input
             className="form-control"
             onChange={[Function]}
+            required={true}
             type="date"
           />
         </div>

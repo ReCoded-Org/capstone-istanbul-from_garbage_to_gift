@@ -24,6 +24,7 @@ export default function DonatorForm() {
       address: donatorPostData.address,
       date: donatorPostData.date,
     });
+    alert(t("formsection.SubmitAlert"));
   };
 
   return (
@@ -33,6 +34,7 @@ export default function DonatorForm() {
           <Form.Group>
             <Form.Label>{t("formsection.DonationType")}</Form.Label>
             <Form.Control
+              required
               as="select"
               onChange={(e) => handlePostChange(e, "type")}
             >
@@ -46,6 +48,7 @@ export default function DonatorForm() {
           <Form.Group>
             <Form.Label>{t("formsection.PostTitle")}</Form.Label>
             <Form.Control
+              required
               type="text"
               placeholder={t("formsection.PostTitle")}
               onChange={(e) => handlePostChange(e, "title")}
@@ -54,6 +57,7 @@ export default function DonatorForm() {
           <Form.Group>
             <Form.Label>{t("formsection.PostDetailsForDonator")}</Form.Label>
             <Form.Control
+              required
               as="textarea"
               rows={3}
               onChange={(e) => handlePostChange(e, "description")}
@@ -62,6 +66,7 @@ export default function DonatorForm() {
           <Form.Group>
             <Form.Label>{t("formsection.TargetGroup")} </Form.Label>
             <Form.Control
+              required
               as="textarea"
               rows={3}
               onChange={(e) => handlePostChange(e, "target")}
@@ -70,6 +75,7 @@ export default function DonatorForm() {
           <Form.Group>
             <Form.Label>{t("formsection.ProfileName")} </Form.Label>
             <Form.Control
+              required
               type="text"
               placeholder={t("formsection.ProfileName")}
               onChange={(e) => handlePostChange(e, "profileName")}
@@ -78,6 +84,7 @@ export default function DonatorForm() {
           <Form.Group>
             <Form.Label>{t("formsection.AboutYou")}</Form.Label>
             <Form.Control
+              required
               as="textarea"
               rows={3}
               onChange={(e) => handlePostChange(e, "about")}
@@ -88,6 +95,7 @@ export default function DonatorForm() {
               <Col>
                 <Form.Label>{t("formsection.City")}</Form.Label>
                 <Form.Control
+                  required
                   type="text"
                   placeholder={t("formsection.City")}
                   onChange={(e) => handlePostChange(e, "address")}
@@ -97,6 +105,7 @@ export default function DonatorForm() {
                 <Form.Label>{t("formsection.ApplicationDate")}</Form.Label>
                 <br />
                 <Form.Control
+                  required
                   type="date"
                   onChange={(e) => handlePostChange(e, "date")}
                 />

@@ -178,11 +178,11 @@
     "TargetGroup": "Target Group (Who you are targeting)",
     "Prerequisites": "Prerequisites (Please tell us about your prerequisites about donator)",
     "ProfileName": "Profile Name",
-    "AboutYouDonate": "About You (Tell us about yourself, so we can find perfect receiver for you)  ",
-    "AboutYouReceive": "About You (Tell us about yourself, so we can find perfect donator for you)  ",
+    "AboutYou": "About You (Tell us about yourself, so we can find perfect receiver for you)  ",
     "City": "City",
     "ApplicationDate": "Last Date for Application",
-    "Submit": "Submit"
+    "Submit": "Submit",
+    "SubmitAlert": "Your request was successfully submitted"
   },
   "singlePost": {
     "TargetGroup": "Target Group",

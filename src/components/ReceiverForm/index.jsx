@@ -25,6 +25,7 @@ export default function ReceiverForm() {
       address: receiverPostData.address,
       date: receiverPostData.date,
     });
+    alert(t("formsection.SubmitAlert"));
   };
 
   return (
@@ -33,6 +34,7 @@ export default function ReceiverForm() {
         <Form.Group>
           <Form.Label>{t("formsection.DonationType")}</Form.Label>
           <Form.Control
+            required
             as="select"
             onChange={(e) => handlePostChange(e, "type")}
           >
@@ -44,6 +46,7 @@ export default function ReceiverForm() {
         <Form.Group>
           <Form.Label>{t("formsection.PostTitle")}</Form.Label>
           <Form.Control
+            required
             type="text"
             placeholder={t("formsection.PostTitle")}
             onChange={(e) => handlePostChange(e, "title")}
@@ -52,6 +55,7 @@ export default function ReceiverForm() {
         <Form.Group>
           <Form.Label>{t("formsection.PostDetailsForReceiver")}</Form.Label>
           <Form.Control
+            required
             as="textarea"
             rows={3}
             onChange={(e) => handlePostChange(e, "description")}
@@ -60,6 +64,7 @@ export default function ReceiverForm() {
         <Form.Group>
           <Form.Label>{t("formsection.Prerequisites")}</Form.Label>
           <Form.Control
+            required
             as="textarea"
             rows={3}
             onChange={(e) => handlePostChange(e, "prerequisites")}
@@ -68,6 +73,7 @@ export default function ReceiverForm() {
         <Form.Group>
           <Form.Label>{t("formsection.ProfileName")}</Form.Label>
           <Form.Control
+            required
             type="text"
             placeholder={t("formsection.ProfileName")}
             onChange={(e) => handlePostChange(e, "profileName")}
@@ -76,6 +82,7 @@ export default function ReceiverForm() {
         <Form.Group>
           <Form.Label>{t("formsection.AboutYou")}</Form.Label>
           <Form.Control
+            required
             as="textarea"
             rows={3}
             onChange={(e) => handlePostChange(e, "about")}
@@ -86,6 +93,7 @@ export default function ReceiverForm() {
             <Col>
               <Form.Label>{t("formsection.City")}</Form.Label>
               <Form.Control
+                required
                 type="text"
                 placeholder={t("formsection.City")}
                 onChange={(e) => handlePostChange(e, "address")}
@@ -95,6 +103,7 @@ export default function ReceiverForm() {
               <Form.Label>{t("formsection.ApplicationDate")}</Form.Label>
               <br />
               <Form.Control
+                required
                 type="date"
                 onChange={(e) => handlePostChange(e, "date")}
               />
