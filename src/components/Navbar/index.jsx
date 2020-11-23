@@ -65,7 +65,7 @@ export default function SiteNavbar() {
         const data = res.docs.find(
           (doc) => {
             console.log(doc.data())
-            return doc.data().userId == currentUser.uid
+            return doc.data().userId === currentUser.uid
           }
       );
         console.log(data)
