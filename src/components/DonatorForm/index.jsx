@@ -2,11 +2,16 @@ import React, { useState } from "react";
 import { Container, Form, Col, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import db from "../../firebaseConfig";
+import i18next from "i18next";
+import swal from "sweetalert";
 import "./index.css";
 
 export default function DonatorForm() {
   const [donatorPostData, setDonatorPostData] = useState({});
-
+  const [currentLanguage, setCurrentLanguage] = useState(i18next.language);
+  i18next.on("languageChanged", (lng) => {
+    setCurrentLanguage(lng);
+  });
   const handlePostChange = (e, key) => {
     setDonatorPostData({ ...donatorPostData, [key]: e.target.value });
   };
@@ -16,6 +21,7 @@ export default function DonatorForm() {
     e.preventDefault();
     db.collection("donatorPost").add({
       title: donatorPostData.title,
+      lang: currentLanguage,
       type: donatorPostData.type,
       description: donatorPostData.description,
       target: donatorPostData.target,
@@ -23,7 +29,10 @@ export default function DonatorForm() {
       about: donatorPostData.about,
       address: donatorPostData.address,
       date: donatorPostData.date,
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp5nbPgcqswxMK_MlDRX81HF17TFaUPSNRtw&usqp=CAU",
     });
+    swal("", t("formsection.SubmitAlert"), "success");
   };
 
   return (
@@ -33,6 +42,7 @@ export default function DonatorForm() {
           <Form.Group>
             <Form.Label>{t("formsection.DonationType")}</Form.Label>
             <Form.Control
+              required
               as="select"
               onChange={(e) => handlePostChange(e, "type")}
             >
@@ -46,6 +56,7 @@ export default function DonatorForm() {
           <Form.Group>
             <Form.Label>{t("formsection.PostTitle")}</Form.Label>
             <Form.Control
+              required
               type="text"
               placeholder={t("formsection.PostTitle")}
               onChange={(e) => handlePostChange(e, "title")}
@@ -54,6 +65,7 @@ export default function DonatorForm() {
           <Form.Group>
             <Form.Label>{t("formsection.PostDetailsForDonator")}</Form.Label>
             <Form.Control
+              required
               as="textarea"
               rows={3}
               onChange={(e) => handlePostChange(e, "description")}
@@ -62,6 +74,7 @@ export default function DonatorForm() {
           <Form.Group>
             <Form.Label>{t("formsection.TargetGroup")} </Form.Label>
             <Form.Control
+              required
               as="textarea"
               rows={3}
               onChange={(e) => handlePostChange(e, "target")}
@@ -70,6 +83,7 @@ export default function DonatorForm() {
           <Form.Group>
             <Form.Label>{t("formsection.ProfileName")} </Form.Label>
             <Form.Control
+              required
               type="text"
               placeholder={t("formsection.ProfileName")}
               onChange={(e) => handlePostChange(e, "profileName")}
@@ -78,6 +92,7 @@ export default function DonatorForm() {
           <Form.Group>
             <Form.Label>{t("formsection.AboutYou")}</Form.Label>
             <Form.Control
+              required
               as="textarea"
               rows={3}
               onChange={(e) => handlePostChange(e, "about")}
@@ -88,6 +103,7 @@ export default function DonatorForm() {
               <Col>
                 <Form.Label>{t("formsection.City")}</Form.Label>
                 <Form.Control
+                  required
                   type="text"
                   placeholder={t("formsection.City")}
                   onChange={(e) => handlePostChange(e, "address")}
@@ -97,6 +113,7 @@ export default function DonatorForm() {
                 <Form.Label>{t("formsection.ApplicationDate")}</Form.Label>
                 <br />
                 <Form.Control
+                  required
                   type="date"
                   onChange={(e) => handlePostChange(e, "date")}
                 />

@@ -1,32 +1,23 @@
-@import url("https://fonts.googleapis.com/css?family=Acme&display=swap");
-
-.container {
+.successStoriesContaier {
   font-family: "Acme";
+  margin-top: 10em;
 }
 
-.successStoriesCardBody {
-  color: #026fc2;
-  font-size: 0.8em;
-}
-
-.title {
+.successTitle {
   color: #c62a88;
   margin-bottom: 1em;
+  font-size: 1.8em;
 }
-
-.successStoriesSinglePost {
-  margin: 1em;
-  padding: 1em 0.75em;
-  border: 0.1em solid #d1dbe3;
-  border-radius: 0.5em;
-  background-color: #eef2f4;
+.successParagraph {
+  color: #c62a88;
+  margin-bottom: 1em;
+  font-size: 1.4em;
 }
-
-img {
-  width: 100%;
-}
-
 .successStoriesCardTitle {
   color: #590995;
   font-size: 1em;
+}
+.postsSuccessStories {
+  justify-content: center;
+  align-items: center;
 }

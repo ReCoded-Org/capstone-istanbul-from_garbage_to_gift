@@ -1,14 +1,17 @@
 .mainScreen {
-  padding: 10px;
-  height: 80vh;
-  margin: 10vh 0 10vh;
+  padding: 0.5em;
+  height: 45em;
+  width: 30em;
+  margin: 10em 0 10em 20em;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
+  background-color: #7bddcb;
+  border-radius: 1em;
 }
 
 .mainScreen::-webkit-scrollbar {
-  width: 0.25rem;
+  width: 0.5rem;
 }
 
 .mainScreen::-webkit-scrollbar-thumb {
@@ -16,41 +19,20 @@
 }
 
 .messageBox {
-  height: 10vh;
-  position: fixed;
-  bottom: 0;
-  background-color: #590995;
-  width: 100%;
-  max-width: 400px;
-  display: flex;
+  height: 3em;
+  background-color: #7bddcb;
   font-size: 1.5rem;
-}
-
-.messageBox button {
-  width: 50%;
-  background-color: #590995;
+  color: white;
 }
 
 .messageBox.input {
-  line-height: 1.5;
-  width: 100%;
+  line-height: 1;
   font-size: 1.5rem;
-  color: white;
-  outline: none;
-  border: none;
-  padding: 0 10px;
 }
 
 button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
-}
-
-.signIn {
-  color: #282c34;
-  background: white;
-  max-width: 400px;
-  margin: 0 auto;
 }
 
 .message {
@@ -59,11 +41,11 @@ button:disabled {
 }
 
 .message p {
-  max-width: 500px;
-  margin-bottom: 12px;
-  line-height: 24px;
-  padding: 10px 20px;
-  border-radius: 25px;
+  max-width: 50em;
+  margin-bottom: 0.3em;
+  line-height: 1.5em;
+  padding: 0.5em 1em;
+  border-radius: 2em;
   position: relative;
   color: white;
   text-align: center;
@@ -87,5 +69,5 @@ button:disabled {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin: 2px 5px;
+  margin: 0.3em 0.75em;
 }

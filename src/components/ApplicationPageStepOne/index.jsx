@@ -11,14 +11,11 @@ export default function PostSectionStepOne(props) {
       <Row className="stepOneApplicationPage">
         <Col md={4}>
           <h2 className="prerequisites">
-            {t("applicationPageStep1.Prerequisites")}
+            {props.prerequisites
+              ? t("applicationPageStep1.Prerequisites")
+              : t("applicationPageStep1.target")}
           </h2>
-          <ul>
-            {props.prerequisites &&
-              props.prerequisites.map((prerequisity) => (
-                <li className="prerequisitesDescription">{prerequisity}</li>
-              ))}
-          </ul>
+          <p>{props.prerequisites ? props.prerequisites : props.target}</p>
           <input
             type="checkbox"
             name="radiobutton"

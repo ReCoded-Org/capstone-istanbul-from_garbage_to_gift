@@ -20,14 +20,15 @@
         "react-bootstrap": "^1.4.0",
         "react-dom": "^16.14.0",
         "react-facebook-login": "^4.1.1",
+        "react-firebase-hooks": "^2.2.0",
         "react-google-login": "^5.1.22",
         "react-i18next": "^11.7.3",
         "react-router-dom": "^5.2.0",
         "react-scripts": "3.4.3",
         "react-test-renderer": "^17.0.1",
         "react-watermark-component": "^2.2.1",
-        "react-firebase-hooks": "^2.2.0",
-        "sass": "^1.27.0"
+        "sass": "^1.27.0",
+        "sweetalert": "^2.1.2"
     },
     "scripts": {
         "start": "react-scripts start",
@@ -64,6 +65,7 @@
         "eslint-plugin-react-hooks": "^4.1.2",
         "jest": "^24.9.0",
         "prettier": "^2.0.5",
-        "pretty-quick": "^2.0.1"
+        "pretty-quick": "^2.0.1",
+        "react-test-renderer": "^16.12.0"
     }
 }

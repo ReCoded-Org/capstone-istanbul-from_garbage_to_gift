@@ -1,4 +1,13 @@
 {
+  "successStories": {
+    "header": "Success Stories",
+    "paragraph": "We succeed to deliver the happiness to more than 1000 person, help us to increase the number and participate in changing the world"
+  },
+  "whoWeAre": {
+    "header": "Website Mission",
+    "paragraph": "Providing the linkage between the people who are willing to donate from their stuff and people who needs these stuff and make sure that we deliver the donation to the most vulnerable people.",
+    "howItWorks": "How It Works"
+  },
   "contact": {
     "aletMessage": "Your message was successfully submitted",
     "formName": "Name",
@@ -183,11 +192,11 @@
     "TargetGroup": "Target Group (Who you are targeting)",
     "Prerequisites": "Prerequisites (Please tell us about your prerequisites about donator)",
     "ProfileName": "Profile Name",
-    "AboutYouDonate": "About You (Tell us about yourself, so we can find perfect receiver for you)  ",
-    "AboutYouReceive": "About You (Tell us about yourself, so we can find perfect donator for you)  ",
+    "AboutYou": "About You (Tell us about yourself, so we can find perfect receiver for you)  ",
     "City": "City",
     "ApplicationDate": "Last Date for Application",
-    "Submit": "Submit"
+    "Submit": "Submit",
+    "SubmitAlert": "Your request was successfully submitted"
   },
   "singlePost": {
     "TargetGroup": "Target Group",
@@ -205,6 +214,7 @@
     "Step2": "Step 2",
     "Next": "Next",
     "Prerequisites": "Prerequisites",
+    "target": "Target",
     "Meet": "I meet these prerequisites"
   },
   "profilePage": {

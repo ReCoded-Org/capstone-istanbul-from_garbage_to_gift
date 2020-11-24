@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import { Container, Form, Button, Col, Row } from "react-bootstrap";
-import db from "../../firebaseConfig";
 import { useTranslation } from "react-i18next";
+import db from "../../firebaseConfig";
+import i18next from "i18next";
+import swal from "sweetalert";
 import "./index.css";
 
 export default function ReceiverForm() {
   const [receiverPostData, setReceiverPostData] = useState({});
-
+  const [currentLanguage, setCurrentLanguage] = useState(i18next.language);
+  i18next.on("languageChanged", (lng) => {
+    setCurrentLanguage(lng);
+  });
   const handlePostChange = (e, key) => {
     setReceiverPostData({ ...receiverPostData, [key]: e.target.value });
   };
@@ -17,6 +22,7 @@ export default function ReceiverForm() {
     e.preventDefault();
     db.collection("receiverPost").add({
       title: receiverPostData.title,
+      lang: currentLanguage,
       type: receiverPostData.type,
       description: receiverPostData.description,
       prerequisites: receiverPostData.prerequisites,
@@ -24,7 +30,10 @@ export default function ReceiverForm() {
       about: receiverPostData.about,
       address: receiverPostData.address,
       date: receiverPostData.date,
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp5nbPgcqswxMK_MlDRX81HF17TFaUPSNRtw&usqp=CAU",
     });
+    swal("", t("formsection.SubmitAlert"), "success");
   };
 
   return (
@@ -33,6 +42,7 @@ export default function ReceiverForm() {
         <Form.Group>
           <Form.Label>{t("formsection.DonationType")}</Form.Label>
           <Form.Control
+            required
             as="select"
             onChange={(e) => handlePostChange(e, "type")}
           >
@@ -44,6 +54,7 @@ export default function ReceiverForm() {
         <Form.Group>
           <Form.Label>{t("formsection.PostTitle")}</Form.Label>
           <Form.Control
+            required
             type="text"
             placeholder={t("formsection.PostTitle")}
             onChange={(e) => handlePostChange(e, "title")}
@@ -52,6 +63,7 @@ export default function ReceiverForm() {
         <Form.Group>
           <Form.Label>{t("formsection.PostDetailsForReceiver")}</Form.Label>
           <Form.Control
+            required
             as="textarea"
             rows={3}
             onChange={(e) => handlePostChange(e, "description")}
@@ -60,6 +72,7 @@ export default function ReceiverForm() {
         <Form.Group>
           <Form.Label>{t("formsection.Prerequisites")}</Form.Label>
           <Form.Control
+            required
             as="textarea"
             rows={3}
             onChange={(e) => handlePostChange(e, "prerequisites")}
@@ -68,6 +81,7 @@ export default function ReceiverForm() {
         <Form.Group>
           <Form.Label>{t("formsection.ProfileName")}</Form.Label>
           <Form.Control
+            required
             type="text"
             placeholder={t("formsection.ProfileName")}
             onChange={(e) => handlePostChange(e, "profileName")}
@@ -76,6 +90,7 @@ export default function ReceiverForm() {
         <Form.Group>
           <Form.Label>{t("formsection.AboutYou")}</Form.Label>
           <Form.Control
+            required
             as="textarea"
             rows={3}
             onChange={(e) => handlePostChange(e, "about")}
@@ -86,6 +101,7 @@ export default function ReceiverForm() {
             <Col>
               <Form.Label>{t("formsection.City")}</Form.Label>
               <Form.Control
+                required
                 type="text"
                 placeholder={t("formsection.City")}
                 onChange={(e) => handlePostChange(e, "address")}
@@ -95,6 +111,7 @@ export default function ReceiverForm() {
               <Form.Label>{t("formsection.ApplicationDate")}</Form.Label>
               <br />
               <Form.Control
+                required
                 type="date"
                 onChange={(e) => handlePostChange(e, "date")}
               />

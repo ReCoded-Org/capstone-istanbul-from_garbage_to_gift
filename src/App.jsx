@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Signup from "./components/LoginPage/Signup";
 import { AuthProvider } from "./components/contexts/AuthContext";
@@ -15,9 +15,18 @@ import PostPageVolunteer from "./containers/PostPageVolunteer";
 import PostPageReceiver from "./containers/PostPageReciever";
 import SiteNavbar from "./components/Navbar";
 import SinglePostPage from "./containers/SinglePostPage";
-import ApplicationPage from "./containers/ApplicationForm";
+import i18next from "i18next";
 
 function App() {
+  const [currentLanguage, setCurrentLanguage] = useState(i18next.language);
+  i18next.on("languageChanged", (lng) => {
+    setCurrentLanguage(lng);
+  });
+  if (currentLanguage === "ar") {
+    document.documentElement.style.setProperty("direction", "rtl");
+  } else {
+    document.documentElement.style.setProperty("direction", "ltr");
+  }
   return (
     <>
       <AuthProvider>
@@ -32,11 +41,7 @@ function App() {
           <Route path="/donatePosts" component={PostPageVolunteer} />
           <Route path="/receivePosts" component={PostPageReceiver} />
           <Route exact path="/posts/:id" component={SinglePostPage} />
-          <Route
-            exact
-            path="/application/:postType/:id"
-            component={ApplicationPage}
-          />
+          <Route exact path="/application" />
           <Route path="/forgot-password" component={ForgotPassword} />
           <Route path="/profile" component={Profile} />
           <Route path="/" component={Footer} />
