@@ -10,7 +10,6 @@
 }
 .nextButton {
   margin: 3em 0;
-  align-self: flex-end;
 }
 .stepOneDiv {
   display: flex;

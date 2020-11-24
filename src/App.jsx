@@ -15,6 +15,7 @@ import SiteNavbar from "./components/Navbar";
 import SinglePostPage from "./containers/SinglePostPage";
 import i18next from "i18next";
 import ApplicationPage from "./containers/ApplicationForm";
+import "./App.css";
 
 function App() {
   const [currentLanguage, setCurrentLanguage] = useState(i18next.language);
@@ -29,24 +30,32 @@ function App() {
   return (
     <>
       <AuthProvider>
-        <Router className="appStyle">
-          <Route path="/" component={SiteNavbar} />
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/signup" component={Signup} />
-          <Route path="/login" component={LoginContainer} />
-          <Route exact path="/donate" component={NewPostForm} />
-          <Route exact path="/contact" component={Contact} />
-          <Route path="/donatePosts" component={PostPageVolunteer} />
-          <Route path="/receivePosts" component={PostPageReceiver} />
-          <Route exact path="/posts/:postType/:id" component={SinglePostPage} />
-          <Route
-            path="/application/:postType/:id"
-            component={ApplicationPage}
-          />
-          <Route path="/forgot-password" component={ForgotPassword} />
-          <Route path="/" component={Footer} />
-        </Router>
+        <div className="appStyle">
+          <Router>
+            <Route path="/" component={SiteNavbar} />
+            <div className="appContainer">
+              <Route exact path="/" component={Home} />
+              <Route path="/about" component={About} />
+              <Route path="/signup" component={Signup} />
+              <Route path="/login" component={LoginContainer} />
+              <Route exact path="/donate" component={NewPostForm} />
+              <Route exact path="/contact" component={Contact} />
+              <Route path="/donatePosts" component={PostPageVolunteer} />
+              <Route path="/receivePosts" component={PostPageReceiver} />
+              <Route
+                exact
+                path="/posts/:postType/:id"
+                component={SinglePostPage}
+              />
+              <Route
+                path="/application/:postType/:id"
+                component={ApplicationPage}
+              />
+              <Route path="/forgot-password" component={ForgotPassword} />
+            </div>
+            <Route path="/" component={Footer} />
+          </Router>
+        </div>
       </AuthProvider>
     </>
   );

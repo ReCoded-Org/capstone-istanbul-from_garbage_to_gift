@@ -4,29 +4,34 @@ exports[`renders PostSection correctly 1`] = `
 <div
   className="postApplicationPage container"
 >
-  <div>
-    <div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-md-6"
+    >
       <img
         alt="post"
         className="postImageApplicationPage"
       />
     </div>
     <div
-      className="postTitleDescription"
-      md={6}
+      className="postTitleDescription col-md-6"
     >
-      <h2
-        className="postTitle"
-      />
-      <p
-        className="postDescription"
-      />
-      <p
-        className="postDescription"
-      >
-        applicationPageStep1.date
-         
-      </p>
+      <div>
+        <h2
+          className="postTitle"
+        />
+        <p
+          className="postDescription"
+        />
+        <p
+          className="postDescription"
+        >
+          applicationPageStep1.date
+           
+        </p>
+      </div>
     </div>
   </div>
 </div>

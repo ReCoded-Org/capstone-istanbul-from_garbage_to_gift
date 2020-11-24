@@ -11,14 +11,17 @@ import {
 export default function Steps(props) {
   const { t } = useTranslation();
   return (
-    <Container className="00">
+    <Container>
       <div className="steps">
-        <div className={props.meet && "stepOne"} onClick={props.handleStep1}>
+        <div
+          className={`stepIcon ${props.meet && "stepOne"}`}
+          onClick={props.handleStep1}
+        >
           <FontAwesomeIcon icon={faHandHolding} size="2x" />
           <h2>{t("applicationPageStep1.Step1")}</h2>
         </div>
         <hr />
-        <div className={props.steps === "stepTwo" && "stepOne"}>
+        <div className={`stepIcon ${props.steps === "stepTwo" && "stepOne"}`}>
           <FontAwesomeIcon icon={faHandHoldingHeart} size="2x" />
           <h2>{t("applicationPageStep1.Step2")}</h2>
         </div>

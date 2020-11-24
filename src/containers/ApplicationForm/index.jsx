@@ -3,7 +3,6 @@ import PostSection from "../../components/ApplactionPagePostSection";
 import PostSectionStep1 from "../../components/ApplicationPageStepOne";
 import Steps from "../../components/Steps";
 import db from "../../firebaseConfig";
-import "./index.css";
 import { useParams } from "react-router-dom";
 import Chat from "../../components/Chat";
 import { Container } from "react-bootstrap";
@@ -31,19 +30,23 @@ export default function ApplicationPage() {
     fetchData();
   }, [id, postType]);
   return (
-    <Container>
-      <PostSection {...post} />
-      <Steps meet={meet} steps={steps} handleStep1={handleStep1} />
-      {steps === "stepOne" ? (
-        <PostSectionStep1
-          {...post}
-          meet={meet}
-          handleSteps={handleSteps}
-          handleMeetSteps={handleMeetSteps}
-        />
-      ) : (
-        <Chat />
-      )}
-    </Container>
+    <div className="appPageDiv">
+      <Container className="appPageContainer">
+        <PostSection {...post} />
+        <Steps meet={meet} steps={steps} handleStep1={handleStep1} />
+        {steps === "stepOne" ? (
+          <PostSectionStep1
+            {...post}
+            meet={meet}
+            handleSteps={handleSteps}
+            handleMeetSteps={handleMeetSteps}
+          />
+        ) : (
+          <div className="d-flex justify-content-center w-100">
+            <Chat />
+          </div>
+        )}
+      </Container>
+    </div>
   );
 }

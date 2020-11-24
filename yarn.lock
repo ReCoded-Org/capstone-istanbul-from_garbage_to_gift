@@ -10050,10 +10050,16 @@ react-google-login@^5.1.22:
   resolved "https://registry.yarnpkg.com/react-google-login/-/react-google-login-5.1.24.tgz#d68f93dedeebaeb450208ec33a7e952c32ef7352"
   integrity sha512-1LyPK9FipvDa9FulIQURwOylfhvat14C65pTOcyXS/kaM0lW5flfErTI1RB0bcRDl1xH9gkdgw/Rl28z7sviXQ==
 =======
+<<<<<<< HEAD
+  version "5.1.24"
+  resolved "https://registry.yarnpkg.com/react-google-login/-/react-google-login-5.1.24.tgz#d68f93dedeebaeb450208ec33a7e952c32ef7352"
+  integrity sha512-1LyPK9FipvDa9FulIQURwOylfhvat14C65pTOcyXS/kaM0lW5flfErTI1RB0bcRDl1xH9gkdgw/Rl28z7sviXQ==
+=======
   version "5.1.25"
   resolved "https://registry.yarnpkg.com/react-google-login/-/react-google-login-5.1.25.tgz#6bf5b4c8ce4e9e64a4c80eb14b80c9c6bd07bf9b"
   integrity sha512-N7SZkjTEX9NsC3hywXs68SPJWAHo6M19Bs1OIFPirG0yomGF7KnbKjSqoiIfxz1V7fKAt8bkfBAzogwnGWYTeQ==
 >>>>>>> 4b4b3a76eaba89c505d2b494094d3c197421cb3a
+>>>>>>> 03300db5de50296042430e86dff3c2982b34b774
   dependencies:
     "@types/react" "*"
     prop-types "^15.6.0"

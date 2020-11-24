@@ -1,6 +1,7 @@
 .steps {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 3.5em;
 }
 .steps hr {
@@ -12,6 +13,6 @@
   text-align: center;
   justify-content: right;
 }
-/* .stepsLine{
-
-} */
+.stepIcon {
+  margin: 0 5em;
+}

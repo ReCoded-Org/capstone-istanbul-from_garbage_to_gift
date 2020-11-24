@@ -161,8 +161,8 @@
     "Home": "Home",
     "Posts": "Posts",
     "Donate": "Donate",
-    "AboutUs": "About us",
-    "ContactUs": "Contact us",
+    "AboutUs": "About",
+    "ContactUs": "Contact",
     "SearchHere": "Search here",
     "Search": "Search",
     "LogIn": "Login",
@@ -208,11 +208,13 @@
     "SimilarPosts": "Similar Posts"
   },
   "applicationPageStep1": {
+    "date": "Date: ",
     "Step1": "Step 1",
     "Step2": "Step 2",
     "Next": "Next",
     "Prerequisites": "Prerequisites",
     "target": "Target",
-    "Meet": "I meet these prerequisites"
+    "MeetPrerequisites": "I meet these prerequisites",
+    "MeettTarget": "I meet these prerequisites"
   }
 }
