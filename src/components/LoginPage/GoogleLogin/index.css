@@ -7,8 +7,15 @@
   border: none;
   height: 3em;
   margin-top: 0.5em;
+  width: 56.5%;
+  justify-content: center;
 }
 
 .googleIcon {
   width: 3em;
+  margin-right: 2.75em;
+}
+
+.lgnGoogleText {
+  margin-right: 2em;
 }

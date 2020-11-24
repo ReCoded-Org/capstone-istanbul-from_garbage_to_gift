@@ -3,21 +3,23 @@
 
 import React from "react";
 import { useGoogleLogin } from "react-google-login";
-import { refreshTokenSetup } from "../utils/refreshToken";
 import googleIcon from "./icons/google.svg";
 import "./index.css";
 import { useTranslation } from "react-i18next";
-
-const clientId =
-  "743068888490-2chsv38s7paclkbc1qjd2ktd3jjf2aqf.apps.googleusercontent.com";
+import "firebase/auth";
+import { refreshTokenSetup } from "../utils/refreshToken";
 
 function Login() {
   const { t } = useTranslation();
+
+  const clientId =
+    "743068888490-2chsv38s7paclkbc1qjd2ktd3jjf2aqf.apps.googleusercontent.com";
   const onSuccess = (res) => {
     refreshTokenSetup(res);
   };
 
-  const onFailure = (res) => {
+  const onFailure = (res, e) => {
+    e.preventDefault();
     alert(t("loginPages.login.alertFailLogin"));
   };
 
@@ -39,7 +41,7 @@ function Login() {
           width="40em"
         />
       </div>
-      <div>
+      <div className="lgnGoogleText">
         <span className="buttonText">{t("loginPages.login.logInGoogle")}</span>
       </div>
     </button>

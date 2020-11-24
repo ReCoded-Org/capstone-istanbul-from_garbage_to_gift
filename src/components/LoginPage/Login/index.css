@@ -5,8 +5,9 @@
   align-items: center;
   border-radius: 0.5em;
   height: 3em;
-  width: 10.88em;
+  width: 56.5%;
   justify-content: center;
+  margin-top: 2em;
 }
 
 .purpleElemLogin {
@@ -19,9 +20,9 @@
 }
 
 .neumorphism {
-  border-radius: 1em;
-  background: #f8f8f8;
-  box-shadow: 0.5em 0.5em 1em #c62a88, -0.25em -0.25em 0.25em #590995;
+  border-radius: 4em;
+  background: #ffffff;
+  box-shadow: 0.25em 0.25em 1em #808080, -0.25em -0.25em 2em #ffffff;
   border: none;
 }
 
@@ -30,4 +31,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.inputSize {
+  width: 30em;
 }
