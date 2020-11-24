@@ -10,7 +10,8 @@
 
 .aboutHeader {
   color: #03c4a1;
-  margin: 3em 0;
+  margin: 1.5em 0;
+  font-size: 3em;
 }
 .aboutTeamImg {
   width: 60%;

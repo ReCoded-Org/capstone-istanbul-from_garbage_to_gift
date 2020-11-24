@@ -7,7 +7,9 @@ exports[`renders TeamMember correctly 1`] = `
   <img
     className="teamMemberImg"
   />
-  <h4 />
+  <h4
+    className="memberTitle"
+  />
   <p
     className="memberTitle"
   />

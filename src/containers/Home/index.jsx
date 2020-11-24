@@ -5,7 +5,7 @@ import WhoWeAre from "../../components/WhoWeAre";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div>
       <ProjectDescription />
       <WhoWeAre />
       <SuccessStories />

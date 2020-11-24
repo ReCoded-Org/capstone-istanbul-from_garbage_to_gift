@@ -5,17 +5,17 @@ exports[`renders SuccessStories correctly 1`] = `
   className="successStoriesContaier container"
 >
   <p
-    className="text-center successTitle"
+    className="text-center sucessStories"
   >
     successStories.header
   </p>
   <p
-    className="text-center successParagraph"
+    className="text-center weSucceed"
   >
     successStories.paragraph
   </p>
   <div
-    className="postsSuccessStories row"
+    className="successStoriesPosts row"
     fluid="md"
   />
 </div>
