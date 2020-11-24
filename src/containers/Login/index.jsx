@@ -11,10 +11,13 @@ export default function LoginContainer() {
         className="d-flex flex-column justify-content-center"
         style={{ minHeight: "10em" }}
       >
-        <div>
-          <Login />
-        </div>
-        <img src={friendsBox} alt="friends around gifts" width="70%" />
+        <Login />
+        <img
+          src={friendsBox}
+          alt="friends around gifts"
+          className="loginImage"
+          width="70%"
+        />
       </Container>
     </div>
   );

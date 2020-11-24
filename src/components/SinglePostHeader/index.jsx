@@ -25,7 +25,11 @@ export default function SinglePostHeader({ postHeaderData, postType }) {
       </Row>
       <Row className="headerSection">
         <Col lg={9}>
-          <img src={postHeaderData.image} alt="ajaj" />
+          <img
+            className="singlePostPagePostImage"
+            src={postHeaderData.image}
+            alt="PostImage"
+          />
         </Col>
         <Col lg={3}>
           <div className="postSection">

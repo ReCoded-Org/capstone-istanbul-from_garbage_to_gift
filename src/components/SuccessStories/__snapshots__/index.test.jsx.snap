@@ -15,7 +15,7 @@ exports[`renders SuccessStories correctly 1`] = `
     successStories.paragraph
   </p>
   <div
-    className="row"
+    className="successStoriesPosts row"
     fluid="md"
   />
 </div>

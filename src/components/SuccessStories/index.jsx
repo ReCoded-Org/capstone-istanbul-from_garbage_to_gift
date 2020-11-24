@@ -38,7 +38,7 @@ export default function SuccessStories() {
     <Container className="successStoriesContaier">
       <p className="text-center sucessStories">{t("successStories.header")}</p>
       <p className="text-center weSucceed">{t("successStories.paragraph")}</p>
-      <Row fluid="md">
+      <Row fluid="md" className="successStoriesPosts">
         {stories
           .map((singleData) => <Post postInfo={singleData} />)
           .slice(0, 3)}

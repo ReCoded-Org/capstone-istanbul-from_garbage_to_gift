@@ -1,8 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Acme&display=swap");
-
 .successStoriesContaier {
   font-family: "Acme";
   margin-bottom: 2em;
+}
+
+.successStoriesPosts {
+  display: flex;
+  align-self: center;
+  justify-content: center;
 }
 
 .sucessStories {

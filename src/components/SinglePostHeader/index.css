@@ -32,3 +32,11 @@
 .headerSection {
   margin: 2em 0;
 }
+
+.singlePostPagePostImage {
+  width: 40em;
+  height: 40em;
+}
+.loginImage {
+  align-self: center;
+}
