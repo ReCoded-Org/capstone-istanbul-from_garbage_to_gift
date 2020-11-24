@@ -32,20 +32,19 @@ export default function Signup() {
       await signup(emailRef.current.value, passwordRef.current.value).then(
         (res) => {
           return db.collection("userProfile").doc(res.user.uid).set({
-            createdAt: createdMoment,
             name: userState.name,
             surname: userState.surname,
             biography: userState.biography,
             userId: res.user.uid,
             job: userState.job,
             location: userState.location,
-            imgUrl: "",
           });
         }
       );
       history.push("/");
     } catch {
       setError(t("loginPages.signup.failCreateAcc"));
+      console.log(error);
     }
   }
 

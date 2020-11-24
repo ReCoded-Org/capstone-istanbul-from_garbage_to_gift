@@ -1,11 +1,10 @@
 import React from "react";
-import profilePic from "../img/orcunProfilePic.png"
+import profilePic from "../img/orcunProfilePic.png";
 import "./index.css";
-
+import EditInfoForm from "../EditInfoForm";
 
 export default function Info({ userInfo }) {
-  
-
+  console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAaa");
   if (!userInfo) {
     return <h2>loading...</h2>;
   } else {
@@ -20,6 +19,7 @@ export default function Info({ userInfo }) {
           <h2>{userInfo.job}</h2>
           <h2>{userInfo.location}</h2>
         </div>
+        <EditInfoForm userInfoForEdit={userInfo} />
       </div>
     );
   }
