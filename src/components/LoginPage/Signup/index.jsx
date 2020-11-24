@@ -39,7 +39,7 @@ export default function Signup() {
             userId: res.user.uid,
             job: userState.job,
             location: userState.location,
-            imgUrl: ""
+            imgUrl: "",
           });
         }
       );

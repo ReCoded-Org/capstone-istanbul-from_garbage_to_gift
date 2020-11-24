@@ -3,11 +3,11 @@
 
 import React from "react";
 import { useGoogleLogin } from "react-google-login";
+import { refreshTokenSetup } from "../utils/refreshToken";
 import googleIcon from "./icons/google.svg";
 import "./index.css";
 import { useTranslation } from "react-i18next";
 import "firebase/auth";
-import { refreshTokenSetup } from "../utils/refreshToken";
 
 function Login() {
   const { t } = useTranslation();
