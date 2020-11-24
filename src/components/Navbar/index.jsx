@@ -67,14 +67,11 @@ export default function SiteNavbar() {
           <Nav.Link href="/" className="navMainClass">
             {t("navbarsection.Home")}
           </Nav.Link>
-          <NavDropdown
-            title={t("navbarsection.Posts")}
-            className="dropdownNavbar"
-          >
-            <NavDropdown.Item href="/donatePosts">
+          <NavDropdown title={t("navbarsection.Posts")}>
+            <NavDropdown.Item className="navDropdownItem" href="/donatePosts">
               {t("navbarsection.DonationPosts")}
             </NavDropdown.Item>
-            <NavDropdown.Item href="/receivePosts">
+            <NavDropdown.Item className="navDropdownItem" href="/receivePosts">
               {t("navbarsection.ReceivingPosts")}
             </NavDropdown.Item>
           </NavDropdown>
@@ -116,7 +113,7 @@ export default function SiteNavbar() {
           title={
             <img
               src={languageIcon}
-              className="languageIconImage"
+              className="languageIconImg"
               alt="Language icon"
             />
           }

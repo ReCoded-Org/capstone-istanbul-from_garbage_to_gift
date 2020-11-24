@@ -3,10 +3,25 @@
 .navMainClass {
   font-family: "Acme" !important;
   color: #590995 !important;
+  font-size: 1.2em !important;
+  padding-right: 3em;
+  padding-left: 3em;
 }
+
+.navbar-light .navbar-nav .nav-link {
+  font-family: "Acme" !important;
+  color: #590995 !important;
+  font-size: 1.2em;
+}
+
+.navDropdownItem {
+  color: #c62a88 !important;
+}
+
 .navButtons {
   font-family: "Acme" !important;
   color: #590995 !important;
+  font-size: 1em;
   height: 2em;
   width: 5em;
   left: 5em;
@@ -36,13 +51,12 @@
 }
 .languageIcon {
   color: #590995;
-  width: 4.2%;
-}
-
-.languageIconImage {
-  width: 2em;
+  width: 3.2em;
 }
 .dropdown-menu {
   min-width: 0.2em !important;
   float: none !important;
+}
+.languageIconImg {
+  width: 100%;
 }

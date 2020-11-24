@@ -1,13 +1,13 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import target from "./images/target.jpg";
 import "./index.css";
 
 export default function WhoWeAre() {
   const { t } = useTranslation();
   return (
-    <Container fluid="md" className="whoWeAre">
+    <div fluid="md" className="whoWeAre">
       <Row className="targetText">
         <Col md={6}>
           <h2 className="targetHeader">{t("whoWeAre.header")}</h2>
@@ -27,15 +27,15 @@ export default function WhoWeAre() {
 
       <Row className="innerVideo">
         <iframe
-          height="400em"
-          width="600em"
+          height="500em"
+          width="800em"
           src="https://www.youtube.com/embed/9Fev-hRCR-8"
-          frameBorder="0"
+          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
+          allowfullscreen
           title="How It Works?"
-        />
+        ></iframe>
       </Row>
-    </Container>
+    </div>
   );
 }

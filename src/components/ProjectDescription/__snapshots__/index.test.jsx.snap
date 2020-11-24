@@ -2,7 +2,8 @@
 
 exports[`renders ProjectDescription correctly 1`] = `
 <div
-  className="container-md"
+  className="projectDiscription"
+  fluid="md"
 >
   <div
     className="projectDescriptionRow row"

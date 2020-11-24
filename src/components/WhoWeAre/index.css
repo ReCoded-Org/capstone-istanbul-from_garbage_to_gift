@@ -5,8 +5,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.8em;
-  margin: 1.8em;
+  padding-left: 3em;
+
   width: 100%;
   line-height: 170%;
   text-align: center;
@@ -14,21 +14,21 @@
 }
 
 .targetHeader {
-  font-size: 1.8em;
+  font-size: 1.75em;
   color: #03c4a1;
 }
 
 .targetParagraph {
   padding: 1.8em;
-  font-size: 1.2em;
+  font-size: 1.25em;
   color: #726a95;
 }
 
 .whoWeAreImage {
-  width: 100%;
+  width: 70%;
   height: auto;
-  padding: 10%;
-  margin: 5%;
+  padding: 1%;
+  margin: 1%;
 }
 
 .wrapper {
@@ -41,9 +41,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #03c4a1;
+  /* background: #03c4a1; */
   padding: 2%;
-  border-radius: 0.5em;
 }
 
 .whoWeAreTitle {
@@ -51,7 +50,8 @@
   align-items: center;
   justify-content: center;
   font-family: "Acme";
+  text-align: center;
   color: #590995;
-  font-size: 3.4em;
-  padding: 5%;
+  font-size: 2.5em;
+  padding-top: 0.2em;
 }

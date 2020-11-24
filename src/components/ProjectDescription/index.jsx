@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import giftImg from "./giftImg.jpg";
 
@@ -8,7 +8,7 @@ export default function ProjectDescription() {
   const { t } = useTranslation();
 
   return (
-    <Container fluid="md">
+    <div className="projectDiscription" fluid="md">
       <Row className="projectDescriptionRow">
         <Col md={6}>
           <img
@@ -28,6 +28,6 @@ export default function ProjectDescription() {
           </div>
         </Col>
       </Row>
-    </Container>
+    </div>
   );
 }
