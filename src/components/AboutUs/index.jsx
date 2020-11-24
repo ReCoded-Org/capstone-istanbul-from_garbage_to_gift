@@ -11,8 +11,8 @@ export default function AboutUs() {
 
   return (
     <div className="aboutCenter">
-      <div className="aboutHeader">
-        <h2>{t("about.about")}</h2>
+      <div>
+        <h2 className="aboutHeader">{t("about.about")}</h2>
       </div>
       <Row>
         {aboutCardInfo.map((aboutCard, index) => (

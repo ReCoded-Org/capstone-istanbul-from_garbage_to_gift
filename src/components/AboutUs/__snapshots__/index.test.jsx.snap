@@ -4,10 +4,10 @@ exports[`renders AboutUs correctly 1`] = `
 <div
   className="aboutCenter"
 >
-  <div
-    className="aboutHeader"
-  >
-    <h2>
+  <div>
+    <h2
+      className="aboutHeader"
+    >
       about.about
     </h2>
   </div>

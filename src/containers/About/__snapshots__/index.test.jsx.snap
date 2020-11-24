@@ -5,10 +5,10 @@ exports[`renders About correctly 1`] = `
   <div
     className="aboutCenter"
   >
-    <div
-      className="aboutHeader"
-    >
-      <h2>
+    <div>
+      <h2
+        className="aboutHeader"
+      >
         about.about
       </h2>
     </div>
@@ -183,7 +183,9 @@ exports[`renders About correctly 1`] = `
           className="teamMemberImg"
           src="luey.png"
         />
-        <h4 />
+        <h4
+          className="memberTitle"
+        />
         <p
           className="memberTitle"
         />
@@ -217,7 +219,9 @@ exports[`renders About correctly 1`] = `
           className="teamMemberImg"
           src="ola.png"
         />
-        <h4 />
+        <h4
+          className="memberTitle"
+        />
         <p
           className="memberTitle"
         />
@@ -251,7 +255,9 @@ exports[`renders About correctly 1`] = `
           className="teamMemberImg"
           src="knar.png"
         />
-        <h4 />
+        <h4
+          className="memberTitle"
+        />
         <p
           className="memberTitle"
         />
@@ -285,7 +291,9 @@ exports[`renders About correctly 1`] = `
           className="teamMemberImg"
           src="betul.png"
         />
-        <h4 />
+        <h4
+          className="memberTitle"
+        />
         <p
           className="memberTitle"
         />
@@ -319,7 +327,9 @@ exports[`renders About correctly 1`] = `
           className="teamMemberImg"
           src="orcun.png"
         />
-        <h4 />
+        <h4
+          className="memberTitle"
+        />
         <p
           className="memberTitle"
         />
@@ -353,7 +363,9 @@ exports[`renders About correctly 1`] = `
           className="teamMemberImg"
           src="ammar.png"
         />
-        <h4 />
+        <h4
+          className="memberTitle"
+        />
         <p
           className="memberTitle"
         />
@@ -386,7 +398,9 @@ exports[`renders About correctly 1`] = `
         <img
           className="teamMemberImg"
         />
-        <h4 />
+        <h4
+          className="memberTitle"
+        />
         <p
           className="memberTitle"
         />
@@ -419,7 +433,9 @@ exports[`renders About correctly 1`] = `
         <img
           className="teamMemberImg"
         />
-        <h4 />
+        <h4
+          className="memberTitle"
+        />
         <p
           className="memberTitle"
         />
@@ -452,7 +468,9 @@ exports[`renders About correctly 1`] = `
         <img
           className="teamMemberImg"
         />
-        <h4 />
+        <h4
+          className="memberTitle"
+        />
         <p
           className="memberTitle"
         />
@@ -485,7 +503,9 @@ exports[`renders About correctly 1`] = `
         <img
           className="teamMemberImg"
         />
-        <h4 />
+        <h4
+          className="memberTitle"
+        />
         <p
           className="memberTitle"
         />
