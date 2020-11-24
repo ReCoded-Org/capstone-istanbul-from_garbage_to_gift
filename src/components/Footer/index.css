@@ -1,19 +1,19 @@
-@import url("https://fonts.googleapis.com/css?family=Acme&display=swap");
-
 .footer {
   font-family: "Acme";
   background: #590995;
   color: white;
   width: "100%";
   font-size: 1em;
-  left: 0;
-  bottom: 0;
+  text-align: center;
+  padding: 3em;
+  margin-top: 6em;
 }
 
 .mainRow {
   display: flex;
   height: 100%;
   align-items: center;
+  justify-content: space-between;
 }
 
 .address {
@@ -44,7 +44,7 @@
   margin: 0 auto;
 }
 
-.iconEmail {
+.iconEm {
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -67,8 +67,13 @@
   padding: 1em;
 }
 
-.logo {
-  margin-left: 5em;
-  margin-bottom: 1.5em;
+.footerLogo {
+  width: 50%;
+}
+
+.contactFooter {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
   width: 30%;
 }
