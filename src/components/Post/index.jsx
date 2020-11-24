@@ -8,11 +8,11 @@ import loadingGif from "../PostList/image/loadingGif.gif";
 
 export default function Post(postInfo) {
   const { t } = useTranslation();
-
+  console.log(postInfo);
   if (postInfo.postInfo && postInfo.postInfo.date && postInfo.postInfo.title) {
     return (
       <Col className="singlePost" lg={3} sm={12} md={6}>
-        <Link to={"posts/" + postInfo.postInfo.id}>
+        <Link to={`posts/${postInfo.type}/${postInfo.postInfo.id}`}>
           <p className="cardTitle text-center">{postInfo.postInfo.title}</p>
         </Link>
         <p className="postDate">Date: {postInfo.postInfo.date}</p>

@@ -14,6 +14,7 @@ import PostPageReceiver from "./containers/PostPageReciever";
 import SiteNavbar from "./components/Navbar";
 import SinglePostPage from "./containers/SinglePostPage";
 import i18next from "i18next";
+import ApplicationPage from "./containers/ApplicationForm";
 
 function App() {
   const [currentLanguage, setCurrentLanguage] = useState(i18next.language);
@@ -38,8 +39,11 @@ function App() {
           <Route exact path="/contact" component={Contact} />
           <Route path="/donatePosts" component={PostPageVolunteer} />
           <Route path="/receivePosts" component={PostPageReceiver} />
-          <Route exact path="/posts/:id" component={SinglePostPage} />
-          <Route exact path="/application" />
+          <Route exact path="/posts/:postType/:id" component={SinglePostPage} />
+          <Route
+            path="/application/:postType/:id"
+            component={ApplicationPage}
+          />
           <Route path="/forgot-password" component={ForgotPassword} />
           <Route path="/" component={Footer} />
         </Router>

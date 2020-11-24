@@ -53,7 +53,6 @@ export default function Signup() {
       ...userState,
       [key]: e.target ? e.target.value : e,
     });
-    console.log(userState);
   };
 
   return (

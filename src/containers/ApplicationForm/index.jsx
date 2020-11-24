@@ -13,8 +13,8 @@ export default function ApplicationPage() {
   const [steps, setSteps] = useState("stepOne");
   const [meet, setMeet] = useState(false);
 
-  const { postType, id } = useParams();
-
+  const { postType } = useParams();
+  const { id } = useParams();
   const handleSteps = (e) => setSteps("stepTwo");
   const handleMeetSteps = (e) => setMeet(!meet);
   const handleStep1 = (e) => {
@@ -26,7 +26,6 @@ export default function ApplicationPage() {
     const fetchData = async () => {
       const res = await db.collection(`${postType}`).doc(`${id}`).get();
       const data = res.data();
-      console.log(data);
       setPost(data);
     };
     fetchData();
