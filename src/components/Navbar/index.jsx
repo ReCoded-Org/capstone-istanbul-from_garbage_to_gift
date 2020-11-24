@@ -86,7 +86,6 @@ export default function SiteNavbar() {
           <Nav.Link href="/" className="navMainClass">
             {t("navbarsection.Home")}
           </Nav.Link>
-<<<<<<< HEAD
 
           {currentUser && (
             <Nav.Link href="/donate" className="navMainClass">
@@ -99,10 +98,6 @@ export default function SiteNavbar() {
             className="dropdownNavbar"
           >
             <NavDropdown.Item href="/donatePosts">
-=======
-          <NavDropdown title={t("navbarsection.Posts")}>
-            <NavDropdown.Item className="navDropdownItem" href="/donatePosts">
->>>>>>> 22a1d46d284eeedcf85d0fc6a659ad93c2e4cf5e
               {t("navbarsection.DonationPosts")}
             </NavDropdown.Item>
             <NavDropdown.Item className="navDropdownItem" href="/receivePosts">
