@@ -6,7 +6,6 @@ import { useTranslation } from "react-i18next";
 
 export default function SinglePostHeader({ postHeaderData, postType }) {
   const { t } = useTranslation();
-
   return (
     <Container className="postHeader">
       <Row className="headerSection">

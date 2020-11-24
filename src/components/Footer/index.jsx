@@ -11,10 +11,10 @@ import "./index.css";
 import WhiteLogo from "./whiteLogo.png";
 
 const contactData = {
-  address: "9094 Bay Meadows Street Conyars, GA 30012",
+  address: "Tomtom, Camcı Fevzi Sk. No:32, 34433 Beyoğlu/İstanbul",
   phone: {
-    phone1: "+229-955-5388-336",
-    phone2: "+229-955-5373-360",
+    phone1: "+90-955-538-33-60",
+    phone2: "+90-955-533-36-50",
   },
   email: {
     email1: "office@mail.com",
@@ -24,32 +24,30 @@ const contactData = {
 
 export default function Footer() {
   return (
-    <div>
-      <Container fluid className="footer">
-        <Row className="mainRow">
-          <Col className="address">
-            <FontAwesomeIcon className="icon" icon={faMapMarkerAlt} />
-            <div className="alignCenter">{contactData.address}</div>
-          </Col>
-          <Col className="phone">
-            <FontAwesomeIcon className="icon" icon={faPhoneAlt} />
-            <div className="phone">
-              <div>{contactData.phone.phone1}</div>
-              <div>{contactData.phone.phone2}</div>
-            </div>
-          </Col>
-          <Col className="email">
-            <FontAwesomeIcon className="icon" icon={faEnvelope} />
-            <div className="email">
-              <div>{contactData.email.email1}</div>
-              <div>{contactData.email.email2}</div>
-            </div>
-          </Col>
-          <Col>
-            <img src={WhiteLogo} alt="logo" className="logo" />
-          </Col>
-        </Row>
-      </Container>
-    </div>
+    <Container fluid className="footer">
+      <Row className="mainRow">
+        <Col md={3}>
+          <FontAwesomeIcon className="icon" icon={faMapMarkerAlt} />
+          <div className="alignCenter">{contactData.address}</div>
+        </Col>
+        <Col md={3}>
+          <FontAwesomeIcon className="icon" icon={faPhoneAlt} />
+          <div className="phone">
+            <div>{contactData.phone.phone1}</div>
+            <div>{contactData.phone.phone2}</div>
+          </div>
+        </Col>
+        <Col md={3}>
+          <FontAwesomeIcon className="icon" icon={faEnvelope} />
+          <div className="email">
+            <div>{contactData.email.email1}</div>
+            <div>{contactData.email.email2}</div>
+          </div>
+        </Col>
+        <Col md={3}>
+          <img src={WhiteLogo} alt="logo" className="footerLogo" />
+        </Col>
+      </Row>
+    </Container>
   );
 }
