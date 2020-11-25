@@ -17,7 +17,6 @@ import {
 } from "react-bootstrap";
 
 export default function SiteNavbar() {
-  
   const { t, i18n } = useTranslation();
   const { currentUser } = useAuth();
   const [userName, setUserName] = useState();
@@ -94,20 +93,26 @@ export default function SiteNavbar() {
             </Nav.Link>
           )}
 
-            {currentUser && (
+          {currentUser && (
             <>
-            <NavDropdown
-            title={t("navbarsection.Posts")}
-            className="dropdownNavbar"
-          >
-            <NavDropdown.Item className="navDropdownItem" href="/donatePosts">
-              {t("navbarsection.DonationPosts")}
-            </NavDropdown.Item>
-            <NavDropdown.Item className="navDropdownItem" href="/receivePosts">
-              {t("navbarsection.ReceivingPosts")}
-            </NavDropdown.Item>
-          </NavDropdown>
-          </>
+              <NavDropdown
+                title={t("navbarsection.Posts")}
+                className="dropdownNavbar"
+              >
+                <NavDropdown.Item
+                  className="navDropdownItem"
+                  href="/donatePosts"
+                >
+                  {t("navbarsection.DonationPosts")}
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  className="navDropdownItem"
+                  href="/receivePosts"
+                >
+                  {t("navbarsection.ReceivingPosts")}
+                </NavDropdown.Item>
+              </NavDropdown>
+            </>
           )}
 
           <Nav.Link href="/about" className="navMainClass">

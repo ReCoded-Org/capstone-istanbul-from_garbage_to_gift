@@ -9,7 +9,9 @@ export default function RecentActivities() {
   return (
     <div className="d-flex flex-column align-items-center">
       <div className="recentActivitiesContainer">
-        <h2 className="recentActivitiesTitle">{t('profilePage.recentActivities')}</h2>
+        <h2 className="recentActivitiesTitle">
+          {t("profilePage.recentActivities")}
+        </h2>
         {activitiyData.map((activity) => (
           <ActivityCard cardInfo={activity} />
         ))}

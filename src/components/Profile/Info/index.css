@@ -20,10 +20,9 @@
   width: 50%;
 }
 
-.infoContainer{
+.infoContainer {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  
 }

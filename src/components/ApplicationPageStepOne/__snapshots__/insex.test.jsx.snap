@@ -5,17 +5,19 @@ exports[`renders PostSectionStep1 correctly 1`] = `
   className="container"
 >
   <div
-    className="stepOneApplicationPage row"
+    className="stepOneApplicationPage"
   >
     <div
-      className="col-md-4"
+      md={4}
     >
       <h2
         className="prerequisites"
       >
         applicationPageStep1.target
       </h2>
-      <p />
+      <p
+        className="prerequisitesDescription"
+      />
       <input
         name="radiobutton"
         type="checkbox"
@@ -25,12 +27,10 @@ exports[`renders PostSectionStep1 correctly 1`] = `
         className=" prerequisitesDescription meet"
         htmlFor="radiobutton"
       >
-        applicationPageStep1.Meet
+        applicationPageStep1.MeetTarget
       </label>
     </div>
-    <div
-      className="stepOneDiv col-md-8"
-    />
+    <div />
   </div>
 </div>
 `;

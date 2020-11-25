@@ -2,12 +2,14 @@
 
 exports[`renders Steps correctly 1`] = `
 <div
-  className="00 container"
+  className="container"
 >
   <div
     className="steps"
   >
-    <div>
+    <div
+      className="stepIcon undefined"
+    >
       <svg
         aria-hidden="true"
         className="svg-inline--fa fa-hand-holding fa-w-18 fa-2x "
@@ -31,7 +33,7 @@ exports[`renders Steps correctly 1`] = `
     </div>
     <hr />
     <div
-      className={false}
+      className="stepIcon false"
     >
       <svg
         aria-hidden="true"

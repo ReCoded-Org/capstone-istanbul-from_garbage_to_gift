@@ -5,7 +5,7 @@
   height: 30%;
 }
 
-.editBtnContainer{
+.editBtnContainer {
   justify-content: center;
   display: flex;
   height: 10em;
@@ -13,7 +13,7 @@
   margin-top: 3em;
 }
 
-.saveBtn{
+.saveBtn {
   background-color: #c62a88;
   border: none;
 }
@@ -21,7 +21,7 @@
 .inputSize {
   width: 30em;
 }
-.modalWidth{
+.modalWidth {
   width: 10em;
 }
 

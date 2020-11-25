@@ -16,6 +16,7 @@ import SiteNavbar from "./components/Navbar";
 import SinglePostPage from "./containers/SinglePostPage";
 import i18next from "i18next";
 import ApplicationPage from "./containers/ApplicationForm";
+import "./App.css";
 
 function App() {
   const [currentLanguage, setCurrentLanguage] = useState(i18next.language);

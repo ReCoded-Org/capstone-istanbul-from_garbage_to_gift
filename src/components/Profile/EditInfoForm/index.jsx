@@ -47,21 +47,29 @@ export default function EditInfoForm({ userInfoForEdit }) {
   return (
     <div>
       <div className="editBtnContainer">
-      <Button
-        className="editProfileBtn"
-        variant="primary"
-        onClick={() => setShow(true)}
-      >
-        {t('profilePage.editForm.editProfile')}
-      </Button>
+        <Button
+          className="editProfileBtn"
+          variant="primary"
+          onClick={() => setShow(true)}
+        >
+          {t("profilePage.editForm.editProfile")}
+        </Button>
       </div>
-      <Modal show={show} dialogClassName="modal-90w" aria-labelledby="example-custom-modal-styling-title" onHide={handleClose} animation={false}>
+      <Modal
+        show={show}
+        dialogClassName="modal-90w"
+        aria-labelledby="example-custom-modal-styling-title"
+        onHide={handleClose}
+        animation={false}
+      >
         <Modal.Header closeButton>
-          <Modal.Title className="purpleElemModal">{t('profilePage.editForm.modalTitle')}</Modal.Title>
+          <Modal.Title className="purpleElemModal">
+            {t("profilePage.editForm.modalTitle")}
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form className="purpleElemSignUp">
-            <Form.Group  id="userName">
+            <Form.Group id="userName">
               <Form.Label>{t("loginPages.signup.name")}</Form.Label>
               <Form.Control
                 className="greenElemSignUp"
@@ -119,10 +127,10 @@ export default function EditInfoForm({ userInfoForEdit }) {
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
-          {t('profilePage.editForm.close')}
+            {t("profilePage.editForm.close")}
           </Button>
           <Button variant="primary" className="saveBtn" onClick={editUserInfo}>
-            {t('profilePage.editForm.saveBtn')}
+            {t("profilePage.editForm.saveBtn")}
           </Button>
         </Modal.Footer>
       </Modal>

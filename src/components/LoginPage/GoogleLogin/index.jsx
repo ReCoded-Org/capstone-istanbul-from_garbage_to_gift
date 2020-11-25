@@ -8,13 +8,16 @@ import { useTranslation } from "react-i18next";
 import "firebase/auth";
 import { auth } from "../../../firebaseConfig";
 import firebase from "firebase";
+import { useHistory } from "react-router-dom";
 
 function Login() {
+  const history = useHistory();
   const { t } = useTranslation();
   const loginWithGoogle = async () => {
     const provider = new firebase.auth.GoogleAuthProvider();
-    provider.addScope("https://www.googleapis.com/auth/contacts.readonly");
+    provider.addScope("https://www.googleapis.com/auth/userinfo.profile");
     await auth.signInWithPopup(provider);
+    history.push("/");
   };
 
   return (

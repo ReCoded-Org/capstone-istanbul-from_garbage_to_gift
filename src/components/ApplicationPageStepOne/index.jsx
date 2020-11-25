@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import "./index.css";
 import { useTranslation } from "react-i18next";
 import { Button } from "react-bootstrap";
@@ -8,14 +8,16 @@ export default function PostSectionStepOne(props) {
   const { t } = useTranslation();
   return (
     <Container>
-      <Row className="stepOneApplicationPage">
-        <Col md={4}>
+      <div className="stepOneApplicationPage">
+        <div md={4}>
           <h2 className="prerequisites">
             {props.prerequisites
               ? t("applicationPageStep1.Prerequisites")
               : t("applicationPageStep1.target")}
           </h2>
-          <p>{props.prerequisites ? props.prerequisites : props.target}</p>
+          <p className="prerequisitesDescription">
+            {props.prerequisites ? props.prerequisites : props.target}
+          </p>
           <input
             type="checkbox"
             name="radiobutton"
@@ -26,10 +28,12 @@ export default function PostSectionStepOne(props) {
             htmlFor="radiobutton"
             className=" prerequisitesDescription meet"
           >
-            {t("applicationPageStep1.Meet")}
+            {props.prerequisites
+              ? t("applicationPageStep1.MeetPrerequisites")
+              : t("applicationPageStep1.MeetTarget")}
           </label>
-        </Col>
-        <Col md={8} className="stepOneDiv">
+        </div>
+        <div>
           {props.meet && (
             <Button
               className="navButtons nextButton"
@@ -38,8 +42,8 @@ export default function PostSectionStepOne(props) {
               {t("applicationPageStep1.Next")}
             </Button>
           )}
-        </Col>
-      </Row>
+        </div>
+      </div>
     </Container>
   );
 }
