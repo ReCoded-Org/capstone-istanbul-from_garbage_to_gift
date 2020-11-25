@@ -3,3 +3,13 @@
   display: flex;
   flex-direction: column;
 }
+
+.leftContainer{
+  height: 60em;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  background-color: #590995;
+  color: white;
+}

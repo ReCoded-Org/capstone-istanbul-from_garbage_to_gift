@@ -2,25 +2,28 @@ import React from "react";
 import profilePic from "../img/orcunProfilePic.png";
 import "./index.css";
 import EditInfoForm from "../EditInfoForm";
+import { useTranslation } from "react-i18next";
 
 export default function Info({ userInfo }) {
-  console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAaa");
+  const { t } = useTranslation();
   if (!userInfo) {
-    return <h2>loading...</h2>;
+    return <h2>{t('profilePage.loading')}</h2>;
   } else {
     return (
+      <>
       <div className="infoContainer">
         <img src={profilePic} className="profileImg" alt="profile" />
-        <div className="nameSurnameTxt">
-          <h2 className="userNameTxt">{userInfo.name}</h2>
-          <h2>{userInfo.surname}</h2>
+        <div className="userNameTxt">
+          <h4 >{t('profilePage.basicInfo.name')}: {userInfo.name}</h4>
+          <h4>{t('profilePage.basicInfo.surname')}: {userInfo.surname}</h4>
         </div>
         <div className="userJobCity">
-          <h2>{userInfo.job}</h2>
-          <h2>{userInfo.location}</h2>
+          <h4>{t('profilePage.basicInfo.job')}: {userInfo.job}</h4>
+          <h4>{t('profilePage.basicInfo.location')}: {userInfo.location}</h4>
         </div>
-        <EditInfoForm userInfoForEdit={userInfo} />
       </div>
+      <EditInfoForm userInfoForEdit={userInfo} />
+      </>
     );
   }
 }

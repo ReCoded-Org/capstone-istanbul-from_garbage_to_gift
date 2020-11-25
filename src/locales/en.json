@@ -219,7 +219,21 @@
   },
   "profilePage": {
     "basicInfo": {
-      "uploadBtn": "Upload"
+      "uploadBtn": "Upload",
+      "name": "Name",
+      "surname": "Surname",
+      "job": "Job",
+      "location": "Location"
+    },
+    "biography": "Biography",
+    "recentActivities": "Recent Activities",
+    "loading": "loading...",
+    "editForm": {
+      "editProfile": "Edit Profile",
+      "modalTitle": "Edit your profile information",
+      "saveBtn": "Update Profile",
+      "close": "Close"
+      
     }
   }
 }

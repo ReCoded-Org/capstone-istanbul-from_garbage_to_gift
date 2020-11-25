@@ -9,19 +9,17 @@ export default function EditInfoForm({ userInfoForEdit }) {
   const { t } = useTranslation();
   const [show, setShow] = useState(false);
   const { currentUser } = useAuth();
-  const [name, setName] = useState(userInfoForEdit.name);
-  const [surname, setSurname] = useState(userInfoForEdit.surname);
-  const [job, setJob] = useState(userInfoForEdit.job);
-  const [location, setLocation] = useState(userInfoForEdit.location);
-  const [biography, setBio] = useState(userInfoForEdit.biography);
+  const [name] = useState(userInfoForEdit.name);
+  const [surname] = useState(userInfoForEdit.surname);
+  const [job] = useState(userInfoForEdit.job);
+  const [location] = useState(userInfoForEdit.location);
+  const [biography] = useState(userInfoForEdit.biography);
 
   const [editForm, setEditForm] = useState({});
 
   const handleClose = () => {
     setShow(false);
   };
-
-  const handleShow = () => setShow(true);
 
   const handleChange = (e, key) => {
     setEditForm({
@@ -48,24 +46,25 @@ export default function EditInfoForm({ userInfoForEdit }) {
 
   return (
     <div>
+      <div className="editBtnContainer">
       <Button
         className="editProfileBtn"
         variant="primary"
         onClick={() => setShow(true)}
       >
-        Edit Profile
+        {t('profilePage.editForm.editProfile')}
       </Button>
-
-      <Modal show={show} onHide={handleClose} animation={false}>
+      </div>
+      <Modal show={show} dialogClassName="modal-90w" aria-labelledby="example-custom-modal-styling-title" onHide={handleClose} animation={false}>
         <Modal.Header closeButton>
-          <Modal.Title>Edit your profile information</Modal.Title>
+          <Modal.Title className="purpleElemModal">{t('profilePage.editForm.modalTitle')}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Form>
-            <Form.Group className="purpleElemSignUp inputSize" id="userName">
+          <Form className="purpleElemSignUp">
+            <Form.Group  id="userName">
               <Form.Label>{t("loginPages.signup.name")}</Form.Label>
               <Form.Control
-                className="purpleElemSignUp"
+                className="greenElemSignUp"
                 type="text"
                 defaultValue={name}
                 onChange={(e) => handleChange(e, "name")}
@@ -75,7 +74,7 @@ export default function EditInfoForm({ userInfoForEdit }) {
             <Form.Group id="userSurname">
               <Form.Label>{t("loginPages.signup.surname")}</Form.Label>
               <Form.Control
-                className="purpleElemSignUp"
+                className="greenElemSignUp"
                 type="text"
                 defaultValue={surname}
                 onChange={(e) => handleChange(e, "surname")}
@@ -85,7 +84,7 @@ export default function EditInfoForm({ userInfoForEdit }) {
             <Form.Group id="jobTitle">
               <Form.Label>{t("loginPages.signup.job")}</Form.Label>
               <Form.Control
-                className="purpleElemSignUp"
+                className="greenElemSignUp"
                 type="text"
                 defaultValue={job}
                 onChange={(e) => handleChange(e, "job")}
@@ -95,7 +94,7 @@ export default function EditInfoForm({ userInfoForEdit }) {
             <Form.Group id="location">
               <Form.Label>{t("loginPages.signup.location")}</Form.Label>
               <Form.Control
-                className="purpleElemSignUp"
+                className="greenElemSignUp"
                 type="text"
                 defaultValue={location}
                 onChange={(e) => handleChange(e, "location")}
@@ -103,26 +102,27 @@ export default function EditInfoForm({ userInfoForEdit }) {
               />
             </Form.Group>
             <Form.Group id="biography">
-              <label>{t("loginPages.signup.biography")}</label>
-              <textarea
+              <Form.Label>{t("loginPages.signup.biography")}</Form.Label>
+              <Form.Control
+                className="greenElemSignUp"
+                as="textarea"
                 id="biography"
                 onChange={(e) => handleChange(e, "biography")}
                 name="biography"
-                cols="50"
-                rows="3"
+                cols="3"
+                rows="5"
                 maxLength="2000"
-              >
-                {biography}
-              </textarea>
+                defaultValue={biography}
+              />
             </Form.Group>
           </Form>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
-            Close
+          {t('profilePage.editForm.close')}
           </Button>
-          <Button variant="primary" onClick={editUserInfo}>
-            Save Changes
+          <Button variant="primary" className="saveBtn" onClick={editUserInfo}>
+            {t('profilePage.editForm.saveBtn')}
           </Button>
         </Modal.Footer>
       </Modal>

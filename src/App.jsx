@@ -10,7 +10,6 @@ import About from "./containers/About";
 import Footer from "./components/Footer";
 import NewPostForm from "./containers/NewPostForm";
 import Profile from "./containers/ProfilePage";
-
 import PostPageVolunteer from "./containers/PostPageVolunteer";
 import PostPageReceiver from "./containers/PostPageReciever";
 import SiteNavbar from "./components/Navbar";

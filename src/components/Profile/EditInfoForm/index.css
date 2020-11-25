@@ -1,4 +1,34 @@
 .editProfileBtn {
   background-color: #c62a88;
   border: none;
+  width: 50%;
+  height: 30%;
+}
+
+.editBtnContainer{
+  justify-content: center;
+  display: flex;
+  height: 10em;
+  align-items: center;
+  margin-top: 3em;
+}
+
+.saveBtn{
+  background-color: #c62a88;
+  border: none;
+}
+
+.inputSize {
+  width: 30em;
+}
+.modalWidth{
+  width: 10em;
+}
+
+.greenElemSignUp {
+  color: #03c4a1;
+}
+
+.purpleElemModal {
+  color: #c62a88;
 }

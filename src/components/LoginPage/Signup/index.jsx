@@ -17,7 +17,6 @@ export default function Signup() {
   const [loading, setLoading] = useState(false);
   const history = useHistory();
   const [userState, setUserState] = useState({});
-  let createdMoment = Date.now();
 
   // eslint-disable-next-line consistent-return
   async function handleSubmit(e) {
