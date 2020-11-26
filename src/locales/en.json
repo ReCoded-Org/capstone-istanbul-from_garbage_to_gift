@@ -88,7 +88,7 @@
     "teamDiscription": "Behind this project is a benevolent team of five brothers and sisters led by an experienced leader, please don't hesitate to contact us for any help or feedback",
     "aboutUs": [
       {
-        "title": "Our Belives",
+        "title": "Our Believes",
         "paragraph": "Together we can build a better world, everyone can participate in changing the world by donating his/her unnecessary stuff to people in need, whatever the stuff is it might rescue the other people lives or better their lives at least."
       },
       {
@@ -139,6 +139,7 @@
     "city": "City",
     "date": "Date",
     "by": "By",
+    "Author": "By",
     "showing": "Showing",
     "results": "results",
     "goods": "Goods",
@@ -160,7 +161,7 @@
   "navbarsection": {
     "Home": "Home",
     "Posts": "Posts",
-    "Donate": "Donate",
+    "Donate": "Add post",
     "AboutUs": "About",
     "ContactUs": "Contact",
     "SearchHere": "Search here",
@@ -168,6 +169,7 @@
     "LogIn": "Login",
     "SignUp": "Sign Up",
     "logout": "Log out",
+    "LoggedInAs": "Logged in as",
     "DonationPosts": "Donation Posts",
     "ReceivingPosts": "Receiving Posts"
   },
@@ -180,6 +182,8 @@
   "formsection": {
     "Donate": "Donate",
     "Receive": "Receive",
+    "FillTheFormDonator": "Fill the form to find a correct receiver",
+    "FillTheFormReceiver": "Fill the form to find a correct donator",
     "DonationType": "Type (Select One)",
     "DonationOption1": "Service",
     "DonationOption2": "Goods",
@@ -200,8 +204,9 @@
     "TargetGroup": "Target Group",
     "Prerequisites": "Prerequisites",
     "Address": "Address",
-    "AboutPostOwner": "AboutPostOwner",
+    "AboutPostOwner": "About Post Owner",
     "ApplicationDeadline": "Last day for Application",
+    "PleaseLogInToApply": "Please log in to apply",
     "PostType": "Post Type:",
     "BackButton": "Go Back to Posts",
     "Apply": "Apply",
@@ -213,8 +218,8 @@
     "Step2": "Step 2",
     "Next": "Next",
     "Prerequisites": "Prerequisites",
-    "target": "Target",
+    "target": "Prerequisites",
     "MeetPrerequisites": "I meet these prerequisites",
-    "MeettTarget": "I meet these prerequisites"
+    "MeetTarget": "I meet these prerequisites"
   }
 }

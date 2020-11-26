@@ -75,9 +75,11 @@ export default function SiteNavbar() {
               {t("navbarsection.ReceivingPosts")}
             </NavDropdown.Item>
           </NavDropdown>
-          <Nav.Link href="/donate" className="navMainClass">
-            {t("navbarsection.Donate")}
-          </Nav.Link>
+          {currentUser && (
+            <Nav.Link href="/donate" className="navMainClass">
+              {t("navbarsection.Donate")}
+            </Nav.Link>
+          )}
           <Nav.Link href="/about" className="navMainClass">
             {t("navbarsection.AboutUs")}
           </Nav.Link>
@@ -89,7 +91,7 @@ export default function SiteNavbar() {
         {currentUser ? (
           <>
             <div className="loggedInUserInfo">
-              Logged in as {currentUser.email}
+              {t("navbarsection.LoggedInAs")} {currentUser.email}
             </div>
             <Logout />
           </>

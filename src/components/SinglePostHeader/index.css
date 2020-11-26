@@ -10,6 +10,18 @@
   border-radius: 0.5em;
 }
 
+.pleaseLogInText {
+  color: #c62a88;
+  margin-top: 7em;
+}
+
+.pleaseLogInLink:hover,
+.pleaseLogInText:hover {
+  text-decoration: none;
+  border: solid;
+  border-radius: 0.5em;
+}
+
 .applyButton {
   background-color: #c62a88;
   color: white;

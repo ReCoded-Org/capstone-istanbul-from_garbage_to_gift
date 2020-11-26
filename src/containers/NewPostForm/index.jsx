@@ -40,9 +40,9 @@ export default function Form() {
       </Row>
       <Row className="justify-content-md-center description">
         {radioValue === "ReceiverForm" ? (
-          <h3>Fill the Form to Find a Correct Receiver</h3>
+          <h3>{t("formsection.FillTheFormReceiver")}</h3>
         ) : (
-          <h3>Fill the Form to Find a Correct Donator</h3>
+          <h3>{t("formsection.FillTheFormDonator")}</h3>
         )}
       </Row>
       {radioValue === "ReceiverForm" ? <ReceiverForm /> : <DonatorForm />}

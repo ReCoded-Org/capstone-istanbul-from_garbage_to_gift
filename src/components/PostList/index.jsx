@@ -11,6 +11,7 @@ import React, { lazy, Suspense, useEffect, useState } from "react";
 import { Row, Container } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import "./index.css";
+import i18next from "i18next";
 import db from "../../firebaseConfig.js";
 import loadingGif from "./image/loadingGif.gif";
 
@@ -19,16 +20,22 @@ const Post = lazy(() => import("../Post/index.jsx"));
 export default function PostList(props) {
   const [posts, setPosts] = useState([]);
   const [constantAllPosts, setConstantAllPosts] = useState();
+  const [currentLanguage, setCurrentLanguage] = useState(i18next.language);
+  i18next.on("languageChanged", (lng) => {
+    setCurrentLanguage(lng);
+  });
   const { t } = useTranslation();
 
   const fetchData = async () => {
     const res = await db.collection(`${props.collectionName}`).get();
 
-    const data = res.docs.map((post) => {
-      const tmp = post.data();
-      const id = post.id;
-      return { id, ...tmp };
-    });
+    const data = res.docs
+      .map((post) => {
+        const tmp = post.data();
+        const id = post.id;
+        return { id, ...tmp };
+      })
+      .filter((post) => post.lang === currentLanguage);
 
     setPosts(data);
     setConstantAllPosts(data);
